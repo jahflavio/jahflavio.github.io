@@ -1,0 +1,8 @@
+# Ignore generated PDFs and text files
+*.pdf
+*.txt
+
+# Ignore copy HTML files
+*copy.html
+cv.html
+extract_pdfs.py
