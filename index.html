@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Fabián Flores</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;700;800&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#0f172a', // Slate 900
+                        accent: '#4f46e5', // Indigo 600
+                        light: '#f8fafc', // Slate 50
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        @media print {
+            @page {
+                margin: 0;
+                size: letter;
+                /* Cambiado de 'auto' a 'letter' */
+            }
+
+            body {
+                background: white;
+            }
+
+            .no-print {
+                display: none !important;
+            }
+
+            .page-break-avoid {
+                break-inside: avoid;
+            }
+
+            .print-shadow-none {
+                box-shadow: none !important;
+            }
+
+            .print-container {
+                margin: 0 auto;
+                width: 100%;
+                max-width: none;
+            }
+
+            /* --- INICIO DE AJUSTES DE ESPACIO PARA IMPRESIÓN --- */
+            header.p-10 {
+                padding: 1.5rem !important;
+                /* Reduce padding del header */
+            }
+
+            main.p-10 {
+                padding: 1.5rem 2rem !important;
+                /* Reduce padding del contenido principal */
+            }
+
+            aside.p-8 {
+                padding: 1.5rem !important;
+                /* Reduce padding de la barra lateral */
+            }
+
+            section.mb-12 {
+                margin-bottom: 1.5rem !important;
+                /* Reduce espacio entre secciones */
+            }
+
+            div.space-y-10 {
+                --tw-space-y-reverse: 0;
+                margin-top: calc(1.25rem * var(--tw-space-y-reverse));
+                /* Reduce espacio entre trabajos (de 2.5rem a 1.25rem) */
+                margin-bottom: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+            }
+
+            div.mb-10 {
+                margin-bottom: 1.25rem !important;
+                /* Reduce espacio en sidebar */
+            }
+
+            h3.mb-8 {
+                margin-bottom: 1rem !important;
+                /* Reduce espacio bajo títulos */
+            }
+
+            /* --- FIN DE AJUSTES DE ESPACIO PARA IMPRESIÓN --- */
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-slate-700 antialiased selection:bg-accent selection:text-white pb-20 print:pb-0">
+
+    <!-- Main CV Container -->
+    <div
+        class="max-w-[210mm] mx-auto bg-white shadow-2xl print:shadow-none print:my-0 min-h-[297mm] relative overflow-hidden print-container">
+
+        <!-- Decorative Top Bar -->
+        <div class="h-2 bg-gradient-to-r from-slate-800 via-indigo-600 to-purple-600 w-full"></div>
+
+        <!-- Header Section -->
+        <header class="bg-white p-10 pb-8 border-b border-gray-100">
+            <div class="flex flex-col md:flex-row justify-between items-start gap-6">
+                <div>
+                    <h1 class="font-display text-5xl font-extrabold text-primary tracking-tight mb-2">Fabián Flores</h1>
+                    <h2 class="font-display text-2xl text-accent font-medium tracking-wide">Software Developer Front-End
+                    </h2>
+                    <p class="mt-4 text-gray-500 max-w-2xl leading-relaxed text-sm">
+                        Comunicador Visual y Desarrollador Front-End especializado en crear experiencias web
+                        responsivas, intuitivas y de alto rendimiento. Experto en transformar diseños complejos en
+                        código limpio (HTML5, CSS3, JS) y optimizar para SEO y UX.
+                    </p>
+                </div>
+
+                <!-- Contact Info Grid -->
+                <div class="grid grid-cols-1 gap-3 text-sm min-w-[240px]">
+                    <a href="mailto:fabianfloram@gmail.com"
+                        class="flex items-center gap-3 text-gray-600 hover:text-accent transition group">
+                        <div
+                            class="w-8 h-8 rounded-lg bg-slate-50 flex items-center justify-center text-accent group-hover:bg-indigo-50 transition">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <span class="font-medium">fabianfloram@gmail.com</span>
+                    </a>
+                    <div class="flex items-center gap-3 text-gray-600 group">
+                        <div class="w-8 h-8 rounded-lg bg-slate-50 flex items-center justify-center text-accent">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <span class="font-medium">+52 55 4928 2677</span>
+                    </div>
+                    <div class="flex items-center gap-3 text-gray-600 group">
+                        <div class="w-8 h-8 rounded-lg bg-slate-50 flex items-center justify-center text-accent">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <span class="font-medium">CDMX, México</span>
+                    </div>
+                    <!--
+                    <a href="https://www.linkedin.com/in/fabian-f-71858b209" target="_blank" class="flex items-center gap-3 text-gray-600 hover:text-accent transition group">
+                        <div class="w-8 h-8 rounded-lg bg-slate-50 flex items-center justify-center text-accent group-hover:bg-indigo-50 transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                        <span class="font-medium">LinkedIn Profile</span>
+                    </a>
+                    <a href="https://fabians-amazing-site-008106.webflow.io/" target="_blank" class="flex items-center gap-3 text-gray-600 hover:text-accent transition group">
+                        <div class="w-8 h-8 rounded-lg bg-slate-50 flex items-center justify-center text-accent group-hover:bg-indigo-50 transition">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <span class="font-medium">Portfolio Webflow</span>
+                    </a>
+                    <a href="https://www.behance.net/gallery/141326181/Diseno-Web-UXUI-y-Redes-Sociales" target="_blank" class="flex items-center gap-3 text-gray-600 hover:text-accent transition group">
+                        <div class="w-8 h-8 rounded-lg bg-slate-50 flex items-center justify-center text-accent group-hover:bg-indigo-50 transition">
+                            <i class="fab fa-behance"></i>
+                        </div>
+                        <span class="font-medium">Behance Profile</span>
+                    </a>
+                    -->
+                </div>
+            </div>
+        </header>
+
+        <!-- Content Grid -->
+        <div class="grid grid-cols-12 min-h-screen">
+
+            <!-- Left Sidebar (Skills & Info) -->
+            <aside class="col-span-12 md:col-span-4 bg-slate-50 p-8 border-r border-gray-100 print:col-span-4">
+
+                <!-- Skills Section -->
+                <div class="mb-10 page-break-avoid">
+                    <h3 class="font-display text-lg font-bold text-primary mb-5 flex items-center gap-2">
+                        <i class="fas fa-code text-accent"></i> Tech Stack
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="px-3 py-1.5 bg-white border border-gray-200 text-slate-700 text-xs font-semibold rounded-md shadow-sm">HTML5
+                            / CSS3</span>
+                        <span
+                            class="px-3 py-1.5 bg-white border border-gray-200 text-slate-700 text-xs font-semibold rounded-md shadow-sm">JavaScript
+                            (ES6+)</span>
+                        <span
+                            class="px-3 py-1.5 bg-white border border-gray-200 text-slate-700 text-xs font-semibold rounded-md shadow-sm">React
+                            / Vue.js</span>
+                        <span
+                            class="px-3 py-1.5 bg-white border border-gray-200 text-slate-700 text-xs font-semibold rounded-md shadow-sm">Tailwind
+                            CSS</span>
+                        <span
+                            class="px-3 py-1.5 bg-white border border-gray-200 text-slate-700 text-xs font-semibold rounded-md shadow-sm">Material
+                            UI</span>
+                        <span
+                            class="px-3 py-1.5 bg-white border border-gray-200 text-slate-700 text-xs font-semibold rounded-md shadow-sm">SEO</span>
+                        <span
+                            class="px-3 py-1.5 bg-white border border-gray-200 text-slate-700 text-xs font-semibold rounded-md shadow-sm">Bootstrap</span>
+                        <span
+                            class="px-3 py-1.5 bg-white border border-gray-200 text-slate-700 text-xs font-semibold rounded-md shadow-sm">Git
+                            / GitHub</span>
+                        <span
+                            class="px-3 py-1.5 bg-white border border-gray-200 text-slate-700 text-xs font-semibold rounded-md shadow-sm">APIs
+                            REST</span>
+                    </div>
+                </div>
+
+                <div class="mb-10 page-break-avoid">
+                    <h3 class="font-display text-lg font-bold text-primary mb-5 flex items-center gap-2">
+                        <i class="fas fa-pen-nib text-accent"></i> Diseño & UX
+                    </h3>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-500 text-xs"></i> Figma
+                            (Wireframes)</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-500 text-xs"></i>
+                            Prototipado UI</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-500 text-xs"></i> Diseño
+                            Responsivo</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-500 text-xs"></i>
+                            Mobile-First</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-500 text-xs"></i>
+                            Accesibilidad (WCAG)</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-500 text-xs"></i> Adobe
+                            Suite</li>
+                    </ul>
+                </div>
+
+                <div class="mb-10 page-break-avoid">
+                    <h3 class="font-display text-lg font-bold text-primary mb-5 flex items-center gap-2">
+                        <i class="fas fa-chart-line text-accent"></i> Marketing & SEO
+                    </h3>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-500 text-xs"></i> SEO
+                            Técnico (On/Off Page)</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-500 text-xs"></i>
+                            Performance Optimization</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-500 text-xs"></i> Google
+                            Analytics</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-500 text-xs"></i> Search
+                            Console</li>
+                    </ul>
+                </div>
+
+                <div class="mb-10 page-break-avoid">
+                    <h3 class="font-display text-lg font-bold text-primary mb-5 flex items-center gap-2">
+                        <i class="fas fa-graduation-cap text-accent"></i> Educación
+                    </h3>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
+                        <h4 class="font-bold text-sm text-primary">Lic. Comunicación Visual</h4>
+                        <p class="text-xs text-gray-500 mt-1">Universidad de la Comunicación</p>
+                        <p class="text-xs text-accent font-medium mt-1">Dic 2005 - Jun 2009</p>
+                    </div>
+                </div>
+
+                <div class="page-break-avoid">
+                    <h3 class="font-display text-lg font-bold text-primary mb-5 flex items-center gap-2">
+                        <i class="fas fa-language text-accent"></i> Idiomas
+                    </h3>
+                    <div class="space-y-3">
+                        <div>
+                            <div class="flex justify-between text-xs font-medium mb-1">
+                                <span>Español</span>
+                                <span class="text-gray-400">Nativo</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-1.5">
+                                <div class="bg-accent h-1.5 rounded-full" style="width: 100%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-xs font-medium mb-1">
+                                <span>Inglés</span>
+                                <span class="text-gray-400">Profesional</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-1.5">
+                                <div class="bg-accent h-1.5 rounded-full" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </aside>
+
+            <!-- Main Content (Experience & Certs) -->
+            <main class="col-span-12 md:col-span-8 p-10 print:col-span-8">
+
+                <section class="mb-12">
+                    <h3
+                        class="font-display text-xl font-bold text-primary mb-8 pb-2 border-b border-gray-100 flex items-center gap-3">
+                        <span
+                            class="bg-accent text-white w-8 h-8 rounded-lg flex items-center justify-center text-sm"><i
+                                class="fas fa-briefcase"></i></span>
+                        Experiencia Profesional
+                    </h3>
+
+                    <div class="space-y-10 border-l-2 border-gray-100 ml-3 pl-8 relative">
+
+                        <!-- Job 1 -->
+                        <div class="relative page-break-avoid">
+                            <div
+                                class="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-accent border-4 border-white shadow-sm">
+                            </div>
+                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-2">
+                                <h4 class="font-display text-lg font-bold text-primary">Front-end Senior & Marketing
+                                    Creative</h4>
+                                <span
+                                    class="text-xs font-bold text-accent bg-indigo-50 px-3 py-1 rounded-full border border-indigo-100">Ago
+                                    2024 - Oct 2025</span>
+                            </div>
+                            <h5 class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wide">B-Drive</h5>
+                            <ul
+                                class="list-disc list-outside ml-4 text-sm text-gray-600 space-y-1.5 marker:text-accent">
+                                <li>Desarrollo de interfaces web responsivas y landing pages de alta conversión.</li>
+                                <li>Implementación pixel-perfect de diseños UX/UI con HTML5, CSS3 y JS.</li>
+                                <li>Optimización de Core Web Vitals y SEO técnico para mejorar ranking.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Job 2 -->
+                        <div class="relative page-break-avoid">
+                            <div
+                                class="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-gray-300 border-4 border-white">
+                            </div>
+                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-2">
+                                <h4 class="font-display text-lg font-bold text-primary">Líder de Proyectos Digitales
+                                </h4>
+                                <span class="text-xs font-bold text-gray-500 bg-gray-100 px-3 py-1 rounded-full">Oct
+                                    2023 - Jul 2024</span>
+                            </div>
+                            <h5 class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wide">Lapi
+                                Laboratorio Médico</h5>
+                            <ul
+                                class="list-disc list-outside ml-4 text-sm text-gray-600 space-y-1.5 marker:text-gray-400">
+                                <li>Gestión de ciclo de vida de proyectos digitales y coordinación de equipos
+                                    dev/design.</li>
+                                <li>Análisis de KPIs y métricas para optimización de estrategias digitales.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Job 3 -->
+                        <div class="relative page-break-avoid">
+                            <div
+                                class="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-gray-300 border-4 border-white">
+                            </div>
+                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-2">
+                                <h4 class="font-display text-lg font-bold text-primary">Marketing Web Designer</h4>
+                                <span class="text-xs font-bold text-gray-500 bg-gray-100 px-3 py-1 rounded-full">Ago
+                                    2022 - Sep 2023</span>
+                            </div>
+                            <h5 class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wide">Archer Troy
+                            </h5>
+                            <ul
+                                class="list-disc list-outside ml-4 text-sm text-gray-600 space-y-1.5 marker:text-gray-400">
+                                <li>Diseño y desarrollo de micrositios y assets digitales para campañas.</li>
+                                <li>Adaptación de creatividades para formatos web responsive.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Job 4 -->
+                        <div class="relative page-break-avoid">
+                            <div
+                                class="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-gray-300 border-4 border-white">
+                            </div>
+                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-2">
+                                <h4 class="font-display text-lg font-bold text-primary">Marketing & Web Designer</h4>
+                                <span class="text-xs font-bold text-gray-500 bg-gray-100 px-3 py-1 rounded-full">Mar
+                                    2020 - Ago 2022</span>
+                            </div>
+                            <h5 class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wide">Polyglobal</h5>
+                            <ul
+                                class="list-disc list-outside ml-4 text-sm text-gray-600 space-y-1.5 marker:text-gray-400">
+                                <li>Maquetación de sitios corporativos y mantenimiento cross-browser.</li>
+                                <li>Integración de Heatmaps y Analytics para decisiones de UX.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Job 5 -->
+                        <div class="relative page-break-avoid">
+                            <div
+                                class="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-gray-300 border-4 border-white">
+                            </div>
+                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-2">
+                                <h4 class="font-display text-lg font-bold text-primary">Web Designer</h4>
+                                <span class="text-xs font-bold text-gray-500 bg-gray-100 px-3 py-1 rounded-full">Jul
+                                    2019 - Mar 2020</span>
+                            </div>
+                            <h5 class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wide">M4 TEL</h5>
+                            <ul
+                                class="list-disc list-outside ml-4 text-sm text-gray-600 space-y-1.5 marker:text-gray-400">
+                                <li>Diseño visual y front-end para campañas de marketing.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Job 6 -->
+                        <div class="relative page-break-avoid">
+                            <div
+                                class="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-gray-300 border-4 border-white">
+                            </div>
+                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-2">
+                                <h4 class="font-display text-lg font-bold text-primary">Project Manager</h4>
+                                <span class="text-xs font-bold text-gray-500 bg-gray-100 px-3 py-1 rounded-full">Jun
+                                    2017 - Jul 2019</span>
+                            </div>
+                            <h5 class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wide">Hand Creative
+                            </h5>
+                        </div>
+
+                        <!-- Job 7 -->
+                        <div class="relative page-break-avoid">
+                            <div
+                                class="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-gray-300 border-4 border-white">
+                            </div>
+                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-2">
+                                <h4 class="font-display text-lg font-bold text-primary">Diseño Gráfico Web</h4>
+                                <span class="text-xs font-bold text-gray-500 bg-gray-100 px-3 py-1 rounded-full">May
+                                    2018 - Nov 2018</span>
+                            </div>
+                            <h5 class="text-sm font-semibold text-gray-500 mb-3 uppercase tracking-wide">Dcobys</h5>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="page-break-avoid">
+                    <h3
+                        class="font-display text-xl font-bold text-primary mb-6 pb-2 border-b border-gray-100 flex items-center gap-3">
+                        <span
+                            class="bg-slate-800 text-white w-8 h-8 rounded-lg flex items-center justify-center text-sm"><i
+                                class="fas fa-certificate"></i></span>
+                        Certificaciones Destacadas
+                    </h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div
+                            class="bg-gray-50 p-4 rounded-lg border border-gray-100 hover:border-accent transition group">
+                            <h4 class="font-bold text-sm text-primary group-hover:text-accent transition">Scrum
+                                Fundamentals</h4>
+                            <p class="text-xs text-gray-500">CertJoin • Nov 2024</p>
+                        </div>
+                        <div
+                            class="bg-gray-50 p-4 rounded-lg border border-gray-100 hover:border-accent transition group">
+                            <h4 class="font-bold text-sm text-primary group-hover:text-accent transition">SEO
+                                Certification</h4>
+                            <p class="text-xs text-gray-500">HubSpot • Mar 2024</p>
+                        </div>
+                        <div
+                            class="bg-gray-50 p-4 rounded-lg border border-gray-100 hover:border-accent transition group">
+                            <h4 class="font-bold text-sm text-primary group-hover:text-accent transition">Foundations of
+                                UX Design</h4>
+                            <p class="text-xs text-gray-500">Google • Mar 2022</p>
+                        </div>
+                        <div
+                            class="bg-gray-50 p-4 rounded-lg border border-gray-100 hover:border-accent transition group">
+                            <h4 class="font-bold text-sm text-primary group-hover:text-accent transition">Primeros Pasos
+                                en React</h4>
+                            <p class="text-xs text-gray-500">UBITS • Ago 2025</p>
+                        </div>
+                        <div
+                            class="bg-gray-50 p-4 rounded-lg border border-gray-100 hover:border-accent transition group">
+                            <h4 class="font-bold text-sm text-primary group-hover:text-accent transition">Ciberseguridad
+                            </h4>
+                            <p class="text-xs text-gray-500">UBITS • Ago 2025</p>
+                        </div>
+                        <div
+                            class="bg-gray-50 p-4 rounded-lg border border-gray-100 hover:border-accent transition group">
+                            <h4 class="font-bold text-sm text-primary group-hover:text-accent transition">Fundamentos JS
+                                I & II</h4>
+                            <p class="text-xs text-gray-500">Grasshopper • 2021</p>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+        </div>
+    </div>
+
+</body>
+
+</html>
