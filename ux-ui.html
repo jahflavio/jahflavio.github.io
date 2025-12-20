@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño UX/UI - Fabián Flores</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Crect%20width='100'%20height='100'%20rx='20'%20fill='%234f46e5'/%3E%3Ctext%20x='50%25'%20y='50%25'%20dominant-baseline='middle'%20text-anchor='middle'%20font-size='70'%20fill='white'%20font-family='sans-serif'%3EF%3C/text%3E%3C/svg%3E">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;700;800&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#0f172a', // Slate 900
+                        accent: '#4f46e5', // Indigo 600
+                        light: '#f8fafc', // Slate 50
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .masonry-grid {
+            column-count: 1;
+            column-gap: 1.5rem;
+        }
+        @media (min-width: 768px) {
+            .masonry-grid {
+                column-count: 2;
+            }
+        }
+        @media (min-width: 1024px) {
+            .masonry-grid {
+                column-count: 3;
+            }
+        }
+        .masonry-item {
+            break-inside: avoid;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-slate-700 antialiased selection:bg-accent selection:text-white pb-20">
+
+    <!-- Main Portfolio Container -->
+    <div class="max-w-7xl mx-auto">
+
+        <!-- Decorative Top Bar -->
+        <div class="h-2 bg-gradient-to-r from-slate-800 via-indigo-600 to-purple-600 w-full"></div>
+
+        <!-- Header Section -->
+        <header class="bg-white p-10 pb-8 border-b border-gray-100">
+            <div class="flex justify-between items-center">
+                <div>
+                    <h1 class="font-display text-4xl font-extrabold text-primary tracking-tight">Diseño UX/UI</h1>
+                    <p class="mt-2 text-gray-500">Una galería de mi trabajo en experiencia de usuario e interfaz de usuario.</p>
+                </div>
+                <div class="flex items-center gap-4">
+                    <a href="proyectos.html" class="flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-accent transition group">
+                        Proyectos Web
+                    </a>
+                    <a href="diseno.html" class="flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-accent transition group">
+                        Diseño Gráfico
+                    </a>
+                    <a href="index.html" class="flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-accent transition group">
+                        <i class="fas fa-arrow-left" aria-hidden="true"></i>
+                        Volver al CV
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="p-10">
+            <div class="masonry-grid">
+                <div class="masonry-item"><a href="ux ui/04fcb0141326181.6251a76087c77.jpg" target="_blank"><img src="ux ui/04fcb0141326181.6251a76087c77.jpg" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/05d84d141326181.64ecfaff13b0c.png" target="_blank"><img src="ux ui/05d84d141326181.64ecfaff13b0c.png" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/098946141326181.6251a7607b987.jpg" target="_blank"><img src="ux ui/098946141326181.6251a7607b987.jpg" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/09a9d2141326181.6251c222e3447.png" target="_blank"><img src="ux ui/09a9d2141326181.6251c222e3447.png" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/0bec30141326181.6251a7607a052.jpg" target="_blank"><img src="ux ui/0bec30141326181.6251a7607a052.jpg" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/0c4f74141326181.6251a76084c83.png" target="_blank"><img src="ux ui/0c4f74141326181.6251a76084c83.png" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/0c6358141326181.6251a7607c8ae.jpg" target="_blank"><img src="ux ui/0c6358141326181.6251a7607c8ae.jpg" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/0c7193141326181.6251a76081afc.jpg" target="_blank"><img src="ux ui/0c7193141326181.6251a76081afc.jpg" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/139c82141326181.6251a7607349f.jpg" target="_blank"><img src="ux ui/139c82141326181.6251a7607349f.jpg" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/142cbb141326181.6251a760778ad.jpg" target="_blank"><img src="ux ui/142cbb141326181.6251a760778ad.jpg" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/1860ef141326181.64ecfaff1556a.png" target="_blank"><img src="ux ui/1860ef141326181.64ecfaff1556a.png" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/18e781141326181.6251a760832b0.jpg" target="_blank"><img src="ux ui/18e781141326181.6251a760832b0.jpg" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/191f7a141326181.6251a76075eee.jpg" target="_blank"><img src="ux ui/191f7a141326181.6251a76075eee.jpg" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/231d9d141326181.6251a76085dc1.jpg" target="_blank"><img src="ux ui/231d9d141326181.6251a76085dc1.jpg" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/26f952141326181.6251a76088d6d.jpg" target="_blank"><img src="ux ui/26f952141326181.6251a76088d6d.jpg" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/30cf41141326181.6251a7608cd1a.png" target="_blank"><img src="ux ui/30cf41141326181.6251a7608cd1a.png" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/325d15178709509.Y3JvcCwxMzM3LDEwNDYsMjkxLDA.jpg" target="_blank"><img src="ux ui/325d15178709509.Y3JvcCwxMzM3LDEwNDYsMjkxLDA.jpg" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/350e1f141326181.6251a76072c14.jpg" target="_blank"><img src="ux ui/350e1f141326181.6251a76072c14.jpg" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/453429141326181.6251a7608bc63.png" target="_blank"><img src="ux ui/453429141326181.6251a7608bc63.png" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/495d28141326181.6251a7607f8ba.jpg" target="_blank"><img src="ux ui/495d28141326181.6251a7607f8ba.jpg" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/4cf3e9141326181.6251a76082252.png" target="_blank"><img src="ux ui/4cf3e9141326181.6251a76082252.png" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/4d3fc2141326181.64ecfaff14891.png" target="_blank"><img src="ux ui/4d3fc2141326181.64ecfaff14891.png" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/4df24b141326181.6251a7607702b.jpg" target="_blank"><img src="ux ui/4df24b141326181.6251a7607702b.jpg" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/4f1426141326181.6251a7608c3c4.jpg" target="_blank"><img src="ux ui/4f1426141326181.6251a7608c3c4.jpg" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/4f8c45141326181.6251a76083c58.jpg" target="_blank"><img src="ux ui/4f8c45141326181.6251a76083c58.jpg" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/571ece141326181.6251a7608a1f3.png" target="_blank"><img src="ux ui/571ece141326181.6251a7608a1f3.png" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/57842f141326181.6251a76074479.jpg" target="_blank"><img src="ux ui/57842f141326181.6251a76074479.jpg" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/5a4e47141326181.6251a76086a7e.png" target="_blank"><img src="ux ui/5a4e47141326181.6251a76086a7e.png" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/5dfde2141326181.6251a76074b6b.jpg" target="_blank"><img src="ux ui/5dfde2141326181.6251a76074b6b.jpg" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/6343e8141326181.6251a7607b167.jpg" target="_blank"><img src="ux ui/6343e8141326181.6251a7607b167.jpg" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/66693c141326181.6251c222e3fb9.png" target="_blank"><img src="ux ui/66693c141326181.6251c222e3fb9.png" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/6b287d141326181.64ecfb4e18f91.png" target="_blank"><img src="ux ui/6b287d141326181.64ecfb4e18f91.png" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/6b2d7c141326181.6251c222e5b8b.png" target="_blank"><img src="ux ui/6b2d7c141326181.6251c222e5b8b.png" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/6b4160141326181.6251a7607efc3.jpg" target="_blank"><img src="ux ui/6b4160141326181.6251a7607efc3.jpg" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/6cdc83141326181.6251c222e465d.png" target="_blank"><img src="ux ui/6cdc83141326181.6251c222e465d.png" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/759a88141326181.6251a7608b6a0.jpg" target="_blank"><img src="ux ui/759a88141326181.6251a7608b6a0.jpg" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/7972b8141326181.6251a76082b6b.png" target="_blank"><img src="ux ui/7972b8141326181.6251a76082b6b.png" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/797862141326181.6251a7607d265.jpg" target="_blank"><img src="ux ui/797862141326181.6251a7607d265.jpg" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/7c7e99141326181.6251c222e3b60.jpg" target="_blank"><img src="ux ui/7c7e99141326181.6251c222e3b60.jpg" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/88862f141326181.6251a7608d456.png" target="_blank"><img src="ux ui/88862f141326181.6251a7608d456.png" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/8a8a10141326181.6251a7608735a.jpg" target="_blank"><img src="ux ui/8a8a10141326181.6251a7608735a.jpg" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/8cd3fb141326181.6251a76076781.jpg" target="_blank"><img src="ux ui/8cd3fb141326181.6251a76076781.jpg" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/8e6aa8141326181.6251a76089b7f.jpg" target="_blank"><img src="ux ui/8e6aa8141326181.6251a76089b7f.jpg" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/976c2a141326181.64ecfa70646e6.png" target="_blank"><img src="ux ui/976c2a141326181.64ecfa70646e6.png" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/9eb555141326181.6251c6f8a813e.png" target="_blank"><img src="ux ui/9eb555141326181.6251c6f8a813e.png" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/a8dd55141326181.64ecfaff16223.png" target="_blank"><img src="ux ui/a8dd55141326181.64ecfaff16223.png" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/aa8f74141326181.6251a7607e71a.jpg" target="_blank"><img src="ux ui/aa8f74141326181.6251a7607e71a.jpg" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/b06eb2141326181.6251a7607ffcf.jpg" target="_blank"><img src="ux ui/b06eb2141326181.6251a7607ffcf.jpg" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/b8b61c141326181.6251a760796ab.jpg" target="_blank"><img src="ux ui/b8b61c141326181.6251a760796ab.jpg" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/bfd3a3141326181.6251a76078828.jpg" target="_blank"><img src="ux ui/bfd3a3141326181.6251a76078828.jpg" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/bfe176141326181.6251a76078fa1.jpg" target="_blank"><img src="ux ui/bfe176141326181.6251a76078fa1.jpg" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/c005c7141326181.64ecfb4e19c5c.png" target="_blank"><img src="ux ui/c005c7141326181.64ecfb4e19c5c.png" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/c804bf141326181.6251c6f8a867f.png" target="_blank"><img src="ux ui/c804bf141326181.6251c6f8a867f.png" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/d186d9141326181.6251c6f8a957d.png" target="_blank"><img src="ux ui/d186d9141326181.6251c6f8a957d.png" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/d41946141326181.659855c580367.png" target="_blank"><img src="ux ui/d41946141326181.659855c580367.png" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/e1cf0b141326181.6251a7608ae56.jpg" target="_blank"><img src="ux ui/e1cf0b141326181.6251a7608ae56.jpg" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/e211a9141326181.6251a76078044.jpg" target="_blank"><img src="ux ui/e211a9141326181.6251a76078044.jpg" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/e4ca9a141326181.64ecfa7062b72" target="_blank"><img src="ux ui/e4ca9a141326181.64ecfa7062b72" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/ef0159141326181.64ecfa7063990.png" target="_blank"><img src="ux ui/ef0159141326181.64ecfa7063990.png" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/f05a54141326181.659855c57f56c.png" target="_blank"><img src="ux ui/f05a54141326181.659855c57f56c.png" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/f8ce4d141326181.6251a7608559c.jpg" target="_blank"><img src="ux ui/f8ce4d141326181.6251a7608559c.jpg" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/fa447b141326181.6251a7608442f.png" target="_blank"><img src="ux ui/fa447b141326181.6251a7608442f.png" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/fa756b141326181.6251a760863b4.jpg" target="_blank"><img src="ux ui/fa756b141326181.6251a760863b4.jpg" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/faad43141326181.64ecfa7061c79.png" target="_blank"><img src="ux ui/faad43141326181.64ecfa7061c79.png" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+                <div class="masonry-item"><a href="ux ui/fbbc15141326181.6251c6f8a8e3a.png" target="_blank"><img src="ux ui/fbbc15141326181.6251c6f8a8e3a.png" alt="Diseiso UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
+            </div>
+        </main>
+
+    </div>
+
+</body>
+
+</html>
