@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Fabián Flores</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;700;800&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#0f172a', // Slate 900
+                        accent: '#4f46e5', // Indigo 600
+                        light: '#f8fafc', // Slate 50
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray-100 text-slate-700 antialiased selection:bg-accent selection:text-white pb-20">
+
+    <!-- Main Portfolio Container -->
+    <div class="max-w-7xl mx-auto">
+
+        <!-- Decorative Top Bar -->
+        <div class="h-2 bg-gradient-to-r from-slate-800 via-indigo-600 to-purple-600 w-full"></div>
+
+        <!-- Header Section -->
+        <header class="bg-white p-10 pb-8 border-b border-gray-100">
+            <div class="flex justify-between items-center">
+                <div>
+                    <h1 class="font-display text-4xl font-extrabold text-primary tracking-tight">Portafolio de Proyectos</h1>
+                    <p class="mt-2 text-gray-500">Una selección de mi trabajo en desarrollo y diseño.</p>
+                </div>
+                <a href="index.html" class="flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-accent transition group">
+                    <i class="fas fa-arrow-left" aria-hidden="true"></i>
+                    Volver al CV
+                </a>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="p-10">
+            <!-- Projects Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Project Card 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-1 transition-transform duration-300">
+                    <img src="https://via.placeholder.com/600x400/0f172a/ffffff?text=Proyecto+1" alt="Imagen del Proyecto 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-display text-xl font-bold text-primary mb-2">Nombre del Proyecto 1</h3>
+                        <p class="text-sm text-gray-600 mb-4">
+                            Aquí va una breve descripción del proyecto. Explica el objetivo, las tecnologías utilizadas y tu rol en el desarrollo.
+                        </p>
+                        <div class="flex gap-4">
+                            <a href="#" class="inline-block bg-accent text-white text-xs font-bold px-4 py-2 rounded-md hover:bg-indigo-700 transition">Ver Demo</a>
+                            <a href="#" class="inline-block bg-slate-100 text-slate-700 text-xs font-bold px-4 py-2 rounded-md hover:bg-slate-200 transition">Código Fuente</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-1 transition-transform duration-300">
+                    <img src="https://via.placeholder.com/600x400/4f46e5/ffffff?text=Proyecto+2" alt="Imagen del Proyecto 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-display text-xl font-bold text-primary mb-2">Nombre del Proyecto 2</h3>
+                        <p class="text-sm text-gray-600 mb-4">
+                            Aquí va una breve descripción del proyecto. Explica el objetivo, las tecnologías utilizadas y tu rol en el desarrollo.
+                        </p>
+                        <div class="flex gap-4">
+                            <a href="#" class="inline-block bg-accent text-white text-xs font-bold px-4 py-2 rounded-md hover:bg-indigo-700 transition">Ver Demo</a>
+                            <a href="#" class="inline-block bg-slate-100 text-slate-700 text-xs font-bold px-4 py-2 rounded-md hover:bg-slate-200 transition">Código Fuente</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-1 transition-transform duration-300">
+                    <img src="https://via.placeholder.com/600x400/334155/ffffff?text=Proyecto+3" alt="Imagen del Proyecto 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-display text-xl font-bold text-primary mb-2">Nombre del Proyecto 3</h3>
+                        <p class="text-sm text-gray-600 mb-4">
+                            Aquí va una breve descripción del proyecto. Explica el objetivo, las tecnologías utilizadas y tu rol en el desarrollo.
+                        </p>
+                        <div class="flex gap-4">
+                            <a href="#" class="inline-block bg-accent text-white text-xs font-bold px-4 py-2 rounded-md hover:bg-indigo-700 transition">Ver Demo</a>
+                            <a href="#" class="inline-block bg-slate-100 text-slate-700 text-xs font-bold px-4 py-2 rounded-md hover:bg-slate-200 transition">Código Fuente</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+    </div>
+
+</body>
+
+</html>
