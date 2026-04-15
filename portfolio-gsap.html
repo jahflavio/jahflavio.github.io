@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabián Flores | Interactive Portfolio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        dark: '#0a0a0a',
+                        accent: '#4f46e5', // Indigo 600
+                        light: '#f8fafc',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Lenis Required Styles */
+        html.lenis, html.lenis body {
+          height: auto;
+        }
+        .lenis.lenis-smooth {
+          scroll-behavior: auto !important;
+        }
+        .lenis.lenis-smooth [data-lenis-prevent] {
+          overscroll-behavior: contain;
+        }
+        .lenis.lenis-stopped {
+          overflow: hidden;
+        }
+        .lenis.lenis-smooth iframe {
+          pointer-events: none;
+        }
+
+        body {
+            background-color: #0a0a0a;
+            color: #f8fafc;
+            overflow-x: hidden;
+            cursor: none; /* Hide default cursor for custom one */
+        }
+        
+        a, button, .magnetic {
+            cursor: none;
+        }
+
+        /* Custom Cursor */
+        .cursor-dot {
+            width: 8px;
+            height: 8px;
+            background-color: white;
+            border-radius: 50%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+            z-index: 9999;
+            mix-blend-mode: difference;
+            transition: width 0.3s, height 0.3s, background-color 0.3s;
+        }
+        
+        .cursor-outline {
+            width: 40px;
+            height: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+            z-index: 9998;
+            transition: transform 0.1s;
+        }
+        
+        .cursor-hover .cursor-dot {
+            width: 50px;
+            height: 50px;
+            background-color: rgba(255, 255, 255, 1);
+            mix-blend-mode: difference;
+        }
+        .cursor-hover .cursor-outline {
+            opacity: 0;
+        }
+
+        /* Preloader */
+        .preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: #0a0a0a;
+            z-index: 10000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            flex-direction: column;
+        }
+        
+        .preloader-text {
+            font-size: 2vw;
+            font-weight: 700;
+            font-family: 'Outfit', sans-serif;
+            overflow: hidden;
+            display: flex;
+        }
+        
+        .preloader-text span {
+            transform: translateY(100%);
+            display: inline-block;
+        }
+
+        .preloader-progress {
+            width: 200px;
+            height: 2px;
+            background: rgba(255,255,255,0.2);
+            margin-top: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        .preloader-progress-bar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 0%;
+            background: white;
+        }
+
+        /* Hero Text Splitting */
+        .split-char {
+            display: inline-block;
+            overflow: hidden;
+            vertical-align: top;
+        }
+        .split-char span {
+            display: inline-block;
+            transform: translateY(100%);
+        }
+
+        /* Text Reveal Section */
+        .reveal-word {
+            color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Horizontal Scroll Section */
+        .horizontal-scroll-container {
+            width: 400vw;
+            height: 100vh;
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        .horizontal-panel {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5rem;
+        }
+        
+        /* Modern Card Image hover */
+        .project-card {
+            overflow: hidden;
+            border-radius: 1rem;
+            position: relative;
+            /* Fix for width to make it responsive on mobile */
+            width: 100%;
+            max-width: 900px; 
+            margin: 0 auto;
+        }
+        .project-card img {
+            transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .project-card:hover img {
+            transform: scale(1.05);
+        }
+        .project-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            padding: 2rem;
+            transform: translateY(20px);
+            opacity: 0;
+            transition: all 0.4s ease;
+        }
+        .project-card:hover .project-overlay {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        /* To return to main cv */
+        .back-btn {
+            position: fixed;
+            top: 2rem;
+            right: 2rem;
+            z-index: 50;
+        }
+
+        @media (max-width: 768px){
+            .cursor-outline, .cursor-dot { display: none; }
+            body { cursor: auto; }
+            a, button, .magnetic { cursor: pointer; }
+            .horizontal-scroll-container {
+                width: 100vw;
+                height: auto;
+                flex-direction: column;
+            }
+            .horizontal-panel {
+                height: auto;
+                padding: 4rem 2rem;
+            }
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Back to normal CV Button -->
+    <a href="index.html" class="back-btn magnetic text-sm font-semibold border border-white/20 px-4 py-2 rounded-full hover:bg-white hover:text-dark transition-colors duration-300 backdrop-blur-sm bg-black/30">
+        <i class="fas fa-arrow-left mr-2"></i> Volver al CV Clásico
+    </a>
+
+    <!-- Preloader -->
+    <div class="preloader bg-dark">
+        <div class="preloader-text magnetic">
+            <span>F</span><span>A</span><span>B</span><span>I</span><span>A</span><span>N</span>
+            <span class="ml-1 md:ml-2">F</span><span>L</span><span>O</span><span>R</span><span>E</span><span>S</span>
+        </div>
+        <div class="preloader-progress">
+            <div class="preloader-progress-bar"></div>
+        </div>
+    </div>
+
+    <main id="main-content" style="opacity: 0;">
+        
+        <!-- Hero Section -->
+        <section class="min-h-[100svh] flex flex-col justify-center items-center relative overflow-hidden" id="hero">
+            <!-- Background element for parallax -->
+            <div class="absolute inset-0 z-0 opacity-20 pointer-events-none" id="hero-bg">
+                <div class="absolute top-1/4 left-1/4 w-[250px] md:w-[500px] h-[250px] md:h-[500px] bg-accent rounded-full mix-blend-screen filter blur-[100px] opacity-50"></div>
+                <div class="absolute bottom-1/4 right-1/4 w-[200px] md:w-[400px] h-[200px] md:h-[400px] bg-purple-600 rounded-full mix-blend-screen filter blur-[100px] opacity-30"></div>
+            </div>
+
+            <div class="z-10 text-center px-4 max-w-5xl mx-auto w-full pt-16">
+                <h2 class="font-sans text-accent font-medium tracking-widest uppercase mb-4 text-xs md:text-sm hero-subtitle" style="opacity: 0;">
+                    Portafolio Creativo e Interactivo
+                </h2>
+                <h1 class="font-display text-4xl md:text-7xl lg:text-8xl font-bold leading-tight mb-6 hero-title text-white">
+                    Frontend Developer<br>& Visual Designer
+                </h1>
+                <p class="text-gray-400 text-base md:text-xl max-w-2xl mx-auto font-light hero-desc" style="opacity: 0;">
+                    Creando experiencias digitales inmersivas uniendo diseño de alta calidad con código de vanguardia. Descubre el poder de GSAP.
+                </p>
+                
+                <div class="mt-12 md:mt-24 hero-cta flex justify-center" style="opacity: 0;">
+                    <button id="scroll-down-btn" class="magnetic inline-flex items-center justify-center w-16 h-16 md:w-24 md:h-24 rounded-full border border-white/20 text-white hover:bg-white hover:text-dark transition-all duration-300">
+                        <i class="fas fa-arrow-down text-lg md:text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Text Reveal Section (About) -->
+        <section id="about" class="py-24 md:py-48 px-6 bg-dark">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="font-display text-2xl md:text-5xl lg:text-6xl font-bold leading-tight reveal-paragraph">
+                    Me especializo en transformar ideas complejas en interfaces sumamente intuitivas y atractivas. Combinando mi formación en Comunicación Visual con mi pasión por el desarrollo web moderno para lograr resultados impactantes.
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 md:mt-24 border-t border-white/10 pt-16" id="stats">
+                    <div class="stat-item">
+                        <h3 class="font-display text-4xl md:text-5xl font-bold text-accent mb-2">5+</h3>
+                        <p class="text-gray-400 text-xs md:text-sm tracking-wider uppercase">Años de Exp. Front-End</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="font-display text-4xl md:text-5xl font-bold text-accent mb-2">Web</h3>
+                        <p class="text-gray-400 text-xs md:text-sm tracking-wider uppercase">GSAP, React, Tailwind</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="font-display text-4xl md:text-5xl font-bold text-accent mb-2">Design</h3>
+                        <p class="text-gray-400 text-xs md:text-sm tracking-wider uppercase">Figma, UI/UX, Adobe suite</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Horizontal Scroll Section (Projects) hidden on mobile to avoid layout breaking, handle gracefully -->
+        <div class="overflow-hidden md:block" id="horizontal-wrapper">
+            <div class="horizontal-scroll-container">
+                <!-- Panel 1: Intro -->
+                <div class="horizontal-panel bg-dark flex-col items-start justify-center">
+                    <div class="max-w-4xl w-full">
+                        <h2 class="font-display text-5xl md:text-8xl font-bold mb-4">Proyectos<br>Destacados</h2>
+                        <p class="text-lg md:text-xl text-gray-400 max-w-md">Sigue haciendo scroll para explorar el efecto de movimiento horizontal.</p>
+                    </div>
+                </div>
+                
+                <!-- Panel 2: Project 1 -->
+                <div class="horizontal-panel bg-dark">
+                    <div class="project-card magnetic">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/4c07c4139824639.6236b2fbadfb7.png" alt="Proyecto 1" class="w-full h-[40vh] md:h-[60vh] object-cover rounded-xl grayscale hover:grayscale-0 transition duration-500">
+                        <div class="project-overlay">
+                            <h3 class="font-display text-2xl md:text-3xl font-bold mb-2">Campaña Digital Lapi</h3>
+                            <p class="text-gray-300 text-sm md:text-base">UX/UI - Front End</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Panel 3: Project 2 -->
+                <div class="horizontal-panel bg-dark">
+                    <div class="project-card magnetic">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/4cd1e1139474753.622facd19efcb.jpg" alt="Proyecto 2" class="w-full h-[40vh] md:h-[60vh] object-cover rounded-xl grayscale hover:grayscale-0 transition duration-500">
+                        <div class="project-overlay">
+                            <h3 class="font-display text-2xl md:text-3xl font-bold mb-2">Diseño Web Archer Troy</h3>
+                            <p class="text-gray-300 text-sm md:text-base">Diseño - Interacción</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Panel 4: Project 3 -->
+                <div class="horizontal-panel bg-dark">
+                    <div class="project-card magnetic">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/96181f139682525.6236b2fdb21d0.jpg" alt="Proyecto 3" class="w-full h-[40vh] md:h-[60vh] object-cover rounded-xl grayscale hover:grayscale-0 transition duration-500">
+                        <div class="project-overlay">
+                            <h3 class="font-display text-2xl md:text-3xl font-bold mb-2">Aplicación Polyglobal</h3>
+                            <p class="text-gray-300 text-sm md:text-base">App Design - Dev</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <section class="py-24 md:py-32 px-6 bg-dark border-t border-white/5 relative" id="contact">
+            <div class="max-w-4xl mx-auto text-center" id="contact-content">
+                <h2 class="font-display text-4xl md:text-7xl font-bold mb-6">Trabajemos Juntos</h2>
+                <p class="text-lg md:text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
+                    ¿Listo para elevar tus experiencias digitales al siguiente nivel interactivo? Contáctame.
+                </p>
+                <a href="mailto:fabianfloram@gmail.com" class="magnetic inline-block border border-accent hover:bg-accent text-white font-medium text-base md:text-lg px-6 py-3 md:px-8 md:py-4 rounded-full transition-colors duration-300">
+                    fabianfloram@gmail.com
+                </a>
+                
+                <div class="mt-20 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-gray-500 text-xs md:text-sm gap-4">
+                    <p>© 2026 Fabián Flores. Portafolio Demo.</p>
+                    <div class="flex gap-4">
+                        <a href="https://www.linkedin.com/in/fabian-f-71858b209" target="_blank" class="hover:text-white transition magnetic"><i class="fab fa-linkedin text-lg md:text-xl"></i></a>
+                        <a href="https://www.behance.net/gallery/141326181/Diseno-Web-UXUI-y-Redes-Sociales" target="_blank" class="hover:text-white transition magnetic"><i class="fab fa-behance text-lg md:text-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- GSAP Core -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- GSAP ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Lenis for Smooth Scrolling -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+    
+    <script>
+        // Register Plugins
+        gsap.registerPlugin(ScrollTrigger);
+
+        // --- LENIS SMOOTH SCROLL INIT ---
+        const lenis = new Lenis({
+            duration: 1.2,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+            direction: 'vertical',
+            gestureDirection: 'vertical',
+            smooth: true,
+            mouseMultiplier: 1,
+            smoothTouch: false,
+            touchMultiplier: 2,
+        });
+
+        // Integrate Lenis with GSAP ScrollTrigger
+        lenis.on('scroll', ScrollTrigger.update);
+
+        gsap.ticker.add((time)=>{
+            lenis.raf(time * 1000);
+        });
+
+        gsap.ticker.lagSmoothing(0, 0);
+
+        // --- SCROLL TO ABOUT VIA HERO CTA ---
+        document.getElementById('scroll-down-btn').addEventListener('click', () => {
+            lenis.scrollTo('#about', { offset: 0, duration: 1.5 });
+        });
+
+        // --- CUSTOM CURSOR ---
+        if (window.matchMedia("(min-width: 768px)").matches) {
+            const cursorDot = document.querySelector('.cursor-dot');
+            const cursorOutline = document.querySelector('.cursor-outline');
+            
+            let mouseX = 0;
+            let mouseY = 0;
+            let outlineX = 0;
+            let outlineY = 0;
+            
+            window.addEventListener('mousemove', (e) => {
+                mouseX = e.clientX;
+                mouseY = e.clientY;
+                cursorDot.style.left = `${mouseX}px`;
+                cursorDot.style.top = `${mouseY}px`;
+            });
+            
+            const animateCursorList = () => {
+                let distX = mouseX - outlineX;
+                let distY = mouseY - outlineY;
+                outlineX = outlineX + (distX * 0.15);
+                outlineY = outlineY + (distY * 0.15);
+                cursorOutline.style.left = `${outlineX}px`;
+                cursorOutline.style.top = `${outlineY}px`;
+                requestAnimationFrame(animateCursorList);
+            };
+            animateCursorList();
+
+            document.querySelectorAll('a, button, .magnetic, .project-card').forEach(el => {
+                el.addEventListener('mouseenter', () => {
+                    document.body.classList.add('cursor-hover');
+                });
+                el.addEventListener('mouseleave', () => {
+                    document.body.classList.remove('cursor-hover');
+                });
+            });
+        }
+
+        // --- PRELOADER ANIMATION ---
+        const tlPreloader = gsap.timeline();
+        
+        tlPreloader.to('.preloader-progress-bar', {
+            width: '100%',
+            duration: 1.5,
+            ease: 'power2.inOut'
+        });
+
+        tlPreloader.to('.preloader-text span', {
+            y: '0%',
+            stagger: 0.05,
+            duration: 0.6,
+            ease: 'power3.out'
+        }, "-=0.5");
+
+        tlPreloader.to('.preloader', {
+            y: '-100%',
+            duration: 0.8,
+            ease: 'power4.inOut',
+            delay: 0.3,
+            onComplete: () => {
+                document.querySelector('.preloader').style.display = 'none';
+                initGSAPAnimations();
+            }
+        });
+        
+        tlPreloader.to('#main-content', {
+            opacity: 1,
+            duration: 0.1
+        }, "-=0.8");
+
+        // --- MAIN GSAP ANIMATIONS ---
+        function initGSAPAnimations() {
+            
+            // 1. Hero Title Animation
+            const title = document.querySelector('.hero-title');
+            const words = title.innerHTML.split('<br>');
+            title.innerHTML = '';
+            
+            words.forEach((word, index) => {
+                if(word.trim() === '') return;
+                const innerWord = word.split(' ').map(w => {
+                     return `<div class="split-char font-display"><span>${w}</span></div>`;
+                }).join(' <div style="display:inline-block; width:10px md:width:15px;"></div> ');
+                
+                title.innerHTML += innerWord;
+                if(index < words.length - 1) title.innerHTML += '<br>';
+            });
+
+            gsap.to('.hero-title .split-char span', {
+                y: '0%',
+                duration: 1,
+                stagger: 0.05,
+                ease: 'power4.out'
+            });
+
+            gsap.to('.hero-subtitle', {
+                opacity: 1,
+                y: 0,
+                duration: 1,
+                delay: 0.5
+            });
+
+            gsap.to('.hero-desc', {
+                opacity: 1,
+                y: 0,
+                duration: 1,
+                delay: 0.7
+            });
+
+            gsap.to('.hero-cta', {
+                opacity: 1,
+                y: 0,
+                duration: 1,
+                delay: 1
+            });
+
+            // Parallax Hero BG
+            gsap.to('#hero-bg', {
+                y: '50%',
+                ease: 'none',
+                scrollTrigger: {
+                    trigger: '#hero',
+                    start: 'top top',
+                    end: 'bottom top',
+                    scrub: 1
+                }
+            });
+
+            // 2. About Section - Text Reveal Effect
+            const revealText = document.querySelector('.reveal-paragraph');
+            const textWords = revealText.innerText.split(' ');
+            revealText.innerHTML = '';
+            textWords.forEach(w => {
+                revealText.innerHTML += `<span class="reveal-word">${w}</span> `;
+            });
+
+            gsap.to('.reveal-word', {
+                color: '#ffffff',
+                stagger: 1,
+                scrollTrigger: {
+                    trigger: '#about',
+                    start: 'top 70%',
+                    end: 'bottom 80%',
+                    scrub: 1,
+                }
+            });
+
+            // Stats animation
+            gsap.from('.stat-item', {
+                y: 50,
+                opacity: 0,
+                stagger: 0.2,
+                duration: 0.8,
+                scrollTrigger: {
+                    trigger: '#stats',
+                    start: 'top 85%',
+                }
+            });
+
+            // 3. Horizontal Scroll Pinning (Only on desktop)
+            if (window.matchMedia("(min-width: 768px)").matches) {
+                const horizontalSection = document.querySelector('#horizontal-wrapper');
+                const scrollContainer = document.querySelector('.horizontal-scroll-container');
+                
+                function getScrollAmount() {
+                    let containerWidth = scrollContainer.scrollWidth;
+                    return -(containerWidth - window.innerWidth);
+                }
+
+                const tween = gsap.to(scrollContainer, {
+                    x: getScrollAmount,
+                    ease: "none"
+                });
+
+                ScrollTrigger.create({
+                    trigger: horizontalSection,
+                    start: "top top",
+                    end: () => `+=${getScrollAmount() * -1}`,
+                    pin: true,
+                    animation: tween,
+                    scrub: 1,
+                    invalidateOnRefresh: true,
+                });
+            } else {
+                // Mobile simple fade in for cards
+                gsap.from('.project-card', {
+                    y: 50,
+                    opacity: 0,
+                    stagger: 0.3,
+                    duration: 0.8,
+                    scrollTrigger: {
+                        trigger: '#horizontal-wrapper',
+                        start: 'top 80%',
+                    }
+                });
+            }
+
+            // 4. Contact Outro Animation
+            gsap.from('#contact-content > *', {
+                y: 50,
+                opacity: 0,
+                stagger: 0.2,
+                duration: 0.8,
+                scrollTrigger: {
+                    trigger: '#contact',
+                    start: 'top 75%',
+                }
+            });
+        }
+    </script>
+</body>
+</html>
