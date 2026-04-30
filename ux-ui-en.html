@@ -6,29 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UX/UI Design - Fabián Flores</title>
     <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Crect%20width='100'%20height='100'%20rx='20'%20fill='%234f46e5'/%3E%3Ctext%20x='50%25'%20y='50%25'%20dominant-baseline='middle'%20text-anchor='middle'%20font-size='70'%20fill='white'%20font-family='sans-serif'%3EF%3C/text%3E%3C/svg%3E">
-    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="lightbox.css">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        display: ['Outfit', 'sans-serif'],
-                    },
-                    colors: {
-                        primary: '#0f172a', // Slate 900
-                        accent: '#4f46e5', // Indigo 600
-                        light: '#f8fafc', // Slate 50
-                    }
-                }
-            }
-        }
-    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <script type="module" src="/main.js"></script>
     <style>
         .masonry-grid {
             column-count: 1;
@@ -51,47 +31,45 @@
     </style>
 </head>
 
-<body class="bg-gray-100 text-slate-700 antialiased selection:bg-accent selection:text-white pb-20">
+<body class="bg-slate-50 text-slate-700 w-full overflow-x-hidden selection:bg-accent selection:text-white">
+
+    <!-- Navigation/Header -->
+    <nav class="fixed top-0 left-0 w-full z-50 glass-light border-b border-slate-200 py-4 px-6 md:px-12 flex justify-between items-center transition-all">
+        <a href="index-en.html" class="font-display font-bold text-2xl text-slate-900 tracking-wide hover:opacity-80 transition cursor-pointer">
+            Fabián<span class="text-accent">Flores</span>
+        </a>
+        <div class="hidden md:flex gap-6 text-sm font-medium items-center">
+            <a href="index-en.html" class="hover:text-accent transition"><i class="fas fa-arrow-left mr-1"></i> Back to CV</a>
+            <span class="text-slate-300">|</span>
+            <a href="proyectos-en.html" class="hover:text-accent transition">Web Projects</a>
+            <a href="diseno-en.html" class="hover:text-accent transition">Graphic Design</a>
+            <a href="ux-ui-en.html" class="hover:text-accent transition">UX/UI</a>
+            <span class="text-slate-300">|</span>
+            <a href="ux-ui.html" class="text-emerald-600 hover:text-emerald-500 transition">Spanish</a>
+        </div>
+    </nav>
+
 
     <!-- Main Portfolio Container -->
-    <div class="max-w-7xl mx-auto">
+    <div class="w-full max-w-[1600px] mx-auto px-6 md:px-24">
 
         <!-- Decorative Top Bar -->
-        <div class="h-2 bg-gradient-to-r from-slate-800 via-indigo-600 to-purple-600 w-full"></div>
+        
 
         <!-- Header Section -->
-        <header class="bg-white p-10 pb-8 border-b border-gray-100">
-            <div class="flex justify-between items-center">
-                <div>
-                    <h1 class="font-display text-4xl font-extrabold text-primary tracking-tight">UX/UI Design</h1>
-                    <p class="mt-2 text-gray-500">A gallery of my work in user experience and user interfaces.</p>
-                </div>
-                <div class="flex items-center gap-4">
-                    <a href="proyectos-en.html" class="flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-accent transition group">
-                        Web Projects
-                    </a>
-                    <a href="diseno-en.html" class="flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-accent transition group">
-                        Graphic Design
-                    </a>
-                    <span class="flex items-center gap-2 text-sm font-bold text-accent">
-                        UX/UI Design
-                    </span>
-                    <a href="index-en.html" class="flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-accent transition group">
-                        <i class="fas fa-arrow-left" aria-hidden="true"></i>
-                        Back to CV
-                    </a>
-                    <span class="text-gray-300">|</span>
-                    <a href="ux-ui.html"
-                        class="flex items-center gap-2 text-sm font-bold text-emerald-600 hover:text-emerald-700 transition group border border-emerald-200 px-3 py-1 rounded-full bg-emerald-50">
-                        <i class="fas fa-globe" aria-hidden="true"></i>
-                        ES
-                    </a>
-                </div>
-            </div>
-        </header>
+        
+    
+    <div class="w-full pt-32 pb-10 border-b border-slate-200 bg-white">
+        <div class="max-w-[1600px] mx-auto px-6 md:px-24">
+            <h1 class="font-display text-4xl md:text-5xl font-bold text-slate-900 mb-4">UX/UI Design</h1>
+         <p class="text-slate-500 text-lg">A gallery of my work in user experience and user interfaces.</p>
+        </div>
+    </div>
+        
+    
 
         <!-- Main Content -->
-        <main class="p-10">
+        <main class="w-full max-w-[1600px] mx-auto px-6 md:px-24 py-16">
             <div class="masonry-grid">
                 <div class="masonry-item"><a href="ux ui/04fcb0141326181.6251a76087c77.jpg" class="lightbox-trigger"><img src="ux ui/04fcb0141326181.6251a76087c77.jpg" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>
                 <div class="masonry-item"><a href="ux ui/05d84d141326181.64ecfaff13b0c.png" class="lightbox-trigger"><img src="ux ui/05d84d141326181.64ecfaff13b0c.png" alt="Diseño UX/UI" class="rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"></a></div>

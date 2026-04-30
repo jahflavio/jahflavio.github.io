@@ -7,92 +7,68 @@
     <title>Proyectos Web - Fabián Flores</title>
     <link rel="icon"
         href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Crect%20width='100'%20height='100'%20rx='20'%20fill='%234f46e5'/%3E%3Ctext%20x='50%25'%20y='50%25'%20dominant-baseline='middle'%20text-anchor='middle'%20font-size='70'%20fill='white'%20font-family='sans-serif'%3EF%3C/text%3E%3C/svg%3E">
-    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;700;800&display=swap"
-        rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        display: ['Outfit', 'sans-serif'],
-                    },
-                    colors: {
-                        primary: '#0f172a', // Slate 900
-                        accent: '#4f46e5', // Indigo 600
-                        light: '#f8fafc', // Slate 50
-                    }
-                }
-            }
-        }
-    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <script type="module" src="/main.js"></script>
 </head>
 
-<body class="bg-gray-100 text-slate-700 antialiased selection:bg-accent selection:text-white pb-20">
+<body class="bg-slate-50 text-slate-700 w-full overflow-x-hidden selection:bg-accent selection:text-white">
+
+    <!-- Navigation/Header -->
+    <nav class="fixed top-0 left-0 w-full z-50 glass-light border-b border-slate-200 py-4 px-6 md:px-12 flex justify-between items-center transition-all">
+        <a href="index.html" class="font-display font-bold text-2xl text-slate-900 tracking-wide hover:opacity-80 transition cursor-pointer">
+            Fabián<span class="text-accent">Flores</span>
+        </a>
+        <div class="hidden md:flex gap-6 text-sm font-medium items-center">
+            <a href="index.html" class="hover:text-accent transition"><i class="fas fa-arrow-left mr-1"></i> Volver al CV</a>
+            <span class="text-slate-300">|</span>
+            <a href="proyectos.html" class="hover:text-accent transition">Proyectos Web</a>
+            <a href="diseno.html" class="hover:text-accent transition">Diseño Gráfico</a>
+            <a href="ux-ui.html" class="hover:text-accent transition">UX/UI</a>
+            <span class="text-slate-300">|</span>
+            <a href="proyectos-en.html" class="text-emerald-600 hover:text-emerald-500 transition">English</a>
+        </div>
+    </nav>
+
 
     <!-- Main Portfolio Container -->
-    <div class="max-w-7xl mx-auto">
+    <div class="w-full max-w-[1600px] mx-auto px-6 md:px-24">
 
         <!-- Decorative Top Bar -->
-        <div class="h-2 bg-gradient-to-r from-slate-800 via-indigo-600 to-purple-600 w-full"></div>
+        
 
         <!-- Header Section -->
-        <header class="bg-white p-10 pb-8 border-b border-gray-100">
-            <div class="flex justify-between items-center">
-                <div>
-                    <h1 class="font-display text-4xl font-extrabold text-primary tracking-tight">Proyectos Web</h1>
-                    <p class="mt-2 text-gray-500">Una selección de mi trabajo en desarrollo y diseño.</p>
-                </div>
-                <div class="flex items-center gap-4">
-                    <span class="flex items-center gap-2 text-sm font-bold text-accent">
-                        Proyectos Web
-                    </span>
-                    <a href="diseno.html"
-                        class="flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-accent transition group">
-                        Diseño Gráfico
-                    </a>
-                    <a href="ux-ui.html"
-                        class="flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-accent transition group">
-                        Diseño UX/UI
-                    </a>
-                    <a href="index.html"
-                        class="flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-accent transition group">
-                        <i class="fas fa-arrow-left" aria-hidden="true"></i>
-                        Volver al CV
-                    </a>
-                    <span class="text-gray-300">|</span>
-                    <a href="proyectos-en.html"
-                        class="flex items-center gap-2 text-sm font-bold text-emerald-600 hover:text-emerald-700 transition group border border-emerald-200 px-3 py-1 rounded-full bg-emerald-50">
-                        <i class="fas fa-globe" aria-hidden="true"></i>
-                        EN
-                    </a>
-                </div>
-            </div>
-        </header>
+        
+    
+    <div class="w-full pt-32 pb-10 border-b border-slate-200 bg-white">
+        <div class="max-w-[1600px] mx-auto px-6 md:px-24">
+            <h1 class="font-display text-4xl md:text-5xl font-bold text-slate-900 mb-4">Proyectos Web</h1>
+         <p class="text-slate-500 text-lg">Una selección de mi trabajo en desarrollo y diseño.</p>
+        </div>
+    </div>
+        
+    
 
         <!-- Main Content -->
-        <main class="p-10">
+        <main class="w-full max-w-[1600px] mx-auto px-6 md:px-24 py-16">
             <!-- Projects Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
                 <!-- Project Card 1: studioMac -->
                 <div
-                    class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-1 transition-transform duration-300">
+                    class="glass-light rounded-2xl overflow-hidden hover:-translate-y-2 hover:shadow-xl transition-all duration-300 border border-slate-200 flex flex-col">
                     <img src="imagenes web_proyectos/studioMAc.png"
                         alt="studioMac – Donde la tecnología y la creatividad se encuentran"
-                        class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="font-display text-xl font-bold text-primary mb-2">studioMac – Donde la tecnología y
+                        class="w-full h-56 object-cover border-b border-slate-200">
+                    <div class="p-8 flex-1 flex flex-col">
+                        <h3 class="font-display text-xl font-bold text-slate-900 mb-3">studioMac – Donde la tecnología y
                             la creatividad se encuentran</h3>
-                        <p class="text-sm text-gray-600 mb-4">Centro de formación especializado en Apple, Adobe y
+                        <p class="text-sm text-slate-600 mb-6 flex-1">Centro de formación especializado en Apple, Adobe y
                             creatividad digital. Instructores certificados, estaciones iMac 4K y diplomados orientados a
                             estándares profesionales de la industria.</p>
                         <div class="flex gap-4">
                             <a href="https://www.studiomac.mx/" target="_blank"
-                                class="inline-block bg-accent text-white text-xs font-bold px-4 py-2 rounded-md hover:bg-indigo-700 transition">Ver
+                                class="inline-flex items-center justify-center bg-accent text-white font-medium px-5 py-2.5 rounded-lg hover:bg-accentDark transition shadow-sm">Ver
                                 Demo</a>
                         </div>
                     </div>
@@ -100,18 +76,18 @@
 
                 <!-- Project Card 2: B drive -->
                 <div
-                    class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-1 transition-transform duration-300">
+                    class="glass-light rounded-2xl overflow-hidden hover:-translate-y-2 hover:shadow-xl transition-all duration-300 border border-slate-200 flex flex-col">
                     <img src="imagenes web_proyectos/bdrive.png" alt="B drive | Transformación Digital para tu Empresa"
-                        class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="font-display text-xl font-bold text-primary mb-2">B drive | Transformación Digital
+                        class="w-full h-56 object-cover border-b border-slate-200">
+                    <div class="p-8 flex-1 flex flex-col">
+                        <h3 class="font-display text-xl font-bold text-slate-900 mb-3">B drive | Transformación Digital
                             para tu Empresa</h3>
-                        <p class="text-sm text-gray-600 mb-4">Diseñamos, implementamos y gestionamos soluciones
+                        <p class="text-sm text-slate-600 mb-6 flex-1">Diseñamos, implementamos y gestionamos soluciones
                             tecnológicas que impulsan la innovación, el crecimiento de tu organización y hacen posible
                             lo imposible.</p>
                         <div class="flex gap-4">
                             <a href="https://bdrive.ai/" target="_blank"
-                                class="inline-block bg-accent text-white text-xs font-bold px-4 py-2 rounded-md hover:bg-indigo-700 transition">Ver
+                                class="inline-flex items-center justify-center bg-accent text-white font-medium px-5 py-2.5 rounded-lg hover:bg-accentDark transition shadow-sm">Ver
                                 Demo</a>
 
                         </div>
@@ -120,16 +96,16 @@
 
                 <!-- Project Card 2: HUNTRESS FILMS -->
                 <div
-                    class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-1 transition-transform duration-300">
+                    class="glass-light rounded-2xl overflow-hidden hover:-translate-y-2 hover:shadow-xl transition-all duration-300 border border-slate-200 flex flex-col">
                     <img src="imagenes web_proyectos/huntress.png" alt="HUNTRESS FILMS"
-                        class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="font-display text-xl font-bold text-primary mb-2">HUNTRESS FILMS – We create digital
+                        class="w-full h-56 object-cover border-b border-slate-200">
+                    <div class="p-8 flex-1 flex flex-col">
+                        <h3 class="font-display text-xl font-bold text-slate-900 mb-3">HUNTRESS FILMS – We create digital
                             contents and master digital media.</h3>
-                        <p class="text-sm text-gray-600 mb-4">We create digital contents and master digital media.</p>
+                        <p class="text-sm text-slate-600 mb-6 flex-1">We create digital contents and master digital media.</p>
                         <div class="flex gap-4">
                             <a href="https://huntress.archertroy.com/" target="_blank"
-                                class="inline-block bg-accent text-white text-xs font-bold px-4 py-2 rounded-md hover:bg-indigo-700 transition">Ver
+                                class="inline-flex items-center justify-center bg-accent text-white font-medium px-5 py-2.5 rounded-lg hover:bg-accentDark transition shadow-sm">Ver
                                 Demo</a>
 
                         </div>
@@ -138,18 +114,18 @@
 
                 <!-- Project Card 3: Polyglobal MX -->
                 <div
-                    class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-1 transition-transform duration-300">
+                    class="glass-light rounded-2xl overflow-hidden hover:-translate-y-2 hover:shadow-xl transition-all duration-300 border border-slate-200 flex flex-col">
                     <img src="imagenes web_proyectos/polyglobal.png"
                         alt="Polyglobal – Alta tecnología y soluciones en polietileno y ..."
-                        class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="font-display text-xl font-bold text-primary mb-2">Polyglobal – Alta tecnología y
+                        class="w-full h-56 object-cover border-b border-slate-200">
+                    <div class="p-8 flex-1 flex flex-col">
+                        <h3 class="font-display text-xl font-bold text-slate-900 mb-3">Polyglobal – Alta tecnología y
                             soluciones en polietileno y ...</h3>
-                        <p class="text-sm text-gray-600 mb-4">Soluciones en poliestireno y polietileno espumado para la
+                        <p class="text-sm text-slate-600 mb-6 flex-1">Soluciones en poliestireno y polietileno espumado para la
                             industria del empaque, embalaje y aislamiento.</p>
                         <div class="flex gap-4">
                             <a href="https://polyglobal.com.mx/" target="_blank"
-                                class="inline-block bg-accent text-white text-xs font-bold px-4 py-2 rounded-md hover:bg-indigo-700 transition">Ver
+                                class="inline-flex items-center justify-center bg-accent text-white font-medium px-5 py-2.5 rounded-lg hover:bg-accentDark transition shadow-sm">Ver
                                 Demo</a>
 
                         </div>
@@ -158,19 +134,19 @@
 
                 <!-- Project Card 4: Polyglobal US -->
                 <div
-                    class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-1 transition-transform duration-300">
+                    class="glass-light rounded-2xl overflow-hidden hover:-translate-y-2 hover:shadow-xl transition-all duration-300 border border-slate-200 flex flex-col">
                     <img src="imagenes web_proyectos/polyglobal us.png"
                         alt="Polyglobal – High performance plastics and polymers for packaging"
-                        class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="font-display text-xl font-bold text-primary mb-2">Polyglobal – High performance
+                        class="w-full h-56 object-cover border-b border-slate-200">
+                    <div class="p-8 flex-1 flex flex-col">
+                        <h3 class="font-display text-xl font-bold text-slate-900 mb-3">Polyglobal – High performance
                             plastics and polymers for packaging</h3>
-                        <p class="text-sm text-gray-600 mb-4">We offer polystyrene and foamed polyethylene solutions for
+                        <p class="text-sm text-slate-600 mb-6 flex-1">We offer polystyrene and foamed polyethylene solutions for
                             the packaging and insulation industries, operating with efficient processes that set us
                             apart.</p>
                         <div class="flex gap-4">
                             <a href="https://polyglobal.us/" target="_blank"
-                                class="inline-block bg-accent text-white text-xs font-bold px-4 py-2 rounded-md hover:bg-indigo-700 transition">Ver
+                                class="inline-flex items-center justify-center bg-accent text-white font-medium px-5 py-2.5 rounded-lg hover:bg-accentDark transition shadow-sm">Ver
                                 Demo</a>
 
                         </div>
@@ -179,17 +155,17 @@
 
                 <!-- Project Card 5: Dcobys Travel -->
                 <div
-                    class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-1 transition-transform duration-300">
+                    class="glass-light rounded-2xl overflow-hidden hover:-translate-y-2 hover:shadow-xl transition-all duration-300 border border-slate-200 flex flex-col">
                     <img src="imagenes web_proyectos/dcobys travel.png" alt="Dcobys TRAVEL - Dcobys Travel"
-                        class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="font-display text-xl font-bold text-primary mb-2">Dcobys TRAVEL - Dcobys Travel</h3>
-                        <p class="text-sm text-gray-600 mb-4">We organize events, conventions, trips, events, for all
+                        class="w-full h-56 object-cover border-b border-slate-200">
+                    <div class="p-8 flex-1 flex flex-col">
+                        <h3 class="font-display text-xl font-bold text-slate-900 mb-3">Dcobys TRAVEL - Dcobys Travel</h3>
+                        <p class="text-sm text-slate-600 mb-6 flex-1">We organize events, conventions, trips, events, for all
                             types of groups and for companies, we put at your disposal more than 35,000 hotels,
                             airlines, excursions, and get tourist visas, study and work.</p>
                         <div class="flex gap-4">
                             <a href="https://dcobystravel.com/" target="_blank"
-                                class="inline-block bg-accent text-white text-xs font-bold px-4 py-2 rounded-md hover:bg-indigo-700 transition">Ver
+                                class="inline-flex items-center justify-center bg-accent text-white font-medium px-5 py-2.5 rounded-lg hover:bg-accentDark transition shadow-sm">Ver
                                 Demo</a>
 
                         </div>
@@ -198,17 +174,17 @@
 
                 <!-- Project Card 6: Dcobys Consulting -->
                 <div
-                    class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-1 transition-transform duration-300">
+                    class="glass-light rounded-2xl overflow-hidden hover:-translate-y-2 hover:shadow-xl transition-all duration-300 border border-slate-200 flex flex-col">
                     <img src="imagenes web_proyectos/dcobys.png" alt="Dcobys | International Business Consulting"
-                        class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="font-display text-xl font-bold text-primary mb-2">Dcobys | International Business
+                        class="w-full h-56 object-cover border-b border-slate-200">
+                    <div class="p-8 flex-1 flex flex-col">
+                        <h3 class="font-display text-xl font-bold text-slate-900 mb-3">Dcobys | International Business
                             Consulting</h3>
-                        <p class="text-sm text-gray-600 mb-4">We are a team of mentors, we have consultants and coaches
+                        <p class="text-sm text-slate-600 mb-6 flex-1">We are a team of mentors, we have consultants and coaches
                             focused on the internationalization of business, education and corporate events.</p>
                         <div class="flex gap-4">
                             <a href="https://dcobys.com/" target="_blank"
-                                class="inline-block bg-accent text-white text-xs font-bold px-4 py-2 rounded-md hover:bg-indigo-700 transition">Ver
+                                class="inline-flex items-center justify-center bg-accent text-white font-medium px-5 py-2.5 rounded-lg hover:bg-accentDark transition shadow-sm">Ver
                                 Demo</a>
 
                         </div>
@@ -217,17 +193,17 @@
 
                 <!-- Project Card 7: Essence MX -->
                 <div
-                    class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-1 transition-transform duration-300">
+                    class="glass-light rounded-2xl overflow-hidden hover:-translate-y-2 hover:shadow-xl transition-all duration-300 border border-slate-200 flex flex-col">
                     <img src="imagenes web_proyectos/essence.png" alt="Essence – El vestido de tus sueños"
-                        class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="font-display text-xl font-bold text-primary mb-2">Essence – El vestido de tus sueños
+                        class="w-full h-56 object-cover border-b border-slate-200">
+                    <div class="p-8 flex-1 flex flex-col">
+                        <h3 class="font-display text-xl font-bold text-slate-900 mb-3">Essence – El vestido de tus sueños
                         </h3>
-                        <p class="text-sm text-gray-600 mb-4">Belleza y Equilibrio se entremezclan para crear detalles
+                        <p class="text-sm text-slate-600 mb-6 flex-1">Belleza y Equilibrio se entremezclan para crear detalles
                             únicos inspirados en la armonía de la naturaleza</p>
                         <div class="flex gap-4">
                             <a href="http://essence.com.mx/" target="_blank"
-                                class="inline-block bg-accent text-white text-xs font-bold px-4 py-2 rounded-md hover:bg-indigo-700 transition">Ver
+                                class="inline-flex items-center justify-center bg-accent text-white font-medium px-5 py-2.5 rounded-lg hover:bg-accentDark transition shadow-sm">Ver
                                 Demo</a>
 
                         </div>
@@ -236,18 +212,18 @@
 
                 <!-- Project Card 8: Essenzia Española -->
                 <div
-                    class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-1 transition-transform duration-300">
+                    class="glass-light rounded-2xl overflow-hidden hover:-translate-y-2 hover:shadow-xl transition-all duration-300 border border-slate-200 flex flex-col">
                     <img src="imagenes web_proyectos/essenzia española.png"
-                        alt="Essenzia Española – Especialistas en alta moda nupcial" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="font-display text-xl font-bold text-primary mb-2">Essenzia Española – Especialistas
+                        alt="Essenzia Española – Especialistas en alta moda nupcial" class="w-full h-56 object-cover border-b border-slate-200">
+                    <div class="p-8 flex-1 flex flex-col">
+                        <h3 class="font-display text-xl font-bold text-slate-900 mb-3">Essenzia Española – Especialistas
                             en alta moda nupcial</h3>
-                        <p class="text-sm text-gray-600 mb-4">Essenzia Española ofrece una experiencia única y llena de
+                        <p class="text-sm text-slate-600 mb-6 flex-1">Essenzia Española ofrece una experiencia única y llena de
                             glamour para elegir tu vestido de novia, con expertas en alta moda nupcial que te ayudarán a
                             encontrar el modelo perfecto.</p>
                         <div class="flex gap-4">
                             <a href="https://essenzia.mx/" target="_blank"
-                                class="inline-block bg-accent text-white text-xs font-bold px-4 py-2 rounded-md hover:bg-indigo-700 transition">Ver
+                                class="inline-flex items-center justify-center bg-accent text-white font-medium px-5 py-2.5 rounded-lg hover:bg-accentDark transition shadow-sm">Ver
                                 Demo</a>
 
                         </div>

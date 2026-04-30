@@ -1,0 +1,216 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-700 font-sans antialiased overflow-x-hidden;
+  }
+}
+
+/* Custom Scrollbar for a premium feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: rgba(23, 23, 23, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glass-light {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Optimización extrema para PDF / Impresión */
+/* Optimización extrema para PDF / Impresión */
+@media print {
+  @page {
+    margin: 1cm;
+    size: A4 portrait;
+  }
+  body, html {
+    background-color: white !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    font-size: 11px !important;
+    line-height: 1.3 !important;
+  }
+  
+  /* Esconder UI */
+  nav, footer, .hero-image, .print\:hidden, button, [onclick="window.print()"] {
+    display: none !important;
+  }
+  
+  /* Reset general de espacios gigantes */
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+    transition: none !important;
+    animation: none !important;
+  }
+  
+  /* Contenedores principales (remover paddings excesivos) */
+  body > div, main, section {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  
+  /* Mantener el ancho y centrado correcto para impresión */
+  .max-w-\[1600px\] {
+    max-width: 100% !important;
+  }
+  .mx-auto {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* El Hero: Hacer que ocupe menos espacio */
+  section.relative.w-full.min-h-\[90vh\] {
+    min-height: auto !important;
+    display: block !important;
+    margin-bottom: 2rem !important;
+  }
+  .hero-text {
+    text-align: left !important;
+  }
+  h1 {
+    font-size: 2.2rem !important;
+    line-height: 1 !important;
+    margin-bottom: 0.5rem !important;
+  }
+  .text-gradient {
+    background: none !important;
+    -webkit-text-fill-color: #1e293b !important;
+    color: #1e293b !important;
+    font-size: 1.5rem !important;
+    display: block;
+    margin-bottom: 1rem !important;
+  }
+  .max-w-xl { max-width: 100% !important; }
+
+  /* Contenedor principal de Experiencia y Habilidades */
+  /* EVITAR FLEX O GRID en contenedores que cruzan páginas, usar float */
+  .grid.grid-cols-1.lg\:grid-cols-12 {
+    display: block !important;
+    width: 100% !important;
+  }
+  .grid.grid-cols-1.lg\:grid-cols-12::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Izquierda: Experiencia */
+  #experience {
+    width: 62% !important;
+    float: left !important;
+    display: block !important;
+  }
+
+  /* Derecha: Habilidades y Educación */
+  #experience + div {
+    width: 34% !important;
+    float: right !important;
+    display: block !important;
+    margin-top: 0 !important;
+  }
+
+  /* Comprimir las tarjetas de experiencia */
+  .space-y-16 > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 1.25rem !important;
+  }
+  .job-card {
+    border: none !important;
+    padding: 0 !important;
+    margin-bottom: 1rem !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+  
+  h3.font-display.text-2xl { font-size: 1.2rem !important; }
+  h4.text-lg { font-size: 1rem !important; margin-bottom: 0.25rem !important;}
+  .text-sm { font-size: 0.85rem !important; }
+  .text-xs { font-size: 0.75rem !important; }
+
+  /* Reducir el borde izquierdo */
+  .border-l-2 { 
+    border-left-width: 1px !important; 
+    margin-left: 0.5rem !important; 
+    padding-left: 1rem !important; 
+  }
+  /* Ajustar los puntos de la línea de tiempo */
+  .absolute.-left-\[45px\] {
+    left: -19px !important;
+    width: 8px !important;
+    height: 8px !important;
+  }
+
+  /* Comprimir la columna derecha */
+  .space-y-12 > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 1rem !important;
+  }
+  .glass-light {
+    box-shadow: none !important;
+    border: 1px solid #e2e8f0 !important;
+    padding: 0.75rem !important;
+    border-radius: 6px !important;
+    break-inside: avoid !important;
+  }
+  .mb-6 { margin-bottom: 0.75rem !important; }
+  .gap-4 { gap: 0.5rem !important; }
+  
+  /* Certificaciones */
+  section.w-full.bg-white.border-t.border-slate-200.py-20 {
+    margin-top: 1rem !important;
+    border-top: none !important;
+  }
+  .grid-cols-1.sm\:grid-cols-2.md\:grid-cols-3.lg\:grid-cols-4 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 0.5rem !important;
+  }
+  .cert-card {
+    width: calc(33% - 0.5rem) !important;
+    padding: 0.5rem !important;
+    break-inside: avoid !important;
+  }
+  .w-10, .h-10, .w-12, .h-12 {
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+    font-size: 0.85rem !important;
+    margin-bottom: 0.25rem !important;
+  }
+}

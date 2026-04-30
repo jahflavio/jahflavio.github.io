@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CV Fabián Flores - PDF Version</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #e4e773; /* Light yellow-green like the Canva template */
+            --text-color: #111111;
+        }
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: #1a1a1a; 
+            color: var(--text-color); 
+        }
+        h1, h2, h3 { 
+            font-family: 'Jost', sans-serif; 
+            font-weight: 300;
+        }
+        /* Main page container */
+        .page { 
+            max-width: 21cm; 
+            min-height: 29.7cm; 
+            margin: 2cm auto; 
+            background-color: var(--bg-color); 
+            padding: 2cm; 
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5); 
+        }
+        
+        /* Divider lines identical to the image */
+        hr {
+            border: none;
+            border-top: 1.5px solid var(--text-color);
+            margin: 1rem 0;
+        }
+
+        /* Standardized bullet rules like in the image */
+        ul.custom-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        ul.custom-list > li {
+            position: relative;
+            padding-left: 12px;
+            margin-bottom: 2px;
+        }
+        ul.custom-list > li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 10px;
+        }
+
+        @media print {
+            body { 
+                background-color: var(--bg-color) !important; 
+                margin: 0; 
+                padding: 0; 
+                -webkit-print-color-adjust: exact !important; 
+                print-color-adjust: exact !important; 
+            }
+            .page { 
+                margin: 0; 
+                padding: 1.5cm 2cm; /* Adjustment to fit perfectly in A4 */
+                box-shadow: none; 
+                max-width: 100%; 
+                min-height: auto; 
+            }
+            .no-print { display: none !important; }
+            a { color: var(--text-color) !important; text-decoration: none !important; }
+            
+            /* Extra typography adjustments to ensure it fits on 1 page */
+            p, li { font-size: 11px !important; line-height: 1.4 !important; }
+            h1 { font-size: 32px !important; }
+            h2 { font-size: 24px !important; }
+            h3 { font-size: 16px !important; }
+            hr { margin: 0.75rem 0 !important; }
+        }
+    </style>
+</head>
+<body>
+    <div class="fixed top-4 right-4 no-print flex gap-4 z-50">
+        <a href="index-en.html" class="px-4 py-2 bg-gray-200 text-gray-800 rounded-md text-sm font-medium hover:bg-gray-300 transition shadow">Back to Web</a>
+        <button onclick="window.print()" class="px-4 py-2 bg-blue-600 text-white rounded-md text-sm font-medium hover:bg-blue-700 transition shadow"><i class="fas fa-print mr-2"></i> Print to PDF</button>
+    </div>
+
+    <!-- Resume Container -->
+    <div class="page relative">
+        <!-- HEADER -->
+        <div class="flex justify-between items-start mb-4 mt-2">
+            <div>
+                <h1 class="text-[42px] leading-none tracking-wide uppercase">Fabián Flores</h1>
+                <h2 class="text-[32px] leading-tight tracking-wide uppercase mt-1">Web Designer</h2>
+            </div>
+            <div class="text-right text-[11px] space-y-1 mt-2 tracking-wide font-medium">
+                <p>+52-222-344-1091</p>
+                <p>fabianfloram@gmail.com</p>
+                <p>linkedin.com/in/fabian-f-71858b209</p>
+                <p>Mexico City</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <p class="text-[11.5px] leading-relaxed text-justify font-medium tracking-wide">
+            As a Visual Communicator and Front-End Developer specialized in creating responsive, intuitive, and high-performance web experiences, I excel in transforming complex designs into clean code. I have a strong commitment to SEO and UX optimization, providing innovative solutions that enhance user interaction and drive business results.
+        </p>
+
+        <hr>
+
+        <!-- SKILLS SECTION -->
+        <div class="flex pt-1 pb-1">
+            <div class="w-[28%]">
+                <h3 class="uppercase text-[18px] tracking-widest">Skills</h3>
+            </div>
+            <div class="w-[72%] grid grid-cols-2 gap-x-4">
+                <ul class="custom-list text-[11.5px] font-medium tracking-wide">
+                    <li>HTML5, CSS3, JavaScript</li>
+                    <li>React, Vue.js, Tailwind CSS</li>
+                    <li>Front-end Development & Layout</li>
+                    <li>Git, GitHub & Version Control</li>
+                </ul>
+                <ul class="custom-list text-[11.5px] font-medium tracking-wide">
+                    <li>UX/UI Design & Prototyping (Figma)</li>
+                    <li>Adobe Creative Suite (Ps, Ai, Id)</li>
+                    <li>Technical SEO On/Off Page</li>
+                    <li>Google Analytics & Performance</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- EDUCATION SECTION -->
+        <div class="flex pt-1 pb-1">
+            <div class="w-[28%]">
+                <h3 class="uppercase text-[18px] tracking-widest">Education</h3>
+            </div>
+            <div class="w-[72%]">
+                <div class="mb-3">
+                    <p class="text-[11.5px] uppercase tracking-wide"><span class="font-bold">BA Visual Communication</span> | University of Communication</p>
+                    <p class="text-[11.5px] font-medium mt-0.5">2005 - 2009</p>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- WORK EXPERIENCE SECTION -->
+        <div class="flex pt-1 pb-1">
+            <div class="w-[28%]">
+                <h3 class="uppercase text-[18px] tracking-widest">Work</h3>
+            </div>
+            <div class="w-[72%]">
+                
+                <div class="mb-3">
+                    <p class="text-[11.5px] uppercase tracking-wide"><span class="font-bold">Front-end Senior & Marketing</span> | B-Drive | 2024 - 2025</p>
+                    <ul class="custom-list text-[11.5px] font-medium mt-1">
+                        <li>Development of responsive web interfaces and high-converting landing pages.</li>
+                        <li>Pixel-perfect implementation of UX/UI designs with HTML5, CSS3 and JS.</li>
+                        <li>Optimization of Core Web Vitals and technical SEO to improve ranking.</li>
+                    </ul>
+                </div>
+
+                <div class="mb-3">
+                    <p class="text-[11.5px] uppercase tracking-wide"><span class="font-bold">Digital Projects Lead</span> | Lapi Laboratory | 2023 - 2024</p>
+                    <ul class="custom-list text-[11.5px] font-medium mt-1">
+                        <li>Management of digital project lifecycle and dev/design team coordination.</li>
+                        <li>Analysis of KPIs and metrics to optimize digital strategies.</li>
+                    </ul>
+                </div>
+
+                <div class="mb-3">
+                    <p class="text-[11.5px] uppercase tracking-wide"><span class="font-bold">Marketing Web Designer</span> | Archer Troy | 2022 - 2023</p>
+                    <ul class="custom-list text-[11.5px] font-medium mt-1">
+                        <li>Design and development of microsites and digital assets for campaigns.</li>
+                        <li>Adaptation of creative assets for responsive web formats.</li>
+                    </ul>
+                </div>
+
+                <div class="mb-3">
+                    <p class="text-[11.5px] uppercase tracking-wide"><span class="font-bold">Marketing & Web Designer</span> | Polyglobal | 2020 - 2022</p>
+                    <ul class="custom-list text-[11.5px] font-medium mt-1">
+                        <li>Layout of corporate sites and cross-browser maintenance.</li>
+                        <li>Integration of Heatmaps and Analytics for UX decisions.</li>
+                    </ul>
+                </div>
+                
+                <div class="mb-1">
+                    <p class="text-[11.5px] uppercase tracking-wide"><span class="font-bold">Web Designer</span> | M4 TEL | 2019 - 2020</p>
+                    <ul class="custom-list text-[11.5px] font-medium mt-1">
+                        <li>Visual and front-end design for digital marketing campaigns.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- CERTIFICATIONS SECTION -->
+        <div class="flex pt-1 pb-1">
+            <div class="w-[28%]">
+                <h3 class="uppercase text-[18px] tracking-widest">Certificates</h3>
+            </div>
+            <div class="w-[72%]">
+                <p class="text-[11.5px] uppercase tracking-wide mb-1.5"><span class="font-bold">Cybersecurity</span> | B drive | 2025</p>
+                <p class="text-[11.5px] uppercase tracking-wide mb-1.5"><span class="font-bold">Gen AI in HR & React</span> | UBITS | 2025</p>
+                <p class="text-[11.5px] uppercase tracking-wide mb-1.5"><span class="font-bold">Algorithm Design</span> | UBITS | 2025</p>
+                <p class="text-[11.5px] uppercase tracking-wide mb-1.5"><span class="font-bold">First Steps in React</span> | UBITS | 2025</p>
+                <p class="text-[11.5px] uppercase tracking-wide mb-1.5"><span class="font-bold">Scrum</span> | CertJoin | 2024</p>
+                <p class="text-[11.5px] uppercase tracking-wide mb-1.5"><span class="font-bold">SEO</span> | HubSpot Academy | 2024</p>
+                <p class="text-[11.5px] uppercase tracking-wide mb-1.5"><span class="font-bold">Foundations of UX Design</span> | Google | 2022</p>
+                <p class="text-[11.5px] uppercase tracking-wide mb-1.5"><span class="font-bold">Digital Marketing</span> | Google | 2021</p>
+                <p class="text-[10px] text-gray-700 italic mt-2">+ 8 additional certifications on Google and Grasshopper.</p>
+            </div>
+        </div>
+        
+        <hr>
+
+    </div>
+</body>
+</html>
