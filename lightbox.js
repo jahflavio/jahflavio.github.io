@@ -1,4 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Automatically inject lightbox.css if not present
+    if (!document.querySelector('link[href*="lightbox.css"]')) {
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = 'lightbox.css';
+        document.head.appendChild(link);
+    }
+
     const lightbox = document.createElement('div');
     lightbox.id = 'image-lightbox';
     lightbox.classList.add('lightbox');

@@ -6,3 +6,9 @@
 *copy.html
 cv.html
 extract_pdfs.py
+
+node_modules/
+*.tmp
+*.js
+.env
+dist/
