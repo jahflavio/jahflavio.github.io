@@ -240,8 +240,8 @@ body {
 
 .editorial-hero .hero-inner {
     width: 100%;
-    max-width: 1600px;
-    margin: 0 auto;
+    max-width: 100%;
+    margin: 0;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -258,7 +258,7 @@ body {
 }
 
 .editorial-hero--dark .hero-year {
-    color: #888;
+    color: #ffffff;
 }
 
 .editorial-hero .hero-title {
