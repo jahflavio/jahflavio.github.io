@@ -1,5 +1,6 @@
 # Ignore generated PDFs and text files
 *.pdf
+!public/assets/*.pdf
 *.txt
 
 # Ignore copy HTML files
