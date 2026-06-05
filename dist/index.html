@@ -14,432 +14,385 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;700;800&display=swap" rel="stylesheet">
-    <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Crect%20width='100'%20height='100'%20rx='20'%20fill='%234f46e5'/%3E%3Ctext%20x='50%25'%20y='50%25'%20dominant-baseline='middle'%20text-anchor='middle'%20font-size='70'%20fill='white'%20font-family='sans-serif'%3EF%3C/text%3E%3C/svg%3E">
-    
-    <!-- Vite entry point -->
-    
-  <style>*,:before,:after,::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:#3b82f680;--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }*,:before,:after{box-sizing:border-box;border:0 solid #e5e7eb}:before,:after{--tw-content:""}html,:host{-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent;font-family:Inter,sans-serif;line-height:1.5}body{line-height:inherit;margin:0}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;-webkit-text-decoration:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,samp,pre{font-feature-settings:normal;font-variation-settings:normal;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-size:1em}small{font-size:80%}sub,sup{vertical-align:baseline;font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-feature-settings:inherit;font-variation-settings:inherit;font-family:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:#0000;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button{height:auto}::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dl,dd,h1,h2,h3,h4,h5,h6,hr,figure,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}ol,ul,menu{margin:0;padding:0;list-style:none}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder{opacity:1;color:#9ca3af}textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::-moz-placeholder, textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}button,[role=button]{cursor:pointer}:disabled{cursor:default}img,svg,video,canvas,audio,iframe,embed,object{vertical-align:middle;display:block}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}body{--tw-bg-opacity:1;background-color:rgb(248 250 252/var(--tw-bg-opacity,1));--tw-text-opacity:1;color:rgb(51 65 85/var(--tw-text-opacity,1));-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-family:Inter,sans-serif;overflow-x:hidden}.container{width:100%}@media (width>=640px){.container{max-width:640px}}@media (width>=768px){.container{max-width:768px}}@media (width>=1024px){.container{max-width:1024px}}@media (width>=1280px){.container{max-width:1280px}}@media (width>=1536px){.container{max-width:1536px}}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0}.-left-\[41px\]{left:-41px}.-left-\[45px\]{left:-45px}.bottom-0{bottom:0}.bottom-1\/4{bottom:25%}.bottom-6{bottom:1.5rem}.left-0{left:0}.left-1\/4{left:25%}.right-0{right:0}.right-1\/4{right:25%}.right-4{right:1rem}.right-6{right:1.5rem}.top-0{top:0}.top-1{top:.25rem}.top-1\.5{top:.375rem}.top-1\/4{top:25%}.top-4{top:1rem}.-z-10{z-index:-10}.z-0{z-index:0}.z-10{z-index:10}.z-50{z-index:50}.col-span-12{grid-column:span 12/span 12}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:.25rem}.mb-1\.5{margin-bottom:.375rem}.mb-10{margin-bottom:2.5rem}.mb-12{margin-bottom:3rem}.mb-2{margin-bottom:.5rem}.mb-3{margin-bottom:.75rem}.mb-4{margin-bottom:1rem}.mb-5{margin-bottom:1.25rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.ml-1{margin-left:.25rem}.ml-3{margin-left:.75rem}.ml-4{margin-left:1rem}.ml-6{margin-left:1.5rem}.mr-1{margin-right:.25rem}.mr-2{margin-right:.5rem}.mt-0\.5{margin-top:.125rem}.mt-1{margin-top:.25rem}.mt-1\.5{margin-top:.375rem}.mt-12{margin-top:3rem}.mt-16{margin-top:4rem}.mt-2{margin-top:.5rem}.mt-20{margin-top:5rem}.mt-4{margin-top:1rem}.mt-8{margin-top:2rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.contents{display:contents}.hidden{display:none}.h-1\.5{height:.375rem}.h-10{height:2.5rem}.h-12{height:3rem}.h-16{height:4rem}.h-2{height:.5rem}.h-3{height:.75rem}.h-5{height:1.25rem}.h-56{height:14rem}.h-8{height:2rem}.h-\[200px\]{height:200px}.h-\[250px\]{height:250px}.h-\[400px\]{height:400px}.h-\[40vh\]{height:40vh}.h-\[500px\]{height:500px}.h-\[600px\]{height:600px}.min-h-\[100svh\]{min-height:100svh}.min-h-\[297mm\]{min-height:297mm}.min-h-\[90vh\]{min-height:90vh}.min-h-screen{min-height:100vh}.w-10{width:2.5rem}.w-12{width:3rem}.w-16{width:4rem}.w-3{width:.75rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-8{width:2rem}.w-\[200px\]{width:200px}.w-\[250px\]{width:250px}.w-\[28\%\]{width:28%}.w-\[400px\]{width:400px}.w-\[600px\]{width:600px}.w-\[72\%\]{width:72%}.w-fit{width:-moz-fit-content;width:fit-content}.w-full{width:100%}.min-w-\[240px\]{min-width:240px}.max-w-2xl{max-width:42rem}.max-w-4xl{max-width:56rem}.max-w-5xl{max-width:64rem}.max-w-\[1600px\]{max-width:1600px}.max-w-\[210mm\]{max-width:210mm}.max-w-md{max-width:28rem}.max-w-xl{max-width:36rem}.flex-1{flex:1}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes ping{75%,to{opacity:0;transform:scale(2)}}.animate-ping{animation:1s cubic-bezier(0,0,.2,1) infinite ping}.cursor-default{cursor:default}.cursor-pointer{cursor:pointer}.list-outside{list-style-position:outside}.list-disc{list-style-type:disc}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}.grid-cols-12{grid-template-columns:repeat(12,minmax(0,1fr))}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-12{gap:3rem}.gap-16{gap:4rem}.gap-2{gap:.5rem}.gap-3{gap:.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.gap-x-4{-moz-column-gap:1rem;column-gap:1rem}.space-y-1>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.25rem * var(--tw-space-y-reverse))}.space-y-1\.5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.375rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.375rem * var(--tw-space-y-reverse))}.space-y-10>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(2.5rem * var(--tw-space-y-reverse))}.space-y-12>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(3rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(3rem * var(--tw-space-y-reverse))}.space-y-16>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(4rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(4rem * var(--tw-space-y-reverse))}.space-y-2>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.5rem * var(--tw-space-y-reverse))}.space-y-3>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.75rem * var(--tw-space-y-reverse))}.space-y-4>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-6>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-x-hidden{overflow-x:hidden}.scroll-smooth{scroll-behavior:smooth}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:.5rem}.rounded-md{border-radius:.375rem}.rounded-xl{border-radius:.75rem}.border{border-width:1px}.border-2{border-width:2px}.border-4{border-width:4px}.border-b{border-bottom-width:1px}.border-l-2{border-left-width:2px}.border-r{border-right-width:1px}.border-t{border-top-width:1px}.border-accent{--tw-border-opacity:1;border-color:rgb(59 130 246/var(--tw-border-opacity,1))}.border-accent\/20{border-color:#3b82f633}.border-accent\/30{border-color:#3b82f64d}.border-gray-100{--tw-border-opacity:1;border-color:rgb(243 244 246/var(--tw-border-opacity,1))}.border-gray-200{--tw-border-opacity:1;border-color:rgb(229 231 235/var(--tw-border-opacity,1))}.border-indigo-100{--tw-border-opacity:1;border-color:rgb(224 231 255/var(--tw-border-opacity,1))}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240/var(--tw-border-opacity,1))}.border-slate-300{--tw-border-opacity:1;border-color:rgb(203 213 225/var(--tw-border-opacity,1))}.border-white{--tw-border-opacity:1;border-color:rgb(255 255 255/var(--tw-border-opacity,1))}.border-white\/10{border-color:#ffffff1a}.border-white\/20{border-color:#fff3}.border-white\/5{border-color:#ffffff0d}.bg-accent{--tw-bg-opacity:1;background-color:rgb(59 130 246/var(--tw-bg-opacity,1))}.bg-accent\/10{background-color:#3b82f61a}.bg-black\/30{background-color:#0000004d}.bg-blue-100{--tw-bg-opacity:1;background-color:rgb(219 234 254/var(--tw-bg-opacity,1))}.bg-blue-600{--tw-bg-opacity:1;background-color:rgb(37 99 235/var(--tw-bg-opacity,1))}.bg-emerald-100{--tw-bg-opacity:1;background-color:rgb(209 250 229/var(--tw-bg-opacity,1))}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246/var(--tw-bg-opacity,1))}.bg-gray-200{--tw-bg-opacity:1;background-color:rgb(229 231 235/var(--tw-bg-opacity,1))}.bg-gray-300{--tw-bg-opacity:1;background-color:rgb(209 213 219/var(--tw-bg-opacity,1))}.bg-indigo-50{--tw-bg-opacity:1;background-color:rgb(238 242 255/var(--tw-bg-opacity,1))}.bg-orange-100{--tw-bg-opacity:1;background-color:rgb(255 237 213/var(--tw-bg-opacity,1))}.bg-purple-100{--tw-bg-opacity:1;background-color:rgb(243 232 255/var(--tw-bg-opacity,1))}.bg-purple-600{--tw-bg-opacity:1;background-color:rgb(147 51 234/var(--tw-bg-opacity,1))}.bg-purple-600\/5{background-color:#9333ea0d}.bg-slate-100{--tw-bg-opacity:1;background-color:rgb(241 245 249/var(--tw-bg-opacity,1))}.bg-slate-200{--tw-bg-opacity:1;background-color:rgb(226 232 240/var(--tw-bg-opacity,1))}.bg-slate-400{--tw-bg-opacity:1;background-color:rgb(148 163 184/var(--tw-bg-opacity,1))}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252/var(--tw-bg-opacity,1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.from-accent{--tw-gradient-from:#3b82f6 var(--tw-gradient-from-position);--tw-gradient-to:#3b82f600 var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-slate-800{--tw-gradient-from:#1e293b var(--tw-gradient-from-position);--tw-gradient-to:#1e293b00 var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-indigo-600{--tw-gradient-to:#4f46e500 var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #4f46e5 var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-purple-500{--tw-gradient-to:#a855f7 var(--tw-gradient-to-position)}.to-purple-600{--tw-gradient-to:#9333ea var(--tw-gradient-to-position)}.object-cover{-o-object-fit:cover;object-fit:cover}.p-10{padding:2.5rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-10{padding-left:2.5rem;padding-right:2.5rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.py-1\.5{padding-top:.375rem;padding-bottom:.375rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.py-2\.5{padding-top:.625rem;padding-bottom:.625rem}.py-20{padding-top:5rem;padding-bottom:5rem}.py-24{padding-top:6rem;padding-bottom:6rem}.py-3{padding-top:.75rem;padding-bottom:.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-8{padding-top:2rem;padding-bottom:2rem}.pb-1{padding-bottom:.25rem}.pb-10{padding-bottom:2.5rem}.pb-12{padding-bottom:3rem}.pb-2{padding-bottom:.5rem}.pb-20{padding-bottom:5rem}.pb-8{padding-bottom:2rem}.pl-10{padding-left:2.5rem}.pl-8{padding-left:2rem}.pt-1{padding-top:.25rem}.pt-16{padding-top:4rem}.pt-2{padding-top:.5rem}.pt-24{padding-top:6rem}.pt-32{padding-top:8rem}.pt-4{padding-top:1rem}.pt-8{padding-top:2rem}.text-center{text-align:center}.text-right{text-align:right}.text-justify{text-align:justify}.font-display{font-family:Outfit,sans-serif}.font-sans{font-family:Inter,sans-serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-\[10px\]{font-size:10px}.text-\[11\.5px\]{font-size:11.5px}.text-\[11px\]{font-size:11px}.text-\[18px\]{font-size:18px}.text-\[32px\]{font-size:32px}.text-\[42px\]{font-size:42px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:.75rem;line-height:1rem}.font-bold{font-weight:700}.font-light{font-weight:300}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-none{line-height:1}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-tight{letter-spacing:-.025em}.tracking-wide{letter-spacing:.025em}.tracking-wider{letter-spacing:.05em}.tracking-widest{letter-spacing:.1em}.text-accent{--tw-text-opacity:1;color:rgb(59 130 246/var(--tw-text-opacity,1))}.text-blue-600{--tw-text-opacity:1;color:rgb(37 99 235/var(--tw-text-opacity,1))}.text-emerald-600{--tw-text-opacity:1;color:rgb(5 150 105/var(--tw-text-opacity,1))}.text-emerald-700{--tw-text-opacity:1;color:rgb(4 120 87/var(--tw-text-opacity,1))}.text-gray-300{--tw-text-opacity:1;color:rgb(209 213 219/var(--tw-text-opacity,1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175/var(--tw-text-opacity,1))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128/var(--tw-text-opacity,1))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99/var(--tw-text-opacity,1))}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81/var(--tw-text-opacity,1))}.text-gray-800{--tw-text-opacity:1;color:rgb(31 41 55/var(--tw-text-opacity,1))}.text-green-500{--tw-text-opacity:1;color:rgb(34 197 94/var(--tw-text-opacity,1))}.text-orange-600{--tw-text-opacity:1;color:rgb(234 88 12/var(--tw-text-opacity,1))}.text-primary{--tw-text-opacity:1;color:rgb(10 10 10/var(--tw-text-opacity,1))}.text-purple-600{--tw-text-opacity:1;color:rgb(147 51 234/var(--tw-text-opacity,1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225/var(--tw-text-opacity,1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184/var(--tw-text-opacity,1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139/var(--tw-text-opacity,1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105/var(--tw-text-opacity,1))}.text-slate-700{--tw-text-opacity:1;color:rgb(51 65 85/var(--tw-text-opacity,1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59/var(--tw-text-opacity,1))}.text-slate-900{--tw-text-opacity:1;color:rgb(15 23 42/var(--tw-text-opacity,1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.opacity-20{opacity:.2}.opacity-30{opacity:.3}.opacity-50{opacity:.5}.mix-blend-screen{mix-blend-mode:screen}.shadow{--tw-shadow:0 1px 3px 0 #0000001a, 0 1px 2px -1px #0000001a;--tw-shadow-colored:0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000), var(--tw-ring-shadow,0 0 #0000), var(--tw-shadow)}.shadow-2xl{--tw-shadow:0 25px 50px -12px #00000040;--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000), var(--tw-ring-shadow,0 0 #0000), var(--tw-shadow)}.shadow-\[0_0_10px_rgba\(59\,130\,246\,0\.5\)\]{--tw-shadow:0 0 10px #3b82f680;--tw-shadow-colored:0 0 10px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000), var(--tw-ring-shadow,0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px #0000001a, 0 4px 6px -4px #0000001a;--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000), var(--tw-ring-shadow,0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 #0000000d;--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000), var(--tw-ring-shadow,0 0 #0000), var(--tw-shadow)}.blur-\[100px\]{--tw-blur:blur(100px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.blur-\[120px\]{--tw-blur:blur(120px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.grayscale{--tw-grayscale:grayscale(100%);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-duration:.15s;transition-timing-function:cubic-bezier(.4,0,.2,1)}.transition-all{transition-property:all;transition-duration:.15s;transition-timing-function:cubic-bezier(.4,0,.2,1)}.transition-colors{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-duration:.15s;transition-timing-function:cubic-bezier(.4,0,.2,1)}.transition-transform{transition-property:transform;transition-duration:.15s;transition-timing-function:cubic-bezier(.4,0,.2,1)}.duration-200{transition-duration:.2s}.duration-300{transition-duration:.3s}.duration-500{transition-duration:.5s}::-webkit-scrollbar{width:8px}::-webkit-scrollbar-track{background:#f1f5f9}::-webkit-scrollbar-thumb{background:#cbd5e1;border-radius:4px}::-webkit-scrollbar-thumb:hover{background:#94a3b8}.glass{-webkit-backdrop-filter:blur(10px);background:#171717b3;border:1px solid #ffffff0d}.glass-light{-webkit-backdrop-filter:blur(10px);background:#ffffffb3;border:1px solid #0000000d;box-shadow:0 4px 30px #0000000d}.hover-glow:hover{box-shadow:0 0 20px #3b82f64d}.text-gradient{background:linear-gradient(90deg,#3b82f6,#8b5cf6);-webkit-text-fill-color:transparent;-webkit-background-clip:text;background-clip:text}@media print{@page{margin:1cm;size:A4 portrait}body,html{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;background-color:#fff!important;font-size:11px!important;line-height:1.3!important}nav,footer,.hero-image,.print\:hidden,button,[onclick="window.print()"]{display:none!important}*{box-shadow:none!important;text-shadow:none!important;transition:none!important;animation:none!important}body>div,main,section{margin-left:0!important;margin-right:0!important;padding:1rem 0!important}.max-w-\[1600px\]{max-width:100%!important}.mx-auto{margin-left:0!important;margin-right:0!important}section.relative.w-full.min-h-\[90vh\]{min-height:auto!important;margin-bottom:2rem!important;display:block!important}.hero-text{text-align:left!important}h1{margin-bottom:.5rem!important;font-size:2.2rem!important;line-height:1!important}.text-gradient{display:block;-webkit-text-fill-color:#1e293b!important;color:#1e293b!important;background:0 0!important;margin-bottom:1rem!important;font-size:1.5rem!important}.max-w-xl{max-width:100%!important}.grid.grid-cols-1.lg\:grid-cols-12{width:100%!important;display:block!important}.grid.grid-cols-1.lg\:grid-cols-12:after{content:"";clear:both;display:table}#experience{float:left!important;width:62%!important;display:block!important}#experience+div{float:right!important;width:34%!important;margin-top:0!important;display:block!important}.space-y-16>:not([hidden])~:not([hidden]){margin-top:1.25rem!important}.job-card{-moz-column-break-inside:avoid!important;break-inside:avoid!important;page-break-inside:avoid!important;border:none!important;margin-bottom:1rem!important;padding:0!important}h3.font-display.text-2xl{font-size:1.2rem!important}h4.text-lg{margin-bottom:.25rem!important;font-size:1rem!important}.text-sm{font-size:.85rem!important}.text-xs{font-size:.75rem!important}.border-l-2{border-left-width:1px!important;margin-left:.5rem!important;padding-left:1rem!important}.absolute.-left-\[45px\]{width:8px!important;height:8px!important;left:-19px!important}.space-y-12>:not([hidden])~:not([hidden]){margin-top:1rem!important}.glass-light{box-shadow:none!important;-moz-column-break-inside:avoid!important;break-inside:avoid!important;border:1px solid #e2e8f0!important;border-radius:6px!important;padding:.75rem!important}.mb-6{margin-bottom:.75rem!important}.gap-4{gap:.5rem!important}section.w-full.bg-white.border-t.border-slate-200.py-20{border-top:none!important;margin-top:1rem!important}.grid-cols-1.sm\:grid-cols-2.md\:grid-cols-3.lg\:grid-cols-4{flex-wrap:wrap!important;gap:.5rem!important;display:flex!important}.cert-card{-moz-column-break-inside:avoid!important;break-inside:avoid!important;width:calc(33% - .5rem)!important;padding:.5rem!important}.w-10,.h-10,.w-12,.h-12{width:1.5rem!important;height:1.5rem!important;margin-bottom:.25rem!important;font-size:.85rem!important}}.marker\:text-accent ::marker{color:#3b82f6}.marker\:text-gray-400 ::marker{color:#9ca3af}.marker\:text-accent::marker{color:#3b82f6}.marker\:text-gray-400::marker{color:#9ca3af}.selection\:bg-accent ::-moz-selection{--tw-bg-opacity:1;background-color:rgb(59 130 246/var(--tw-bg-opacity,1))}.selection\:bg-accent ::selection{--tw-bg-opacity:1;background-color:rgb(59 130 246/var(--tw-bg-opacity,1))}.selection\:text-white ::-moz-selection{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.selection\:text-white ::selection{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.selection\:bg-accent::-moz-selection{--tw-bg-opacity:1;background-color:rgb(59 130 246/var(--tw-bg-opacity,1))}.selection\:bg-accent::selection{--tw-bg-opacity:1;background-color:rgb(59 130 246/var(--tw-bg-opacity,1))}.selection\:text-white::-moz-selection{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.selection\:text-white::selection{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.hover\:-translate-y-0\.5:hover{--tw-translate-y:-.125rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:-translate-y-2:hover{--tw-translate-y:-.5rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:scale-105:hover{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:border-accent:hover{--tw-border-opacity:1;border-color:rgb(59 130 246/var(--tw-border-opacity,1))}.hover\:bg-accent:hover{--tw-bg-opacity:1;background-color:rgb(59 130 246/var(--tw-bg-opacity,1))}.hover\:bg-accentDark:hover{--tw-bg-opacity:1;background-color:rgb(37 99 235/var(--tw-bg-opacity,1))}.hover\:bg-blue-700:hover{--tw-bg-opacity:1;background-color:rgb(29 78 216/var(--tw-bg-opacity,1))}.hover\:bg-gray-300:hover{--tw-bg-opacity:1;background-color:rgb(209 213 219/var(--tw-bg-opacity,1))}.hover\:bg-indigo-700:hover{--tw-bg-opacity:1;background-color:rgb(67 56 202/var(--tw-bg-opacity,1))}.hover\:bg-slate-200:hover{--tw-bg-opacity:1;background-color:rgb(226 232 240/var(--tw-bg-opacity,1))}.hover\:bg-slate-50:hover{--tw-bg-opacity:1;background-color:rgb(248 250 252/var(--tw-bg-opacity,1))}.hover\:bg-white:hover{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))}.hover\:text-accent:hover{--tw-text-opacity:1;color:rgb(59 130 246/var(--tw-text-opacity,1))}.hover\:text-emerald-500:hover{--tw-text-opacity:1;color:rgb(16 185 129/var(--tw-text-opacity,1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.hover\:opacity-80:hover{opacity:.8}.hover\:shadow-xl:hover{--tw-shadow:0 20px 25px -5px #0000001a, 0 8px 10px -6px #0000001a;--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000), var(--tw-ring-shadow,0 0 #0000), var(--tw-shadow)}.hover\:grayscale-0:hover{--tw-grayscale:grayscale(0);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.group:hover .group-hover\:bg-accent\/10{background-color:#3b82f61a}.group:hover .group-hover\:bg-emerald-50{--tw-bg-opacity:1;background-color:rgb(236 253 245/var(--tw-bg-opacity,1))}.group:hover .group-hover\:bg-indigo-50{--tw-bg-opacity:1;background-color:rgb(238 242 255/var(--tw-bg-opacity,1))}.group:hover .group-hover\:text-accent{--tw-text-opacity:1;color:rgb(59 130 246/var(--tw-text-opacity,1))}@media (width>=640px){.sm\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.sm\:flex-row{flex-direction:row}.sm\:items-baseline{align-items:baseline}.sm\:justify-between{justify-content:space-between}}@media (width>=768px){.md\:col-span-4{grid-column:span 4/span 4}.md\:col-span-8{grid-column:span 8/span 8}.md\:ml-2{margin-left:.5rem}.md\:mt-0{margin-top:0}.md\:mt-24{margin-top:6rem}.md\:block{display:block}.md\:flex{display:flex}.md\:h-24{height:6rem}.md\:h-\[400px\]{height:400px}.md\:h-\[500px\]{height:500px}.md\:h-\[60vh\]{height:60vh}.md\:w-24{width:6rem}.md\:w-\[400px\]{width:400px}.md\:w-\[500px\]{width:500px}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.md\:flex-row{flex-direction:row}.md\:items-center{align-items:center}.md\:px-12{padding-left:3rem;padding-right:3rem}.md\:px-24{padding-left:6rem;padding-right:6rem}.md\:px-8{padding-left:2rem;padding-right:2rem}.md\:py-32{padding-top:8rem;padding-bottom:8rem}.md\:py-4{padding-top:1rem;padding-bottom:1rem}.md\:py-48{padding-top:12rem;padding-bottom:12rem}.md\:text-3xl{font-size:1.875rem;line-height:2.25rem}.md\:text-4xl{font-size:2.25rem;line-height:2.5rem}.md\:text-5xl{font-size:3rem;line-height:1}.md\:text-6xl{font-size:3.75rem;line-height:1}.md\:text-7xl{font-size:4.5rem;line-height:1}.md\:text-8xl{font-size:6rem;line-height:1}.md\:text-base{font-size:1rem;line-height:1.5rem}.md\:text-lg{font-size:1.125rem;line-height:1.75rem}.md\:text-sm{font-size:.875rem;line-height:1.25rem}.md\:text-xl{font-size:1.25rem;line-height:1.75rem}}@media (width>=1024px){.lg\:col-span-4{grid-column:span 4/span 4}.lg\:col-span-8{grid-column:span 8/span 8}.lg\:block{display:block}.lg\:grid-cols-12{grid-template-columns:repeat(12,minmax(0,1fr))}.lg\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.lg\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.lg\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}.lg\:text-6xl{font-size:3.75rem;line-height:1}.lg\:text-8xl{font-size:6rem;line-height:1}}@media print{.print\:col-span-4{grid-column:span 4/span 4}.print\:col-span-8{grid-column:span 8/span 8}.print\:my-0{margin-top:0;margin-bottom:0}.print\:hidden{display:none}.print\:pb-0{padding-bottom:0}.print\:shadow-none{--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;box-shadow:var(--tw-ring-offset-shadow,0 0 #0000), var(--tw-ring-shadow,0 0 #0000), var(--tw-shadow)}}
+    <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Crect%20width='100'%20height='100'%20rx='20'%20fill='%230a0a0a'/%3E%3Ctext%20x='50%25'%20y='50%25'%20dominant-baseline='middle'%20text-anchor='middle'%20font-size='65'%20font-weight='bold'%20fill='white'%20font-family='sans-serif'%3EF%3C/text%3E%3C/svg%3E">
+    
+
+    <!-- Performance & SEO -->
+    <meta name="theme-color" content="#0a0a0a">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
+<style>*,:before,:after,::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:#3b82f680;--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }*,:before,:after{box-sizing:border-box;border:0 solid #e5e7eb}:before,:after{--tw-content:""}html,:host{-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent;font-family:Inter,sans-serif;line-height:1.5}body{line-height:inherit;margin:0}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;-webkit-text-decoration:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,samp,pre{font-feature-settings:normal;font-variation-settings:normal;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-size:1em}small{font-size:80%}sub,sup{vertical-align:baseline;font-size:75%;line-height:0;position:relative}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-feature-settings:inherit;font-variation-settings:inherit;font-family:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:#0000;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button{height:auto}::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dl,dd,h1,h2,h3,h4,h5,h6,hr,figure,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}ol,ul,menu{margin:0;padding:0;list-style:none}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder{opacity:1;color:#9ca3af}textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::-moz-placeholder, textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}button,[role=button]{cursor:pointer}:disabled{cursor:default}img,svg,video,canvas,audio,iframe,embed,object{vertical-align:middle;display:block}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}body{--tw-bg-opacity:1;background-color:rgb(248 250 252/var(--tw-bg-opacity,1));--tw-text-opacity:1;color:rgb(51 65 85/var(--tw-text-opacity,1));-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-family:Inter,sans-serif;overflow-x:hidden}.container{width:100%}@media (width>=640px){.container{max-width:640px}}@media (width>=768px){.container{max-width:768px}}@media (width>=1024px){.container{max-width:1024px}}@media (width>=1280px){.container{max-width:1280px}}@media (width>=1536px){.container{max-width:1536px}}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0}.-left-\[41px\]{left:-41px}.-left-\[45px\]{left:-45px}.bottom-0{bottom:0}.bottom-1\/4{bottom:25%}.bottom-6{bottom:1.5rem}.left-0{left:0}.left-1\/4{left:25%}.right-0{right:0}.right-1\/4{right:25%}.right-4{right:1rem}.right-6{right:1.5rem}.top-0{top:0}.top-1{top:.25rem}.top-1\.5{top:.375rem}.top-1\/4{top:25%}.top-4{top:1rem}.-z-10{z-index:-10}.z-0{z-index:0}.z-10{z-index:10}.z-50{z-index:50}.col-span-12{grid-column:span 12/span 12}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:.25rem}.mb-1\.5{margin-bottom:.375rem}.mb-10{margin-bottom:2.5rem}.mb-12{margin-bottom:3rem}.mb-2{margin-bottom:.5rem}.mb-3{margin-bottom:.75rem}.mb-4{margin-bottom:1rem}.mb-5{margin-bottom:1.25rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.ml-1{margin-left:.25rem}.ml-3{margin-left:.75rem}.ml-4{margin-left:1rem}.ml-6{margin-left:1.5rem}.mr-1{margin-right:.25rem}.mr-2{margin-right:.5rem}.mt-0\.5{margin-top:.125rem}.mt-1{margin-top:.25rem}.mt-1\.5{margin-top:.375rem}.mt-12{margin-top:3rem}.mt-16{margin-top:4rem}.mt-2{margin-top:.5rem}.mt-20{margin-top:5rem}.mt-4{margin-top:1rem}.mt-8{margin-top:2rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.contents{display:contents}.hidden{display:none}.h-1\.5{height:.375rem}.h-10{height:2.5rem}.h-12{height:3rem}.h-16{height:4rem}.h-2{height:.5rem}.h-3{height:.75rem}.h-5{height:1.25rem}.h-56{height:14rem}.h-8{height:2rem}.h-\[200px\]{height:200px}.h-\[250px\]{height:250px}.h-\[400px\]{height:400px}.h-\[40vh\]{height:40vh}.h-\[500px\]{height:500px}.h-\[600px\]{height:600px}.min-h-\[100svh\]{min-height:100svh}.min-h-\[297mm\]{min-height:297mm}.min-h-\[90vh\]{min-height:90vh}.min-h-screen{min-height:100vh}.w-10{width:2.5rem}.w-12{width:3rem}.w-16{width:4rem}.w-3{width:.75rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-8{width:2rem}.w-\[200px\]{width:200px}.w-\[250px\]{width:250px}.w-\[28\%\]{width:28%}.w-\[400px\]{width:400px}.w-\[600px\]{width:600px}.w-\[72\%\]{width:72%}.w-fit{width:-moz-fit-content;width:fit-content}.w-full{width:100%}.min-w-\[240px\]{min-width:240px}.max-w-2xl{max-width:42rem}.max-w-4xl{max-width:56rem}.max-w-5xl{max-width:64rem}.max-w-\[1600px\]{max-width:1600px}.max-w-\[210mm\]{max-width:210mm}.max-w-md{max-width:28rem}.max-w-xl{max-width:36rem}.flex-1{flex:1}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes ping{75%,to{opacity:0;transform:scale(2)}}.animate-ping{animation:1s cubic-bezier(0,0,.2,1) infinite ping}.cursor-default{cursor:default}.cursor-pointer{cursor:pointer}.list-outside{list-style-position:outside}.list-disc{list-style-type:disc}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}.grid-cols-12{grid-template-columns:repeat(12,minmax(0,1fr))}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-12{gap:3rem}.gap-16{gap:4rem}.gap-2{gap:.5rem}.gap-3{gap:.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.gap-x-4{-moz-column-gap:1rem;column-gap:1rem}.space-y-1>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.25rem * var(--tw-space-y-reverse))}.space-y-1\.5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.375rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.375rem * var(--tw-space-y-reverse))}.space-y-10>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(2.5rem * var(--tw-space-y-reverse))}.space-y-12>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(3rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(3rem * var(--tw-space-y-reverse))}.space-y-16>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(4rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(4rem * var(--tw-space-y-reverse))}.space-y-2>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.5rem * var(--tw-space-y-reverse))}.space-y-3>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.75rem * var(--tw-space-y-reverse))}.space-y-4>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-6>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-x-hidden{overflow-x:hidden}.scroll-smooth{scroll-behavior:smooth}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:.5rem}.rounded-md{border-radius:.375rem}.rounded-xl{border-radius:.75rem}.border{border-width:1px}.border-2{border-width:2px}.border-4{border-width:4px}.border-b{border-bottom-width:1px}.border-l-2{border-left-width:2px}.border-r{border-right-width:1px}.border-t{border-top-width:1px}.border-accent{--tw-border-opacity:1;border-color:rgb(59 130 246/var(--tw-border-opacity,1))}.border-accent\/20{border-color:#3b82f633}.border-accent\/30{border-color:#3b82f64d}.border-gray-100{--tw-border-opacity:1;border-color:rgb(243 244 246/var(--tw-border-opacity,1))}.border-gray-200{--tw-border-opacity:1;border-color:rgb(229 231 235/var(--tw-border-opacity,1))}.border-indigo-100{--tw-border-opacity:1;border-color:rgb(224 231 255/var(--tw-border-opacity,1))}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240/var(--tw-border-opacity,1))}.border-slate-300{--tw-border-opacity:1;border-color:rgb(203 213 225/var(--tw-border-opacity,1))}.border-white{--tw-border-opacity:1;border-color:rgb(255 255 255/var(--tw-border-opacity,1))}.border-white\/10{border-color:#ffffff1a}.border-white\/20{border-color:#fff3}.border-white\/5{border-color:#ffffff0d}.bg-accent{--tw-bg-opacity:1;background-color:rgb(59 130 246/var(--tw-bg-opacity,1))}.bg-accent\/10{background-color:#3b82f61a}.bg-black\/30{background-color:#0000004d}.bg-blue-100{--tw-bg-opacity:1;background-color:rgb(219 234 254/var(--tw-bg-opacity,1))}.bg-blue-600{--tw-bg-opacity:1;background-color:rgb(37 99 235/var(--tw-bg-opacity,1))}.bg-emerald-100{--tw-bg-opacity:1;background-color:rgb(209 250 229/var(--tw-bg-opacity,1))}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246/var(--tw-bg-opacity,1))}.bg-gray-200{--tw-bg-opacity:1;background-color:rgb(229 231 235/var(--tw-bg-opacity,1))}.bg-gray-300{--tw-bg-opacity:1;background-color:rgb(209 213 219/var(--tw-bg-opacity,1))}.bg-indigo-50{--tw-bg-opacity:1;background-color:rgb(238 242 255/var(--tw-bg-opacity,1))}.bg-orange-100{--tw-bg-opacity:1;background-color:rgb(255 237 213/var(--tw-bg-opacity,1))}.bg-purple-100{--tw-bg-opacity:1;background-color:rgb(243 232 255/var(--tw-bg-opacity,1))}.bg-purple-600{--tw-bg-opacity:1;background-color:rgb(147 51 234/var(--tw-bg-opacity,1))}.bg-purple-600\/5{background-color:#9333ea0d}.bg-slate-100{--tw-bg-opacity:1;background-color:rgb(241 245 249/var(--tw-bg-opacity,1))}.bg-slate-200{--tw-bg-opacity:1;background-color:rgb(226 232 240/var(--tw-bg-opacity,1))}.bg-slate-400{--tw-bg-opacity:1;background-color:rgb(148 163 184/var(--tw-bg-opacity,1))}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252/var(--tw-bg-opacity,1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.from-accent{--tw-gradient-from:#3b82f6 var(--tw-gradient-from-position);--tw-gradient-to:#3b82f600 var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-slate-800{--tw-gradient-from:#1e293b var(--tw-gradient-from-position);--tw-gradient-to:#1e293b00 var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-indigo-600{--tw-gradient-to:#4f46e500 var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #4f46e5 var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-purple-500{--tw-gradient-to:#a855f7 var(--tw-gradient-to-position)}.to-purple-600{--tw-gradient-to:#9333ea var(--tw-gradient-to-position)}.object-cover{-o-object-fit:cover;object-fit:cover}.p-10{padding:2.5rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-10{padding-left:2.5rem;padding-right:2.5rem}.px-3{padding-left:.75rem;padding-right:.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.py-1\.5{padding-top:.375rem;padding-bottom:.375rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.py-2\.5{padding-top:.625rem;padding-bottom:.625rem}.py-20{padding-top:5rem;padding-bottom:5rem}.py-24{padding-top:6rem;padding-bottom:6rem}.py-3{padding-top:.75rem;padding-bottom:.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-8{padding-top:2rem;padding-bottom:2rem}.pb-1{padding-bottom:.25rem}.pb-10{padding-bottom:2.5rem}.pb-12{padding-bottom:3rem}.pb-2{padding-bottom:.5rem}.pb-20{padding-bottom:5rem}.pb-8{padding-bottom:2rem}.pl-10{padding-left:2.5rem}.pl-8{padding-left:2rem}.pt-1{padding-top:.25rem}.pt-16{padding-top:4rem}.pt-2{padding-top:.5rem}.pt-24{padding-top:6rem}.pt-32{padding-top:8rem}.pt-4{padding-top:1rem}.pt-8{padding-top:2rem}.text-center{text-align:center}.text-right{text-align:right}.text-justify{text-align:justify}.font-display{font-family:Outfit,sans-serif}.font-sans{font-family:Inter,sans-serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-\[10px\]{font-size:10px}.text-\[11\.5px\]{font-size:11.5px}.text-\[11px\]{font-size:11px}.text-\[18px\]{font-size:18px}.text-\[32px\]{font-size:32px}.text-\[42px\]{font-size:42px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:.75rem;line-height:1rem}.font-bold{font-weight:700}.font-light{font-weight:300}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-none{line-height:1}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-tight{letter-spacing:-.025em}.tracking-wide{letter-spacing:.025em}.tracking-wider{letter-spacing:.05em}.tracking-widest{letter-spacing:.1em}.text-accent{--tw-text-opacity:1;color:rgb(59 130 246/var(--tw-text-opacity,1))}.text-blue-600{--tw-text-opacity:1;color:rgb(37 99 235/var(--tw-text-opacity,1))}.text-emerald-600{--tw-text-opacity:1;color:rgb(5 150 105/var(--tw-text-opacity,1))}.text-emerald-700{--tw-text-opacity:1;color:rgb(4 120 87/var(--tw-text-opacity,1))}.text-gray-300{--tw-text-opacity:1;color:rgb(209 213 219/var(--tw-text-opacity,1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175/var(--tw-text-opacity,1))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128/var(--tw-text-opacity,1))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99/var(--tw-text-opacity,1))}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81/var(--tw-text-opacity,1))}.text-gray-800{--tw-text-opacity:1;color:rgb(31 41 55/var(--tw-text-opacity,1))}.text-green-500{--tw-text-opacity:1;color:rgb(34 197 94/var(--tw-text-opacity,1))}.text-orange-600{--tw-text-opacity:1;color:rgb(234 88 12/var(--tw-text-opacity,1))}.text-primary{--tw-text-opacity:1;color:rgb(10 10 10/var(--tw-text-opacity,1))}.text-purple-600{--tw-text-opacity:1;color:rgb(147 51 234/var(--tw-text-opacity,1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225/var(--tw-text-opacity,1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184/var(--tw-text-opacity,1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139/var(--tw-text-opacity,1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105/var(--tw-text-opacity,1))}.text-slate-700{--tw-text-opacity:1;color:rgb(51 65 85/var(--tw-text-opacity,1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59/var(--tw-text-opacity,1))}.text-slate-900{--tw-text-opacity:1;color:rgb(15 23 42/var(--tw-text-opacity,1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.opacity-20{opacity:.2}.opacity-30{opacity:.3}.opacity-50{opacity:.5}.mix-blend-screen{mix-blend-mode:screen}.shadow{--tw-shadow:0 1px 3px 0 #0000001a, 0 1px 2px -1px #0000001a;--tw-shadow-colored:0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000), var(--tw-ring-shadow,0 0 #0000), var(--tw-shadow)}.shadow-2xl{--tw-shadow:0 25px 50px -12px #00000040;--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000), var(--tw-ring-shadow,0 0 #0000), var(--tw-shadow)}.shadow-\[0_0_10px_rgba\(59\,130\,246\,0\.5\)\]{--tw-shadow:0 0 10px #3b82f680;--tw-shadow-colored:0 0 10px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000), var(--tw-ring-shadow,0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px #0000001a, 0 4px 6px -4px #0000001a;--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000), var(--tw-ring-shadow,0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 #0000000d;--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000), var(--tw-ring-shadow,0 0 #0000), var(--tw-shadow)}.blur-\[100px\]{--tw-blur:blur(100px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.blur-\[120px\]{--tw-blur:blur(120px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.grayscale{--tw-grayscale:grayscale(100%);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-duration:.15s;transition-timing-function:cubic-bezier(.4,0,.2,1)}.transition-all{transition-property:all;transition-duration:.15s;transition-timing-function:cubic-bezier(.4,0,.2,1)}.transition-colors{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-duration:.15s;transition-timing-function:cubic-bezier(.4,0,.2,1)}.transition-transform{transition-property:transform;transition-duration:.15s;transition-timing-function:cubic-bezier(.4,0,.2,1)}.duration-200{transition-duration:.2s}.duration-300{transition-duration:.3s}.duration-500{transition-duration:.5s}::-webkit-scrollbar{width:8px}::-webkit-scrollbar-track{background:#f1f5f9}::-webkit-scrollbar-thumb{background:#cbd5e1;border-radius:4px}::-webkit-scrollbar-thumb:hover{background:#94a3b8}.glass{-webkit-backdrop-filter:blur(10px);background:#171717b3;border:1px solid #ffffff0d}.glass-light{-webkit-backdrop-filter:blur(10px);background:#ffffffb3;border:1px solid #0000000d;box-shadow:0 4px 30px #0000000d}.hover-glow:hover{box-shadow:0 0 20px #3b82f64d}.text-gradient{background:linear-gradient(90deg,#3b82f6,#8b5cf6);-webkit-text-fill-color:transparent;-webkit-background-clip:text;background-clip:text}@media print{@page{margin:1cm;size:A4 portrait}body,html{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important;background-color:#fff!important;font-size:11px!important;line-height:1.3!important}nav,footer,.hero-image,.print\:hidden,button,[onclick="window.print()"]{display:none!important}*{box-shadow:none!important;text-shadow:none!important;transition:none!important;animation:none!important}body>div,main,section{margin-left:0!important;margin-right:0!important;padding:1rem 0!important}.max-w-\[1600px\]{max-width:100%!important}.mx-auto{margin-left:0!important;margin-right:0!important}section.relative.w-full.min-h-\[90vh\]{min-height:auto!important;margin-bottom:2rem!important;display:block!important}.hero-text{text-align:left!important}h1{margin-bottom:.5rem!important;font-size:2.2rem!important;line-height:1!important}.text-gradient{display:block;-webkit-text-fill-color:#1e293b!important;color:#1e293b!important;background:0 0!important;margin-bottom:1rem!important;font-size:1.5rem!important}.max-w-xl{max-width:100%!important}.grid.grid-cols-1.lg\:grid-cols-12{width:100%!important;display:block!important}.grid.grid-cols-1.lg\:grid-cols-12:after{content:"";clear:both;display:table}#experience{float:left!important;width:62%!important;display:block!important}#experience+div{float:right!important;width:34%!important;margin-top:0!important;display:block!important}.space-y-16>:not([hidden])~:not([hidden]){margin-top:1.25rem!important}.job-card{-moz-column-break-inside:avoid!important;break-inside:avoid!important;page-break-inside:avoid!important;border:none!important;margin-bottom:1rem!important;padding:0!important}h3.font-display.text-2xl{font-size:1.2rem!important}h4.text-lg{margin-bottom:.25rem!important;font-size:1rem!important}.text-sm{font-size:.85rem!important}.text-xs{font-size:.75rem!important}.border-l-2{border-left-width:1px!important;margin-left:.5rem!important;padding-left:1rem!important}.absolute.-left-\[45px\]{width:8px!important;height:8px!important;left:-19px!important}.space-y-12>:not([hidden])~:not([hidden]){margin-top:1rem!important}.glass-light{box-shadow:none!important;-moz-column-break-inside:avoid!important;break-inside:avoid!important;border:1px solid #e2e8f0!important;border-radius:6px!important;padding:.75rem!important}.mb-6{margin-bottom:.75rem!important}.gap-4{gap:.5rem!important}section.w-full.bg-white.border-t.border-slate-200.py-20{border-top:none!important;margin-top:1rem!important}.grid-cols-1.sm\:grid-cols-2.md\:grid-cols-3.lg\:grid-cols-4{flex-wrap:wrap!important;gap:.5rem!important;display:flex!important}.cert-card{-moz-column-break-inside:avoid!important;break-inside:avoid!important;width:calc(33% - .5rem)!important;padding:.5rem!important}.w-10,.h-10,.w-12,.h-12{width:1.5rem!important;height:1.5rem!important;margin-bottom:.25rem!important;font-size:.85rem!important}}.marker\:text-accent ::marker{color:#3b82f6}.marker\:text-gray-400 ::marker{color:#9ca3af}.marker\:text-accent::marker{color:#3b82f6}.marker\:text-gray-400::marker{color:#9ca3af}.selection\:bg-accent ::-moz-selection{--tw-bg-opacity:1;background-color:rgb(59 130 246/var(--tw-bg-opacity,1))}.selection\:bg-accent ::selection{--tw-bg-opacity:1;background-color:rgb(59 130 246/var(--tw-bg-opacity,1))}.selection\:text-white ::-moz-selection{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.selection\:text-white ::selection{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.selection\:bg-accent::-moz-selection{--tw-bg-opacity:1;background-color:rgb(59 130 246/var(--tw-bg-opacity,1))}.selection\:bg-accent::selection{--tw-bg-opacity:1;background-color:rgb(59 130 246/var(--tw-bg-opacity,1))}.selection\:text-white::-moz-selection{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.selection\:text-white::selection{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.hover\:-translate-y-0\.5:hover{--tw-translate-y:-.125rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:-translate-y-2:hover{--tw-translate-y:-.5rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:scale-105:hover{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:border-accent:hover{--tw-border-opacity:1;border-color:rgb(59 130 246/var(--tw-border-opacity,1))}.hover\:bg-accent:hover{--tw-bg-opacity:1;background-color:rgb(59 130 246/var(--tw-bg-opacity,1))}.hover\:bg-accentDark:hover{--tw-bg-opacity:1;background-color:rgb(37 99 235/var(--tw-bg-opacity,1))}.hover\:bg-blue-700:hover{--tw-bg-opacity:1;background-color:rgb(29 78 216/var(--tw-bg-opacity,1))}.hover\:bg-gray-300:hover{--tw-bg-opacity:1;background-color:rgb(209 213 219/var(--tw-bg-opacity,1))}.hover\:bg-indigo-700:hover{--tw-bg-opacity:1;background-color:rgb(67 56 202/var(--tw-bg-opacity,1))}.hover\:bg-slate-200:hover{--tw-bg-opacity:1;background-color:rgb(226 232 240/var(--tw-bg-opacity,1))}.hover\:bg-slate-50:hover{--tw-bg-opacity:1;background-color:rgb(248 250 252/var(--tw-bg-opacity,1))}.hover\:bg-white:hover{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))}.hover\:text-accent:hover{--tw-text-opacity:1;color:rgb(59 130 246/var(--tw-text-opacity,1))}.hover\:text-emerald-500:hover{--tw-text-opacity:1;color:rgb(16 185 129/var(--tw-text-opacity,1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.hover\:opacity-80:hover{opacity:.8}.hover\:shadow-xl:hover{--tw-shadow:0 20px 25px -5px #0000001a, 0 8px 10px -6px #0000001a;--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000), var(--tw-ring-shadow,0 0 #0000), var(--tw-shadow)}.hover\:grayscale-0:hover{--tw-grayscale:grayscale(0);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.group:hover .group-hover\:bg-accent\/10{background-color:#3b82f61a}.group:hover .group-hover\:bg-emerald-50{--tw-bg-opacity:1;background-color:rgb(236 253 245/var(--tw-bg-opacity,1))}.group:hover .group-hover\:bg-indigo-50{--tw-bg-opacity:1;background-color:rgb(238 242 255/var(--tw-bg-opacity,1))}.group:hover .group-hover\:text-accent{--tw-text-opacity:1;color:rgb(59 130 246/var(--tw-text-opacity,1))}@media (width>=640px){.sm\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.sm\:flex-row{flex-direction:row}.sm\:items-baseline{align-items:baseline}.sm\:justify-between{justify-content:space-between}}@media (width>=768px){.md\:col-span-4{grid-column:span 4/span 4}.md\:col-span-8{grid-column:span 8/span 8}.md\:ml-2{margin-left:.5rem}.md\:mt-0{margin-top:0}.md\:mt-24{margin-top:6rem}.md\:block{display:block}.md\:flex{display:flex}.md\:h-24{height:6rem}.md\:h-\[400px\]{height:400px}.md\:h-\[500px\]{height:500px}.md\:h-\[60vh\]{height:60vh}.md\:w-24{width:6rem}.md\:w-\[400px\]{width:400px}.md\:w-\[500px\]{width:500px}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.md\:flex-row{flex-direction:row}.md\:items-center{align-items:center}.md\:px-12{padding-left:3rem;padding-right:3rem}.md\:px-24{padding-left:6rem;padding-right:6rem}.md\:px-8{padding-left:2rem;padding-right:2rem}.md\:py-32{padding-top:8rem;padding-bottom:8rem}.md\:py-4{padding-top:1rem;padding-bottom:1rem}.md\:py-48{padding-top:12rem;padding-bottom:12rem}.md\:text-3xl{font-size:1.875rem;line-height:2.25rem}.md\:text-4xl{font-size:2.25rem;line-height:2.5rem}.md\:text-5xl{font-size:3rem;line-height:1}.md\:text-6xl{font-size:3.75rem;line-height:1}.md\:text-7xl{font-size:4.5rem;line-height:1}.md\:text-8xl{font-size:6rem;line-height:1}.md\:text-base{font-size:1rem;line-height:1.5rem}.md\:text-lg{font-size:1.125rem;line-height:1.75rem}.md\:text-sm{font-size:.875rem;line-height:1.25rem}.md\:text-xl{font-size:1.25rem;line-height:1.75rem}}@media (width>=1024px){.lg\:col-span-4{grid-column:span 4/span 4}.lg\:col-span-8{grid-column:span 8/span 8}.lg\:block{display:block}.lg\:grid-cols-12{grid-template-columns:repeat(12,minmax(0,1fr))}.lg\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.lg\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.lg\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}.lg\:text-6xl{font-size:3.75rem;line-height:1}.lg\:text-8xl{font-size:6rem;line-height:1}}@media print{.print\:col-span-4{grid-column:span 4/span 4}.print\:col-span-8{grid-column:span 8/span 8}.print\:my-0{margin-top:0;margin-bottom:0}.print\:hidden{display:none}.print\:pb-0{padding-bottom:0}.print\:shadow-none{--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;box-shadow:var(--tw-ring-offset-shadow,0 0 #0000), var(--tw-ring-shadow,0 0 #0000), var(--tw-shadow)}}
 </style>
+  <link rel="stylesheet" crossorigin href="./assets/editorial-NztferLu.css">
 </head>
 
-<body class="bg-slate-50 text-slate-700 w-full overflow-x-hidden selection:bg-accent selection:text-white">
+<body>
 
-    <!-- Navigation/Header -->
-    <nav class="fixed top-0 w-full z-50 print:hidden glass-light border-b border-slate-200 py-4 px-6 md:px-12 flex justify-between items-center transition-all">
-        <a href="index.html" class="font-display font-bold text-2xl text-slate-900 tracking-wide hover:opacity-80 transition cursor-pointer">
-            Fabián<span class="text-accent">Flores</span>
-        </a>
+    <!-- Navigation -->
+    <nav class="editorial-nav">
+        <a href="index.html" class="nav-logo">Fabián<span>Flores</span></a>
         
-        <!-- Hamburger Button -->
-        <button id="mobile-menu-btn" class="md:hidden text-slate-700 hover:text-accent focus:outline-none transition-colors" aria-label="Toggle Menu">
-            <i class="fas fa-bars text-xl"></i>
+        <button id="mobile-menu-btn" class="mobile-btn" aria-label="Toggle Menu">
+            <i class="fas fa-bars"></i>
         </button>
 
-        <!-- Desktop Menu -->
-        <div class="hidden md:flex gap-6 text-sm font-medium items-center">
-            <a href="tel:+522223441091" class="hover:text-accent transition">+52 222 344 1091</a>
-            <a href="mailto:fabianfloram@gmail.com" class="hover:text-accent transition">fabianfloram@gmail.com</a>
-            <a href="https://www.linkedin.com/in/fabian-f-71858b209" target="_blank" class="hover:text-accent transition">LinkedIn</a>
-            <span class="text-slate-300">|</span>
-            <a href="proyectos.html" class="hover:text-accent transition">Proyectos Web</a>
-            <a href="diseno.html" class="hover:text-accent transition">Diseño Gráfico</a>
-            <a href="ux-ui.html" class="hover:text-accent transition">UX/UI</a>
-            <span class="text-slate-300">|</span>
-            <a href="index-en.html" class="text-emerald-600 hover:text-emerald-500 transition">English</a>
+        <div class="nav-links">
+            <a href="tel:+522223441091" title="+52 222 344 1091" style="font-size: 1.1rem;"><i class="fas fa-phone"></i></a>
+            <a href="mailto:fabianfloram@gmail.com" title="fabianfloram@gmail.com" style="font-size: 1.1rem;"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/fabian-f-71858b209" target="_blank" title="LinkedIn" style="font-size: 1.1rem;"><i class="fab fa-linkedin"></i></a>
+            <div class="nav-separator"></div>
+            <a href="proyectos.html">Proyectos Web</a>
+            <a href="ux-ui.html">UX/UI</a>
+            <a href="diseno.html">Diseño Gráfico</a>
+            <div class="nav-separator"></div>
+            <a href="index-en.html" class="nav-lang">English</a>
         </div>
 
-        <!-- Mobile Menu Dropdown -->
-        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-md border-b border-slate-200 py-6 px-6 flex flex-col gap-4 shadow-lg transition-all duration-300">
-            <a href="tel:+522223441091" class="hover:text-accent transition py-2 border-b border-slate-100 flex items-center gap-2"><i class="fas fa-phone text-xs"></i> +52 222 344 1091</a>
-            <a href="mailto:fabianfloram@gmail.com" class="hover:text-accent transition py-2 border-b border-slate-100 flex items-center gap-2"><i class="fas fa-envelope text-xs"></i> fabianfloram@gmail.com</a>
-            <a href="https://www.linkedin.com/in/fabian-f-71858b209" target="_blank" class="hover:text-accent transition py-2 border-b border-slate-100 flex items-center gap-2"><i class="fab fa-linkedin text-xs"></i> LinkedIn</a>
-            <a href="proyectos.html" class="hover:text-accent transition py-2 border-b border-slate-100 flex items-center gap-2"><i class="fas fa-laptop-code text-xs"></i> Proyectos Web</a>
-            <a href="diseno.html" class="hover:text-accent transition py-2 border-b border-slate-100 flex items-center gap-2"><i class="fas fa-palette text-xs"></i> Diseño Gráfico</a>
-            <a href="ux-ui.html" class="hover:text-accent transition py-2 border-b border-slate-100 flex items-center gap-2"><i class="fas fa-drafting-compass text-xs"></i> UX/UI</a>
-            <a href="index-en.html" class="text-emerald-600 hover:text-emerald-500 transition py-2 flex items-center gap-2"><i class="fas fa-globe text-xs"></i> English</a>
+        <div id="mobile-menu" class="editorial-mobile-menu" style="top: 100%; z-index: 9999;">
+            <a href="tel:+522223441091"><i class="fas fa-phone"></i> +52 222 344 1091</a>
+            <a href="mailto:fabianfloram@gmail.com"><i class="fas fa-envelope"></i> fabianfloram@gmail.com</a>
+            <a href="https://www.linkedin.com/in/fabian-f-71858b209" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="proyectos.html"><i class="fas fa-laptop-code"></i> Proyectos Web</a>
+            <a href="ux-ui.html"><i class="fas fa-drafting-compass"></i> UX/UI</a>
+            <a href="diseno.html"><i class="fas fa-palette"></i> Diseño Gráfico</a>
+            <a href="index-en.html"><i class="fas fa-globe"></i> English</a>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="relative w-full min-h-[90vh] flex items-center px-6 md:px-24 pt-24 pb-12 overflow-hidden bg-white">
-        <!-- Background Effects -->
-        <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-accent/10 rounded-full blur-[120px] -z-10 pointer-events-none print:hidden"></div>
-        <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-purple-600/5 rounded-full blur-[100px] -z-10 pointer-events-none print:hidden"></div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full max-w-[1600px] mx-auto">
-            <div class="space-y-6">
-                <div class="hero-text flex flex-wrap gap-3 mb-4">
-                    <span class="inline-block px-4 py-1.5 rounded-full border border-accent/30 bg-accent/10 text-accent text-sm font-medium">
-                        <i class="fas fa-rocket mr-1"></i> Disponible para nuevos retos
-                    </span>
-                    <span class="inline-block px-4 py-1.5 rounded-full border border-slate-200 bg-slate-100 text-slate-600 text-sm font-medium">
-                        <i class="fas fa-map-marker-alt text-accent mr-1"></i> Ciudad de México
-                    </span>
-                </div>
-                <h1 class="hero-text font-display text-5xl md:text-6xl font-bold text-slate-900 leading-tight">
-                    Diseñador Web <br />
-                    <span class="text-gradient text-3xl md:text-4xl mt-2 block">con especialidad en Marketing Digital</span>
-                </h1>
-                <p class="hero-text text-lg text-slate-600 max-w-xl leading-relaxed">
-                    Comunicador Visual y Desarrollador Front-End especializado en crear experiencias web responsivas, intuitivas y de alto rendimiento. Experto en transformar diseños complejos en código limpio y optimizar para SEO y UX.
-                </p>
-                <div class="hero-text flex flex-wrap gap-4 pt-4 print:hidden">
-                    <a href="cv-impresion.html" class="px-8 py-4 bg-accent hover:bg-accentDark text-white rounded-lg font-medium transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5 flex items-center gap-2">
-                        <i class="fas fa-file-pdf"></i> Descargar PDF
-                    </a>
-                    <a href="#experience" class="px-8 py-4 bg-white border border-slate-200 text-slate-700 rounded-lg font-medium hover:bg-slate-50 transition-all flex items-center gap-2 shadow-sm">
-                        Ver Experiencia <i class="fas fa-arrow-down"></i>
-                    </a>
-                </div>
+    <section id="vanta-hero" class="editorial-hero editorial-hero--dark">
+        <a href="https://www.linkedin.com/in/fabian-f-71858b209" target="_blank" class="hero-arrow no-print" title="LinkedIn">↗</a>
+        <div class="hero-inner">
+            <span class="hero-year">2026</span>
+            <h1 class="hero-title hero-text">Port—<br>folio</h1>
+            <p class="hero-subtitle hero-text">Estratega Digital y Desarrollador Front-End Senior especializado en crear experiencias web responsivas y de alto rendimiento. Fusiono diseño UX/UI avanzado con estrategias de SEO Técnico, creación de contenido y campañas de pago (Google Ads) para maximizar la conversión y el alcance de marca.</p>
+            <div class="hero-meta hero-text">
+                <span class="hero-tag"><i class="fas fa-rocket"></i> Disponible para liderar proyectos</span>
+                <span class="hero-tag"><i class="fas fa-map-marker-alt"></i> Ciudad de México</span>
+                <a href="assets/CV_Fabian_Flores.pdf" download="CV_Fabian_Flores.pdf" target="_blank" class="editorial-btn"><i class="fas fa-file-pdf"></i> Descargar PDF</a>
             </div>
-            
-            <div class="hero-image relative hidden lg:block h-fit w-full rounded-2xl overflow-hidden glass-light border border-slate-200 p-8 flex flex-col justify-center shadow-lg">
-                 <h3 class="font-display text-2xl font-bold text-slate-900 mb-6">Tech Stack</h3>
-                 <div class="flex flex-wrap gap-3">
-                    <span class="flex items-center gap-2 px-3 py-2 bg-slate-100 border border-slate-200 text-slate-700 rounded-lg font-medium hover:bg-slate-200 transition cursor-default">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg" class="w-5 h-5" alt="Illustrator" decoding="async" loading="lazy"> Illustrator
-                    </span>
-                    <span class="flex items-center gap-2 px-3 py-2 bg-slate-100 border border-slate-200 text-slate-700 rounded-lg font-medium hover:bg-slate-200 transition cursor-default">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" class="w-5 h-5" alt="Photoshop" decoding="async" loading="lazy"> Photoshop
-                    </span>
-                    <span class="flex items-center gap-2 px-3 py-2 bg-slate-100 border border-slate-200 text-slate-700 rounded-lg font-medium hover:bg-slate-200 transition cursor-default">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Adobe_InDesign_CC_icon.svg" class="w-5 h-5" alt="InDesign" decoding="async" loading="lazy"> InDesign
-                    </span>
-                    <span class="flex items-center gap-2 px-3 py-2 bg-slate-100 border border-slate-200 text-slate-700 rounded-lg font-medium hover:bg-slate-200 transition cursor-default">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" class="w-4 h-5" alt="Figma" decoding="async" loading="lazy"> Figma
-                    </span>
-                    <span class="flex items-center gap-2 px-3 py-2 bg-slate-100 border border-slate-200 text-slate-700 rounded-lg font-medium hover:bg-slate-200 transition cursor-default">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" class="w-5 h-5" alt="JavaScript" decoding="async" loading="lazy"> JavaScript
-                    </span>
-                    <span class="flex items-center gap-2 px-3 py-2 bg-slate-100 border border-slate-200 text-slate-700 rounded-lg font-medium hover:bg-slate-200 transition cursor-default">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" class="w-5 h-5" alt="React" decoding="async" loading="lazy"> React
-                    </span>
-                    <span class="flex items-center gap-2 px-3 py-2 bg-slate-100 border border-slate-200 text-slate-700 rounded-lg font-medium hover:bg-slate-200 transition cursor-default">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" class="w-5 h-5" alt="HTML5" decoding="async" loading="lazy"> HTML5
-                    </span>
-                    <span class="flex items-center gap-2 px-3 py-2 bg-slate-100 border border-slate-200 text-slate-700 rounded-lg font-medium hover:bg-slate-200 transition cursor-default">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" class="w-5 h-5" alt="CSS3" decoding="async" loading="lazy"> CSS3
-                    </span>
-                    <span class="flex items-center gap-2 px-3 py-2 bg-slate-100 border border-slate-200 text-slate-700 rounded-lg font-medium hover:bg-slate-200 transition cursor-default">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" class="w-5 h-5" alt="Tailwind CSS" decoding="async" loading="lazy"> Tailwind CSS
-                    </span>
-                    <span class="flex items-center gap-2 px-3 py-2 bg-slate-100 border border-slate-200 text-slate-700 rounded-lg font-medium hover:bg-slate-200 transition cursor-default">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-plain.svg" class="w-5 h-5" alt="WordPress" decoding="async" loading="lazy"> WordPress
-                    </span>
-                    <span class="flex items-center gap-2 px-3 py-2 bg-slate-100 border border-slate-200 text-slate-700 rounded-lg font-medium hover:bg-slate-200 transition cursor-default">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" class="w-5 h-5" alt="Git" decoding="async" loading="lazy"> Git
-                    </span>
-                    <span class="flex items-center gap-2 px-3 py-2 bg-slate-100 border border-slate-200 text-slate-700 rounded-lg font-medium hover:bg-slate-200 transition cursor-default">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Google_Analytics_A_Logo.svg" class="w-5 h-5" alt="Google Analytics" decoding="async" loading="lazy"> Analytics
-                    </span>
-                    <span class="flex items-center gap-2 px-3 py-2 bg-slate-100 border border-slate-200 text-slate-700 rounded-lg font-medium hover:bg-slate-200 transition cursor-default">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Adobe_Premiere_Pro_CC_icon.svg" class="w-5 h-5" alt="Premiere Pro" decoding="async" loading="lazy"> Premiere Pro
-                    </span>
-                 </div>
-                 <div class="mt-8 pt-8 border-t border-slate-200">
-                    <h4 class="text-slate-500 text-sm mb-4 uppercase tracking-wider font-semibold">Idiomas</h4>
-                    <div class="space-y-4">
-                        <div>
-                            <div class="flex justify-between text-sm mb-1 text-slate-800 font-medium"><span>Español</span><span class="text-accent">Nativo</span></div>
-                            <div class="w-full bg-slate-200 rounded-full h-2"><div class="bg-gradient-to-r from-accent to-purple-500 h-2 rounded-full" style="width: 100%"></div></div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between text-sm mb-1 text-slate-800 font-medium"><span>Inglés</span><span class="text-accent">Profesional</span></div>
-                            <div class="w-full bg-slate-200 rounded-full h-2"><div class="bg-gradient-to-r from-accent to-purple-500 h-2 rounded-full" style="width: 80%"></div></div>
-                        </div>
-                    </div>
-                 </div>
-            </div>
+            <p class="hero-subtitle hero-text" style="margin-top: 0.5rem; font-size: 0.8rem; letter-spacing: 0.15em; text-transform: uppercase; color: #aaa;">UX/UI Design | Web Development | Performance Marketing | SEO Técnico</p>
         </div>
     </section>
 
-    <!-- Main Content 100% Width -->
-    <div class="w-full border-t border-slate-200 bg-slate-50">
-        <div class="w-full max-w-[1600px] mx-auto px-6 md:px-24 py-20 grid grid-cols-1 lg:grid-cols-12 gap-16">
-            
+
+    <!-- Experience & Skills Grid -->
+    <div class="editorial-section">
+        <div class="editorial-grid">
             <!-- Left Column: Experience -->
-            <div class="lg:col-span-8" id="experience">
-                <div class="flex items-center gap-4 mb-12">
-                    <div class="w-12 h-12 rounded-xl bg-accent/10 text-accent flex items-center justify-center text-xl shadow-sm">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <h2 class="font-display text-3xl font-bold text-slate-900">Experiencia Profesional</h2>
+            <div class="grid-main" id="experience">
+                <div class="section-header">
+                    <h2 class="section-title">Experiencia</h2>
+                    <span class="section-count">7 roles</span>
                 </div>
 
-                <div class="relative border-l-2 border-slate-200 ml-6 pl-10 space-y-16">
-                    
-                    <!-- Job 1 -->
-                    <div class="job-card relative">
-                        <div class="absolute -left-[45px] top-1.5 w-3 h-3 rounded-full bg-accent shadow-[0_0_10px_rgba(59,130,246,0.5)]"></div>
-                        <div class="absolute -left-[45px] top-1.5 w-3 h-3 rounded-full bg-accent animate-ping opacity-50"></div>
-                        
-                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
-                            <h3 class="font-display text-2xl font-bold text-slate-900">Front-end Senior & Marketing Creative</h3>
-                            <span class="text-sm font-semibold text-accent bg-accent/10 px-4 py-1.5 rounded-full border border-accent/20 mt-2 md:mt-0 inline-block w-fit">Ago 2024 - Oct 2025</span>
-                        </div>
-                        <h4 class="text-lg text-slate-600 font-semibold mb-4">B-Drive</h4>
-                        <ul class="space-y-3 text-slate-600">
-                            <li class="flex items-start gap-3"><i class="fas fa-check text-accent mt-1.5 text-xs"></i> <span>Desarrollo de interfaces web responsivas y landing pages de alta conversión.</span></li>
-                            <li class="flex items-start gap-3"><i class="fas fa-check text-accent mt-1.5 text-xs"></i> <span>Implementación pixel-perfect de diseños UX/UI con HTML5, CSS3 y JS.</span></li>
-                            <li class="flex items-start gap-3"><i class="fas fa-check text-accent mt-1.5 text-xs"></i> <span>Optimización de Core Web Vitals y SEO técnico para mejorar ranking.</span></li>
-                        </ul>
+                <!-- Job 1 -->
+                <div class="editorial-job">
+                    <div class="job-header">
+                        <h3 class="job-role">Front-end Senior & Marketing Creative</h3>
+                        <span class="job-date">Ago 2024 — Oct 2025</span>
                     </div>
+                    <p class="job-company">B-Drive</p>
+                    <ul class="job-list">
+                        <li>Liderazgo en el desarrollo de interfaces web responsivas y landing pages orientadas a alta conversión.</li>
+                        <li>Implementación pixel-perfect de diseños UX/UI utilizando HTML5, CSS3, JS y frameworks modernos.</li>
+                        <li>Gestión integral de estrategias de Performance Marketing, abarcando optimización de Core Web Vitals, SEO Técnico, SEO Linkbuilding y despliegue de Campañas Pagadas (Google Ads).</li>
+                    </ul>
+                </div>
 
-                    <!-- Job 2 -->
-                    <div class="job-card relative">
-                        <div class="absolute -left-[45px] top-1.5 w-3 h-3 rounded-full bg-slate-400 border-2 border-white"></div>
-                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
-                            <h3 class="font-display text-2xl font-bold text-slate-900">Líder de Proyectos Digitales</h3>
-                            <span class="text-sm font-semibold text-slate-600 bg-slate-200 px-4 py-1.5 rounded-full border border-slate-300 mt-2 md:mt-0 inline-block w-fit">Oct 2023 - Jul 2024</span>
-                        </div>
-                        <h4 class="text-lg text-slate-600 font-semibold mb-4">Lapi Laboratorio Médico</h4>
-                        <ul class="space-y-3 text-slate-600">
-                            <li class="flex items-start gap-3"><i class="fas fa-arrow-right text-slate-400 mt-1.5 text-xs"></i> <span>Gestión de ciclo de vida de proyectos digitales y coordinación de equipos dev/design.</span></li>
-                            <li class="flex items-start gap-3"><i class="fas fa-arrow-right text-slate-400 mt-1.5 text-xs"></i> <span>Análisis de KPIs y métricas para optimización de estrategias digitales.</span></li>
-                        </ul>
+                <!-- Job 2 -->
+                <div class="editorial-job">
+                    <div class="job-header">
+                        <h3 class="job-role">Líder de Proyectos Digitales</h3>
+                        <span class="job-date">Oct 2023 — Jul 2024</span>
                     </div>
+                    <p class="job-company">Lapi Laboratorio Médico</p>
+                    <ul class="job-list">
+                        <li>Gestión de todo el ciclo de vida de proyectos digitales, coordinando equipos multidisciplinarios de desarrollo y diseño.</li>
+                        <li>Análisis profundo de KPIs y métricas para la optimización de estrategias digitales y toma de decisiones basada en datos.</li>
+                        <li>Dirección de la creación de contenidos optimizados para SEO y supervisión de campañas en medios digitales.</li>
+                    </ul>
+                </div>
 
-                    <!-- Job 3 -->
-                    <div class="job-card relative">
-                        <div class="absolute -left-[45px] top-1.5 w-3 h-3 rounded-full bg-slate-400 border-2 border-white"></div>
-                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
-                            <h3 class="font-display text-2xl font-bold text-slate-900">Marketing Web Designer</h3>
-                            <span class="text-sm font-semibold text-slate-600 bg-slate-200 px-4 py-1.5 rounded-full border border-slate-300 mt-2 md:mt-0 inline-block w-fit">Ago 2022 - Sep 2023</span>
-                        </div>
-                        <h4 class="text-lg text-slate-600 font-semibold mb-4">Archer Troy</h4>
-                        <ul class="space-y-3 text-slate-600">
-                            <li class="flex items-start gap-3"><i class="fas fa-arrow-right text-slate-400 mt-1.5 text-xs"></i> <span>Diseño y desarrollo de micrositios y assets digitales para campañas.</span></li>
-                            <li class="flex items-start gap-3"><i class="fas fa-arrow-right text-slate-400 mt-1.5 text-xs"></i> <span>Adaptación de creatividades para formatos web responsive.</span></li>
-                        </ul>
+                <!-- Job 3 -->
+                <div class="editorial-job">
+                    <div class="job-header">
+                        <h3 class="job-role">Marketing Web Designer</h3>
+                        <span class="job-date">Ago 2022 — Sep 2023</span>
                     </div>
+                    <p class="job-company">Archer Troy</p>
+                    <ul class="job-list">
+                        <li>Diseño y desarrollo end-to-end de micrositios y activos digitales estratégicos para campañas publicitarias masivas.</li>
+                        <li>Adaptación y optimización de creatividades para formatos web responsive, garantizando consistencia de marca.</li>
+                    </ul>
+                </div>
 
-                    <!-- Job 4 -->
-                    <div class="job-card relative">
-                        <div class="absolute -left-[45px] top-1.5 w-3 h-3 rounded-full bg-slate-400 border-2 border-white"></div>
-                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
-                            <h3 class="font-display text-2xl font-bold text-slate-900">Marketing & Web Designer</h3>
-                            <span class="text-sm font-semibold text-slate-600 bg-slate-200 px-4 py-1.5 rounded-full border border-slate-300 mt-2 md:mt-0 inline-block w-fit">Mar 2020 - Ago 2022</span>
-                        </div>
-                        <h4 class="text-lg text-slate-600 font-semibold mb-4">Polyglobal</h4>
-                        <ul class="space-y-3 text-slate-600">
-                            <li class="flex items-start gap-3"><i class="fas fa-arrow-right text-slate-400 mt-1.5 text-xs"></i> <span>Maquetación de sitios corporativos y mantenimiento cross-browser.</span></li>
-                            <li class="flex items-start gap-3"><i class="fas fa-arrow-right text-slate-400 mt-1.5 text-xs"></i> <span>Integración de Heatmaps y Analytics para decisiones de UX.</span></li>
-                        </ul>
+                <!-- Job 4 -->
+                <div class="editorial-job">
+                    <div class="job-header">
+                        <h3 class="job-role">Marketing & Web Designer</h3>
+                        <span class="job-date">Mar 2020 — Ago 2022</span>
                     </div>
+                    <p class="job-company">Polyglobal</p>
+                    <ul class="job-list">
+                        <li>Maquetación de sitios corporativos y mantenimiento técnico cross-browser.</li>
+                        <li>Integración de herramientas de análisis (Heatmaps, Analytics) para impulsar decisiones estratégicas de UX y CRO.</li>
+                    </ul>
+                </div>
 
-                     <!-- Job 5 -->
-                     <div class="job-card relative">
-                        <div class="absolute -left-[45px] top-1.5 w-3 h-3 rounded-full bg-slate-400 border-2 border-white"></div>
-                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
-                            <h3 class="font-display text-2xl font-bold text-slate-900">Web Designer</h3>
-                            <span class="text-sm font-semibold text-slate-600 bg-slate-200 px-4 py-1.5 rounded-full border border-slate-300 mt-2 md:mt-0 inline-block w-fit">Jul 2019 - Mar 2020</span>
-                        </div>
-                        <h4 class="text-lg text-slate-600 font-semibold mb-4">M4 TEL</h4>
-                        <ul class="space-y-3 text-slate-600">
-                            <li class="flex items-start gap-3"><i class="fas fa-arrow-right text-slate-400 mt-1.5 text-xs"></i> <span>Diseño visual y front-end para campañas de marketing.</span></li>
-                        </ul>
+                <!-- Job 5 -->
+                <div class="editorial-job">
+                    <div class="job-header">
+                        <h3 class="job-role">Web Designer</h3>
+                        <span class="job-date">Jul 2019 — Mar 2020</span>
                     </div>
+                    <p class="job-company">M4 TEL</p>
+                    <ul class="job-list">
+                        <li>Creación de diseño visual y desarrollo front-end para campañas de marketing digital multiplataforma.</li>
+                    </ul>
+                </div>
 
-                    <!-- Job 6 & 7 -->
-                    <div class="job-card relative">
-                        <div class="absolute -left-[45px] top-1.5 w-3 h-3 rounded-full bg-slate-400 border-2 border-white"></div>
-                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
-                            <h3 class="font-display text-xl font-bold text-slate-900">Project Manager</h3>
-                            <span class="text-sm font-semibold text-slate-600 bg-slate-200 px-4 py-1.5 rounded-full border border-slate-300 mt-2 md:mt-0 inline-block w-fit">Jun 2017 - Jul 2019</span>
-                        </div>
-                        <h4 class="text-lg text-slate-600 font-semibold mb-6">Hand Creative</h4>
-
-                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-2">
-                            <h3 class="font-display text-xl font-bold text-slate-900">Diseño Gráfico Web</h3>
-                            <span class="text-sm font-semibold text-slate-600 bg-slate-200 px-4 py-1.5 rounded-full border border-slate-300 mt-2 md:mt-0 inline-block w-fit">May 2018 - Nov 2018</span>
-                        </div>
-                        <h4 class="text-lg text-slate-600 font-semibold">Dcobys</h4>
+                <!-- Job 6 & 7 -->
+                <div class="editorial-job">
+                    <div class="job-header">
+                        <h3 class="job-role">Project Manager</h3>
+                        <span class="job-date">Jun 2017 — Jul 2019</span>
                     </div>
-
+                    <p class="job-company">Hand Creative</p>
+                    <ul class="job-list">
+                        <li>Gestión de ciclo de vida de proyectos y coordinación de equipos de diseño y desarrollo.</li>
+                        <li>Análisis de requerimientos y optimización de flujos de trabajo.</li>
+                    </ul>
                 </div>
             </div>
 
             <!-- Right Column: Skills & Education -->
-            <div class="lg:col-span-4 space-y-12">
+            <div class="grid-sidebar">
                 
-                <!-- Diseño & UX -->
-                <div class="glass-light p-8 rounded-2xl">
-                    <h3 class="font-display text-xl font-bold text-slate-900 mb-6 flex items-center gap-3">
-                        <i class="fas fa-pen-nib text-accent"></i> Diseño & UX
-                    </h3>
-                    <div class="space-y-4">
-                        <div class="flex items-center gap-4 text-slate-600 hover:text-accent transition group skill-badge">
-                            <div class="w-8 h-8 rounded-lg bg-slate-100 flex items-center justify-center group-hover:bg-accent/10 group-hover:text-accent transition shadow-sm"><i class="fas fa-bezier-curve"></i></div>
-                            <span class="font-medium">Figma (Wireframes)</span>
-                        </div>
-                        <div class="flex items-center gap-4 text-slate-600 hover:text-accent transition group skill-badge">
-                            <div class="w-8 h-8 rounded-lg bg-slate-100 flex items-center justify-center group-hover:bg-accent/10 group-hover:text-accent transition shadow-sm"><i class="fas fa-layer-group"></i></div>
-                            <span class="font-medium">Prototipado UI</span>
-                        </div>
-                        <div class="flex items-center gap-4 text-slate-600 hover:text-accent transition group skill-badge">
-                            <div class="w-8 h-8 rounded-lg bg-slate-100 flex items-center justify-center group-hover:bg-accent/10 group-hover:text-accent transition shadow-sm"><i class="fas fa-mobile-alt"></i></div>
-                            <span class="font-medium">Diseño Responsivo & Mobile-First</span>
-                        </div>
-                        <div class="flex items-center gap-4 text-slate-600 hover:text-accent transition group skill-badge">
-                            <div class="w-8 h-8 rounded-lg bg-slate-100 flex items-center justify-center group-hover:bg-accent/10 group-hover:text-accent transition shadow-sm"><i class="fas fa-universal-access"></i></div>
-                            <span class="font-medium">Accesibilidad (WCAG)</span>
-                        </div>
+                <!-- Tech Stack -->
+                <div class="editorial-sidebar-block">
+                    <h3 class="editorial-sidebar-title">Tech Stack</h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                        <span class="editorial-skill"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/Adobe_Illustrator_CC_icon.svg" alt="Illustrator"> Illustrator</span>
+                        <span class="editorial-skill"><img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" alt="Photoshop"> Photoshop</span>
+                        <span class="editorial-skill"><img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Adobe_InDesign_CC_icon.svg" alt="InDesign"> InDesign</span>
+                        <span class="editorial-skill"><img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma"> Figma</span>
+                        <span class="editorial-skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript"> JavaScript</span>
+                        <span class="editorial-skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React"> React</span>
+                        <span class="editorial-skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5"> HTML5</span>
+                        <span class="editorial-skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3"> CSS3</span>
+                        <span class="editorial-skill"><img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="Tailwind CSS"> Tailwind</span>
+                        <span class="editorial-skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-plain.svg" alt="WordPress"> WordPress</span>
+                        <span class="editorial-skill"><img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='64'%20height='64'%3e%3cg%20transform='matrix(.363638%200%200%20.363636%20-3.272763%20-2.909091)'%3e%3cpath%20d='M130%2029v132c0%2014.77%2010.2%2023%2021%2023%2010%200%2021-7%2021-23V30c0-13.54-10-22-21-22s-21%209.33-21%2021z'%20fill='%23f9ab00'/%3e%3cg%20fill='%23e37400'%3e%3cpath%20d='M75%2096v65c0%2014.77%2010.2%2023%2021%2023%2010%200%2021-7%2021-23V97c0-13.54-10-22-21-22s-21%209.33-21%2021z'/%3e%3ccircle%20cx='41'%20cy='163'%20r='21'/%3e%3c/g%3e%3c/g%3e%3c/svg%3e" alt="Google Analytics"> Google Analytics</span>
+                        <span class="editorial-skill"><i class="fas fa-ad" style="color: #4285F4; margin-right: 4px;"></i> Google Ads</span>
+                        <span class="editorial-skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git"> Git</span>
+                        <span class="editorial-skill"><img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Adobe_Premiere_Pro_CC_icon.svg" alt="Premiere Pro"> Premiere</span>
                     </div>
+                </div>
+
+                <!-- Marketing & SEO Stack -->
+                <div class="editorial-sidebar-block" style="margin-top: 2rem;">
+                    <h3 class="editorial-sidebar-title">Marketing & SEO</h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                        <span class="editorial-skill"><i class="fas fa-search" style="color: #34A853; margin-right: 4px;"></i> SEO Técnico</span>
+                        <span class="editorial-skill"><i class="fas fa-link" style="color: #FBBC05; margin-right: 4px;"></i> SEO Linkbuilding</span>
+                        <span class="editorial-skill"><i class="fas fa-pen-nib" style="color: #EA4335; margin-right: 4px;"></i> Contenido Optimizado</span>
+                        <span class="editorial-skill"><i class="fas fa-bullhorn" style="color: #8E24AA; margin-right: 4px;"></i> Campañas Pagadas</span>
+                        <span class="editorial-skill"><i class="fas fa-envelope-open-text" style="color: #FF5722; margin-right: 4px;"></i> Email Marketing</span>
+                    </div>
+                </div>
+
+                <!-- Diseño & UX -->
+                <div class="editorial-sidebar-block">
+                    <h3 class="editorial-sidebar-title">Diseño & UX</h3>
+                    <ul class="job-list" style="padding: 0;">
+                        <li>Figma (Wireframes)</li>
+                        <li>Prototipado UI</li>
+                        <li>Diseño Responsivo & Mobile-First</li>
+                        <li>Accesibilidad (WCAG)</li>
+                    </ul>
                 </div>
 
                 <!-- Marketing & SEO -->
-                <div class="glass-light p-8 rounded-2xl">
-                    <h3 class="font-display text-xl font-bold text-slate-900 mb-6 flex items-center gap-3">
-                        <i class="fas fa-chart-line text-accent"></i> Marketing & SEO
-                    </h3>
-                    <div class="space-y-4">
-                        <div class="flex items-center gap-4 text-slate-600 hover:text-accent transition group skill-badge">
-                            <div class="w-8 h-8 rounded-lg bg-slate-100 flex items-center justify-center group-hover:bg-accent/10 group-hover:text-accent transition shadow-sm"><i class="fas fa-search"></i></div>
-                            <span class="font-medium">SEO Técnico (On/Off Page)</span>
-                        </div>
-                        <div class="flex items-center gap-4 text-slate-600 hover:text-accent transition group skill-badge">
-                            <div class="w-8 h-8 rounded-lg bg-slate-100 flex items-center justify-center group-hover:bg-accent/10 group-hover:text-accent transition shadow-sm"><i class="fas fa-tachometer-alt"></i></div>
-                            <span class="font-medium">Performance Optimization</span>
-                        </div>
-                        <div class="flex items-center gap-4 text-slate-600 hover:text-accent transition group skill-badge">
-                            <div class="w-8 h-8 rounded-lg bg-slate-100 flex items-center justify-center group-hover:bg-accent/10 group-hover:text-accent transition shadow-sm"><i class="fas fa-chart-pie"></i></div>
-                            <span class="font-medium">Google Analytics & Search Console</span>
-                        </div>
+                <div class="editorial-sidebar-block">
+                    <h3 class="editorial-sidebar-title">Marketing & SEO</h3>
+                    <ul class="job-list" style="padding: 0;">
+                        <li>SEO Técnico (On/Off Page)</li>
+                        <li>Performance Optimization</li>
+                        <li>Google Analytics & Search Console</li>
+                    </ul>
+                </div>
+
+                <!-- Idiomas -->
+                <div class="editorial-sidebar-block">
+                    <h3 class="editorial-sidebar-title">Idiomas</h3>
+                    <div class="editorial-lang-bar">
+                        <div class="lang-label"><span>Español</span><span class="lang-level">Nativo</span></div>
+                        <div class="lang-track"><div class="lang-fill" style="width: 100%"></div></div>
+                    </div>
+                    <div class="editorial-lang-bar">
+                        <div class="lang-label"><span>Inglés</span><span class="lang-level">Profesional</span></div>
+                        <div class="lang-track"><div class="lang-fill" style="width: 80%"></div></div>
                     </div>
                 </div>
 
-                <!-- Education -->
-                <div class="glass-light p-8 rounded-2xl">
-                    <h3 class="font-display text-xl font-bold text-slate-900 mb-6 flex items-center gap-3">
-                        <i class="fas fa-graduation-cap text-accent"></i> Educación
-                    </h3>
-                    <div>
-                        <h4 class="font-bold text-lg text-slate-900">Lic. Comunicación Visual</h4>
-                        <p class="text-slate-600 font-medium mt-1">Universidad de la Comunicación</p>
-                        <p class="text-accent text-sm font-semibold mt-2">Dic 2005 - Jun 2009</p>
-                    </div>
+                <!-- Educación -->
+                <div class="editorial-sidebar-block">
+                    <h3 class="editorial-sidebar-title">Educación</h3>
+                    <p style="font-weight: 600; font-size: 0.9rem; color: #1a1a1a;">Lic. Comunicación Visual</p>
+                    <p style="font-size: 0.8rem; color: #666; margin-top: 0.25rem;">Universidad de la Comunicación</p>
+                    <p style="font-size: 0.75rem; color: #999; margin-top: 0.25rem;">Dic 2005 — Jun 2009</p>
                 </div>
-
             </div>
         </div>
     </div>
 
-    <!-- Certifications Section (100% Width) -->
-    <section class="w-full bg-white border-t border-slate-200 py-20">
-        <div class="w-full max-w-[1600px] mx-auto px-6 md:px-24">
-            <div class="flex items-center gap-4 mb-12">
-                <div class="w-12 h-12 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center text-xl shadow-sm">
-                    <i class="fas fa-certificate"></i>
-                </div>
-                <h2 class="font-display text-3xl font-bold text-slate-900">Certificaciones Destacadas</h2>
-            </div>
-            
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                <!-- Cert 1 -->
-                <div class="cert-card glass-light p-6 rounded-xl hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
-                    <div class="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center text-accent mb-4"><i class="fas fa-shield-alt"></i></div>
-                    <h4 class="font-bold text-slate-900 mb-2 leading-tight">Ciberseguridad</h4>
-                    <p class="text-xs text-slate-500 font-medium">B drive • ago. 2025</p>
-                </div>
-                <!-- Cert 2 -->
-                <div class="cert-card glass-light p-6 rounded-xl hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
-                    <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 mb-4"><i class="fas fa-robot"></i></div>
-                    <h4 class="font-bold text-slate-900 mb-2 leading-tight">IA generativa en RR. HH.</h4>
-                    <p class="text-xs text-slate-500 font-medium">UBITS • ago. 2025</p>
-                </div>
-                <!-- Cert 3 -->
-                <div class="cert-card glass-light p-6 rounded-xl hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
-                    <div class="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600 mb-4"><i class="fas fa-code-branch"></i></div>
-                    <h4 class="font-bold text-slate-900 mb-2 leading-tight">Diseño de algoritmos</h4>
-                    <p class="text-xs text-slate-500 font-medium">UBITS • ago. 2025</p>
-                </div>
-                <!-- Cert 4 -->
-                <div class="cert-card glass-light p-6 rounded-xl hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
-                    <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mb-4"><i class="fab fa-react"></i></div>
-                    <h4 class="font-bold text-slate-900 mb-2 leading-tight">Primeros pasos en React</h4>
-                    <p class="text-xs text-slate-500 font-medium">UBITS • ago. 2025</p>
-                </div>
-                <!-- Cert 5 -->
-                <div class="cert-card glass-light p-6 rounded-xl hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
-                    <div class="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center text-orange-600 mb-4"><i class="fas fa-tasks"></i></div>
-                    <h4 class="font-bold text-slate-900 mb-2 leading-tight">Scrum</h4>
-                    <p class="text-xs text-slate-500 font-medium">CertJoin • nov. 2024</p>
-                </div>
-                <!-- Cert 6 -->
-                <div class="cert-card glass-light p-6 rounded-xl hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
-                    <div class="w-10 h-10 rounded-full bg-orange-100 flex items-center justify-center text-orange-600 mb-4"><i class="fas fa-search-dollar"></i></div>
-                    <h4 class="font-bold text-slate-900 mb-2 leading-tight">SEO</h4>
-                    <p class="text-xs text-slate-500 font-medium">HubSpot Academy • mar. 2024</p>
-                </div>
-                <!-- Cert 7 -->
-                <div class="cert-card glass-light p-6 rounded-xl hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
-                    <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mb-4"><i class="fab fa-google"></i></div>
-                    <h4 class="font-bold text-slate-900 mb-2 leading-tight">Foundations of UX Design</h4>
-                    <p class="text-xs text-slate-500 font-medium">Google • mar. 2022</p>
-                </div>
-                <!-- Cert 8 -->
-                <div class="cert-card glass-light p-6 rounded-xl hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
-                    <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mb-4"><i class="fab fa-google"></i></div>
-                    <h4 class="font-bold text-slate-900 mb-2 leading-tight">Conceptos de marketing Digital</h4>
-                    <p class="text-xs text-slate-500 font-medium">Google • dic. 2021</p>
-                </div>
-                <!-- Cert 9 -->
-                <div class="cert-card glass-light p-6 rounded-xl hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
-                    <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mb-4"><i class="fab fa-google"></i></div>
-                    <h4 class="font-bold text-slate-900 mb-2 leading-tight">Fundamentals of digital marketing</h4>
-                    <p class="text-xs text-slate-500 font-medium">Google Digital Academy • dic. 2021</p>
-                </div>
-                <!-- Cert 10 -->
-                <div class="cert-card glass-light p-6 rounded-xl hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
-                    <div class="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600 mb-4"><i class="fas fa-laptop-code"></i></div>
-                    <h4 class="font-bold text-slate-900 mb-2 leading-tight">Fundamentos de JavaScript II</h4>
-                    <p class="text-xs text-slate-500 font-medium">Grasshopper by Google • dic. 2021</p>
-                </div>
-                <!-- Cert 11 -->
-                <div class="cert-card glass-light p-6 rounded-xl hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
-                    <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mb-4"><i class="fab fa-google"></i></div>
-                    <h4 class="font-bold text-slate-900 mb-2 leading-tight">Introducción a páginas web</h4>
-                    <p class="text-xs text-slate-500 font-medium">Google • nov. 2021</p>
-                </div>
-                <!-- Cert 12 -->
-                <div class="cert-card glass-light p-6 rounded-xl hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
-                    <div class="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600 mb-4"><i class="fas fa-laptop-code"></i></div>
-                    <h4 class="font-bold text-slate-900 mb-2 leading-tight">Introducción a HTML, CSS, JS</h4>
-                    <p class="text-xs text-slate-500 font-medium">Grasshopper by Google • nov. 2021</p>
-                </div>
-                <!-- Cert 13 -->
-                <div class="cert-card glass-light p-6 rounded-xl hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
-                    <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 mb-4"><i class="fab fa-google"></i></div>
-                    <h4 class="font-bold text-slate-900 mb-2 leading-tight">Digitaliza tu negocio con Google</h4>
-                    <p class="text-xs text-slate-500 font-medium">Google • mar. 2021</p>
+    <!-- Certifications Section -->
+    <div class="editorial-section">
+        <div class="section-header">
+            <h2 class="section-title">Educación & Certificaciones</h2>
+            <span class="section-count">14 hitos</span>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem;">
+            <!-- Educación -->
+            <div class="editorial-cert">
+                <div class="cert-icon" style="background: var(--ed-text); color: var(--ed-bg);"><i class="fas fa-graduation-cap"></i></div>
+                <div class="cert-info">
+                    <p class="cert-name">Lic. Comunicación Visual</p>
+                    <p class="cert-issuer">Universidad de la Comunicación · Dic 2005 - Jun 2009</p>
                 </div>
             </div>
-            
-            <div class="mt-8 text-center">
-                <p class="text-slate-500 text-sm italic font-medium">Lista completa de certificaciones y cursos acreditados.</p>
+            <div class="editorial-cert">
+                <div class="cert-icon"><i class="fas fa-shield-alt"></i></div>
+                <div class="cert-info">
+                    <p class="cert-name">Ciberseguridad</p>
+                    <p class="cert-issuer">B drive · Ago. 2025</p>
+                </div>
+            </div>
+            <div class="editorial-cert">
+                <div class="cert-icon"><i class="fas fa-robot"></i></div>
+                <div class="cert-info">
+                    <p class="cert-name">IA generativa en RR. HH.</p>
+                    <p class="cert-issuer">UBITS · Ago. 2025</p>
+                </div>
+            </div>
+            <div class="editorial-cert">
+                <div class="cert-icon"><i class="fas fa-code-branch"></i></div>
+                <div class="cert-info">
+                    <p class="cert-name">Diseño de algoritmos</p>
+                    <p class="cert-issuer">UBITS · Ago. 2025</p>
+                </div>
+            </div>
+            <div class="editorial-cert">
+                <div class="cert-icon"><i class="fab fa-react"></i></div>
+                <div class="cert-info">
+                    <p class="cert-name">Primeros pasos en React</p>
+                    <p class="cert-issuer">UBITS · Ago. 2025</p>
+                </div>
+            </div>
+            <div class="editorial-cert">
+                <div class="cert-icon"><i class="fas fa-tasks"></i></div>
+                <div class="cert-info">
+                    <p class="cert-name">Scrum</p>
+                    <p class="cert-issuer">CertJoin · Nov. 2024</p>
+                </div>
+            </div>
+            <div class="editorial-cert">
+                <div class="cert-icon"><i class="fas fa-search-dollar"></i></div>
+                <div class="cert-info">
+                    <p class="cert-name">SEO</p>
+                    <p class="cert-issuer">HubSpot Academy · Mar. 2024</p>
+                </div>
+            </div>
+            <div class="editorial-cert">
+                <div class="cert-icon"><i class="fab fa-google"></i></div>
+                <div class="cert-info">
+                    <p class="cert-name">Foundations of UX Design</p>
+                    <p class="cert-issuer">Google · Mar. 2022</p>
+                </div>
+            </div>
+            <div class="editorial-cert">
+                <div class="cert-icon"><i class="fab fa-google"></i></div>
+                <div class="cert-info">
+                    <p class="cert-name">Conceptos de marketing Digital</p>
+                    <p class="cert-issuer">Google · Dic. 2021</p>
+                </div>
+            </div>
+             <div class="editorial-cert">
+                <div class="cert-icon"><i class="fab fa-google"></i></div>
+                <div class="cert-info">
+                    <p class="cert-name">Fundamentals of digital marketing</p>
+                    <p class="cert-issuer">Google Digital Academy · Dic. 2021</p>
+                </div>
+            </div>
+             <div class="editorial-cert">
+                <div class="cert-icon"><i class="fas fa-laptop-code"></i></div>
+                <div class="cert-info">
+                    <p class="cert-name">Fundamentos de JavaScript II</p>
+                    <p class="cert-issuer">Grasshopper by Google · Dic. 2021</p>
+                </div>
+            </div>
+            <div class="editorial-cert">
+                <div class="cert-icon"><i class="fab fa-google"></i></div>
+                <div class="cert-info">
+                    <p class="cert-name">Introducción a páginas web</p>
+                    <p class="cert-issuer">Google · Nov. 2021</p>
+                </div>
+            </div>
+            <div class="editorial-cert">
+                <div class="cert-icon"><i class="fas fa-laptop-code"></i></div>
+                <div class="cert-info">
+                    <p class="cert-name">Introducción a HTML, CSS, JS</p>
+                    <p class="cert-issuer">Grasshopper by Google · Nov. 2021</p>
+                </div>
+            </div>
+             <div class="editorial-cert">
+                <div class="cert-icon"><i class="fab fa-google"></i></div>
+                <div class="cert-info">
+                    <p class="cert-name">Digitaliza tu negocio con Google</p>
+                    <p class="cert-issuer">Google · Mar. 2021</p>
+                </div>
             </div>
         </div>
-    </section>
+        <p style="margin-top: 1.5rem; font-size: 0.75rem; color: #999; letter-spacing: 0.05em;">Lista completa de certificaciones y cursos acreditados.</p>
+    </div>
 
     <!-- Footer -->
-    <footer class="w-full bg-slate-50 print:hidden border-t border-slate-200 py-12 px-6 md:px-24">
-        <div class="max-w-[1600px] mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-            <a href="index.html" class="font-display font-bold text-2xl text-slate-900 hover:opacity-80 transition cursor-pointer">
-                Fabián<span class="text-accent">Flores</span>
-            </a>
-            <p class="text-slate-500 font-medium text-sm">© 2026 Fabián Flores. Todos los derechos reservados.</p>
-            <div class="flex gap-4">
-                <a href="tel:+522223441091" class="w-10 h-10 rounded-full glass-light flex items-center justify-center text-slate-500 hover:text-accent hover:bg-slate-200 transition" aria-label="Llamar" title="+52 222 344 1091"><i class="fas fa-phone-alt"></i></a>
-                <a href="mailto:fabianfloram@gmail.com" class="w-10 h-10 rounded-full glass-light flex items-center justify-center text-slate-500 hover:text-accent hover:bg-slate-200 transition"><i class="fas fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/fabian-f-71858b209" class="w-10 h-10 rounded-full glass-light flex items-center justify-center text-slate-500 hover:text-accent hover:bg-slate-200 transition"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-        </div>
+    <footer class="editorial-footer no-print">
+        <p>© 2026 Fabián Flores. Todos los derechos reservados.</p>
     </footer>
 
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script defer src="main-static.js"></script>
+    <script>
+        // Mobile menu toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        if (btn && menu) {
+            btn.addEventListener('click', () => {
+                menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+            });
+        }
+    </script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="main-static.js"></script>
-
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.topology.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            VANTA.TOPOLOGY({
+              el: "#vanta-hero",
+              mouseControls: true,
+              touchControls: true,
+              gyroControls: false,
+              minHeight: 200.00,
+              minWidth: 200.00,
+              scale: 2.00,
+              scaleMobile: 3.00,
+              color: 0x888888,
+              backgroundColor: 0x0a0a0a
+            })
+        });
+    </script>
 </body>
 </html>

@@ -24,18 +24,18 @@ nav_es = """
             <a href="{idx_link}" class="hover:text-accent transition"><i class="fas fa-arrow-left mr-1"></i> Volver al CV</a>
             <span class="text-slate-300">|</span>
             <a href="{proy_link}" class="hover:text-accent transition">Proyectos Web</a>
-            <a href="{dis_link}" class="hover:text-accent transition">Diseño Gráfico</a>
             <a href="{ux_link}" class="hover:text-accent transition">UX/UI</a>
+            <a href="{dis_link}" class="hover:text-accent transition">Diseño Gráfico</a>
             <span class="text-slate-300">|</span>
             <a href="{lang_link}" class="text-emerald-600 hover:text-emerald-500 transition">English</a>
         </div>
 
         <!-- Mobile Menu Dropdown -->
-        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-md border-b border-slate-200 py-6 px-6 flex flex-col gap-4 shadow-lg transition-all duration-300">
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-md border-b border-slate-200 py-6 px-6 flex flex-col gap-4 shadow-lg transition-all duration-300" style="top: 100%; z-index: 9999;">
             <a href="{idx_link}" class="hover:text-accent transition py-2 border-b border-slate-100 flex items-center gap-2"><i class="fas fa-arrow-left text-xs"></i> Volver al CV</a>
             <a href="{proy_link}" class="hover:text-accent transition py-2 border-b border-slate-100 flex items-center gap-2"><i class="fas fa-laptop-code text-xs"></i> Proyectos Web</a>
-            <a href="{dis_link}" class="hover:text-accent transition py-2 border-b border-slate-100 flex items-center gap-2"><i class="fas fa-palette text-xs"></i> Diseño Gráfico</a>
             <a href="{ux_link}" class="hover:text-accent transition py-2 border-b border-slate-100 flex items-center gap-2"><i class="fas fa-drafting-compass text-xs"></i> UX/UI</a>
+            <a href="{dis_link}" class="hover:text-accent transition py-2 border-b border-slate-100 flex items-center gap-2"><i class="fas fa-palette text-xs"></i> Diseño Gráfico</a>
             <a href="{lang_link}" class="text-emerald-600 hover:text-emerald-500 transition py-2 flex items-center gap-2"><i class="fas fa-globe text-xs"></i> English</a>
         </div>
     </nav>
@@ -58,18 +58,18 @@ nav_en = """
             <a href="{idx_link}" class="hover:text-accent transition"><i class="fas fa-arrow-left mr-1"></i> Back to CV</a>
             <span class="text-slate-300">|</span>
             <a href="{proy_link}" class="hover:text-accent transition">Web Projects</a>
-            <a href="{dis_link}" class="hover:text-accent transition">Graphic Design</a>
             <a href="{ux_link}" class="hover:text-accent transition">UX/UI</a>
+            <a href="{dis_link}" class="hover:text-accent transition">Graphic Design</a>
             <span class="text-slate-300">|</span>
             <a href="{lang_link}" class="text-emerald-600 hover:text-emerald-500 transition">Spanish</a>
         </div>
 
         <!-- Mobile Menu Dropdown -->
-        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-md border-b border-slate-200 py-6 px-6 flex flex-col gap-4 shadow-lg transition-all duration-300">
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-md border-b border-slate-200 py-6 px-6 flex flex-col gap-4 shadow-lg transition-all duration-300" style="top: 100%; z-index: 9999;">
             <a href="{idx_link}" class="hover:text-accent transition py-2 border-b border-slate-100 flex items-center gap-2"><i class="fas fa-arrow-left text-xs"></i> Back to CV</a>
             <a href="{proy_link}" class="hover:text-accent transition py-2 border-b border-slate-100 flex items-center gap-2"><i class="fas fa-laptop-code text-xs"></i> Web Projects</a>
-            <a href="{dis_link}" class="hover:text-accent transition py-2 border-b border-slate-100 flex items-center gap-2"><i class="fas fa-palette text-xs"></i> Graphic Design</a>
             <a href="{ux_link}" class="hover:text-accent transition py-2 border-b border-slate-100 flex items-center gap-2"><i class="fas fa-drafting-compass text-xs"></i> UX/UI</a>
+            <a href="{dis_link}" class="hover:text-accent transition py-2 border-b border-slate-100 flex items-center gap-2"><i class="fas fa-palette text-xs"></i> Graphic Design</a>
             <a href="{lang_link}" class="text-emerald-600 hover:text-emerald-500 transition py-2 flex items-center gap-2"><i class="fas fa-globe text-xs"></i> Spanish</a>
         </div>
     </nav>
