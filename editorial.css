@@ -1077,3 +1077,20 @@ body {
     background: var(--ed-text);
     color: var(--ed-bg);
 }
+
+/* Compact Hero for subpages */
+.editorial-hero--compact {
+    min-height: 40vh !important;
+    padding: 8rem 1.5rem 3rem !important;
+}
+@media (min-width: 768px) {
+    .editorial-hero--compact {
+        min-height: 40vh !important;
+        padding: 10rem 3rem 4rem !important;
+    }
+}
+@media (min-width: 1024px) {
+    .editorial-hero--compact {
+        padding: 10rem 6rem 5rem !important;
+    }
+}
