@@ -258,7 +258,7 @@ data_general_es = {
     'profile': 'Comunicador Audiovisual especializado en Multimedia UX Design, Desarrollo Web y Marketing Digital. Con una sólida trayectoria como Diseñador Senior, Media Planner y Project Manager, aporto una visión holística a cada proyecto. Domino HTML, CSS, JS, React, WordPress, Adobe Suite y Figma, integrando estrategias SEO/SEM para asegurar que los productos digitales no solo sean estéticamente impactantes y centrados en el usuario, sino que también alcancen sus objetivos de negocio de manera efectiva.',
     'skills_col1': ['UX/UI Design & Multimedia', 'Desarrollo Web (HTML, CSS, JS)', 'Gestión de Proyectos & Scrum', 'WordPress & E-commerce'],
     'skills_col2': ['Marketing Digital (SEO/SEM)', 'Adobe Suite & Figma', 'Estrategia de Medios', 'Analítica Web (Google)'],
-    'software_icons': ['fab fa-figma', 'fab fa-html5', 'fab fa-css3-alt', 'fab fa-js', 'fab fa-react', 'fab fa-wordpress', 'text:Ps', 'text:Ai', 'text:Id', 'text:Ads', 'fas fa-chart-line', 'text:Gemini'],
+    'software_icons': ['text:Ai', 'text:Ps', 'text:Id', 'fab fa-figma', 'fab fa-js', 'fab fa-react', 'fab fa-html5', 'fab fa-css3-alt', 'text:Tw', 'fab fa-wordpress', 'fas fa-chart-line', 'text:Ads', 'fab fa-git-alt', 'text:Pr'],
     'certs': shared_certs_es,
     'edu': {'title': 'Licenciatura en Comunicación Visual', 'school': 'Universidad de la Comunicación', 'date': 'Ago 2005 - Dic 2009'},
     'exp': [
@@ -276,7 +276,7 @@ data_general_en = {
     'profile': 'Audiovisual Communicator specializing in Multimedia UX Design, Web Development, and Digital Marketing. With a solid background as a Senior Designer, Media Planner, and Project Manager, I bring a holistic vision to every project. I am proficient in HTML, CSS, JS, React, WordPress, Adobe Suite, and Figma, integrating SEO/SEM strategies to ensure that digital products are not only aesthetically striking and user-centered but also achieve their business goals effectively.',
     'skills_col1': ['UX/UI Design & Multimedia', 'Web Development (HTML, CSS, JS)', 'Project Management & Scrum', 'WordPress & E-commerce'],
     'skills_col2': ['Digital Marketing (SEO/SEM)', 'Adobe Suite & Figma', 'Media Planning', 'Web Analytics (Google)'],
-    'software_icons': ['fab fa-html5', 'fab fa-css3-alt', 'fab fa-js', 'fab fa-react', 'fab fa-wordpress', 'fab fa-figma', 'text:Ps', 'text:Ai', 'text:Id', 'text:Ads', 'fas fa-chart-line', 'text:Gemini'],
+    'software_icons': ['text:Ai', 'text:Ps', 'text:Id', 'fab fa-figma', 'fab fa-js', 'fab fa-react', 'fab fa-html5', 'fab fa-css3-alt', 'text:Tw', 'fab fa-wordpress', 'fas fa-chart-line', 'text:Ads', 'fab fa-git-alt', 'text:Pr'],
     'certs': shared_certs_en,
     'edu': {'title': 'BA Visual Communication', 'school': 'University of Communication', 'date': 'Aug 2005 - Dec 2009'},
     'exp': [
