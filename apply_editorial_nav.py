@@ -20,20 +20,20 @@ nav_es = """
         <div class="nav-links">
             <a href="{idx_link}"><i class="fas fa-arrow-left"></i> Volver al CV</a>
             <div class="nav-separator"></div>
-            <a href="{serv_link}">Servicios</a>
             <a href="{proy_link}">Proyectos Web</a>
             <a href="{ux_link}">UX/UI</a>
             <a href="{dis_link}">Diseño Gráfico</a>
+            <a href="{serv_link}">Servicios</a>
             <div class="nav-separator"></div>
             <a href="{lang_link}" class="nav-lang">English</a>
         </div>
 
         <div id="mobile-menu" class="editorial-mobile-menu" style="top: 100%; z-index: 9999;">
             <a href="{idx_link}"><i class="fas fa-arrow-left"></i> Volver al CV</a>
-            <a href="{serv_link}"><i class="fas fa-concierge-bell"></i> Servicios</a>
             <a href="{proy_link}"><i class="fas fa-laptop-code"></i> Proyectos Web</a>
             <a href="{ux_link}"><i class="fas fa-drafting-compass"></i> UX/UI</a>
             <a href="{dis_link}"><i class="fas fa-palette"></i> Diseño Gráfico</a>
+            <a href="{serv_link}"><i class="fas fa-concierge-bell"></i> Servicios</a>
             <a href="{lang_link}"><i class="fas fa-globe"></i> English</a>
         </div>
     </nav>
@@ -51,20 +51,20 @@ nav_en = """
         <div class="nav-links">
             <a href="{idx_link}"><i class="fas fa-arrow-left"></i> Back to CV</a>
             <div class="nav-separator"></div>
-            <a href="{serv_link}">Services</a>
             <a href="{proy_link}">Web Projects</a>
             <a href="{ux_link}">UX/UI</a>
             <a href="{dis_link}">Graphic Design</a>
+            <a href="{serv_link}">Services</a>
             <div class="nav-separator"></div>
             <a href="{lang_link}" class="nav-lang">Spanish</a>
         </div>
 
         <div id="mobile-menu" class="editorial-mobile-menu" style="top: 100%; z-index: 9999;">
             <a href="{idx_link}"><i class="fas fa-arrow-left"></i> Back to CV</a>
-            <a href="{serv_link}"><i class="fas fa-concierge-bell"></i> Services</a>
             <a href="{proy_link}"><i class="fas fa-laptop-code"></i> Web Projects</a>
             <a href="{ux_link}"><i class="fas fa-drafting-compass"></i> UX/UI</a>
             <a href="{dis_link}"><i class="fas fa-palette"></i> Graphic Design</a>
+            <a href="{serv_link}"><i class="fas fa-concierge-bell"></i> Services</a>
             <a href="{lang_link}"><i class="fas fa-globe"></i> Spanish</a>
         </div>
     </nav>
