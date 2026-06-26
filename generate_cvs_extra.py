@@ -184,7 +184,7 @@ data_ux_es = {
     'profile': 'UX/UI Designer centrado en el usuario con sólida experiencia en la investigación, conceptualización y diseño de productos digitales. Poseo un enfoque holístico que combina la empatía por las necesidades del usuario con una profunda comprensión técnica del desarrollo front-end. Utilizo metodologías de Design Thinking y herramientas como Figma para crear wireframes, prototipos interactivos y sistemas de diseño escalables. Mi objetivo es resolver problemas complejos mediante interfaces intuitivas, accesibles y estéticamente atractivas que potencien la conversión y satisfacción del cliente.',
     'skills_col1': ['UX Research & User Journeys', 'Diseño de Interfaces (UI) & Sistemas de Diseño', 'Prototipado Interactivo (Figma)', 'Wireframing & Arquitectura de la Información'],
     'skills_col2': ['Pruebas de Usabilidad & A/B Testing', 'Accesibilidad Web (WCAG)', 'HTML5, CSS3, JS (Bases Front-end)', 'Design Thinking & Metodologías Ágiles'],
-    'software_icons': ['fab fa-figma', 'fab fa-html5', 'fab fa-css3-alt', 'fab fa-js', 'text:Ps', 'text:Ai'],
+    'software_icons': ['text:Ai', 'text:Ps', 'text:Id', 'fab fa-figma', 'fab fa-js', 'fab fa-react', 'fab fa-html5', 'fab fa-css3-alt', 'text:Tw', 'fab fa-wordpress', 'fas fa-chart-line', 'text:Ads', 'fab fa-git-alt', 'text:Pr'],
     'certs': shared_certs_es,
     'edu': {'title': 'Licenciatura en Comunicación Visual', 'school': 'Universidad de la Comunicación', 'date': 'Ago 2005 - Dic 2009'},
     'exp': [
@@ -192,7 +192,8 @@ data_ux_es = {
         {'title': 'Líder de UX & Proyectos Digitales', 'company': 'Lapi Laboratorio', 'date': 'Ene 2023 - Ene 2024', 'bullets': ['Liderazgo en la investigación de usuarios y auditorías heurísticas para el rediseño de plataformas digitales, mejorando la retención.', 'Definición de user personas y mapeo del customer journey para alinear los objetivos del producto con las necesidades de pacientes.']},
         {'title': 'UX/UI Designer', 'company': 'Archer Troy', 'date': 'Mar 2022 - Dic 2022', 'bullets': ['Conceptualización de flujos de interacción y prototipado de alta fidelidad para micrositios de campañas interactivas.', 'Análisis de comportamiento mediante heatmaps para iterar en el diseño y mejorar la tasa de conversión.']},
         {'title': 'Web & UI Designer', 'company': 'Polyglobal', 'date': 'Jun 2020 - Feb 2022', 'bullets': ['Diseño de interfaces corporativas enfocadas en la usabilidad B2B y adaptación a múltiples dispositivos (Responsive Design).', 'Aplicación de pruebas de usabilidad tempranas para validar conceptos antes de la etapa de desarrollo front-end.']},
-        {'title': 'Visual Designer', 'company': 'M4 TEL', 'date': 'Ago 2019 - May 2020', 'bullets': ['Creación de assets visuales y layouts intuitivos para tiendas de e-commerce y campañas promocionales.']}
+        {'title': 'Visual Designer', 'company': 'M4 TEL', 'date': 'Ago 2019 - May 2020', 'bullets': ['Creación de assets visuales y layouts intuitivos para tiendas de e-commerce y campañas promocionales.']},
+        {'title': 'Project Manager', 'company': 'Hand Creative', 'date': 'Jun 2017 - Jul 2019', 'bullets': ['Gestión de ciclo de vida de proyectos y coordinación de equipos de diseño y desarrollo.', 'Análisis de requerimientos y optimización de flujos de trabajo.']}
     ]
 }
 
@@ -202,7 +203,7 @@ data_ux_en = {
     'profile': 'User-centered UX/UI Designer with solid experience in research, conceptualization, and digital product design. I take a holistic approach that combines empathy for user needs with a deep technical understanding of front-end development. I utilize Design Thinking methodologies and tools like Figma to create wireframes, interactive prototypes, and scalable design systems. My goal is to solve complex problems through intuitive, accessible, and aesthetically pleasing interfaces that boost conversion and user satisfaction.',
     'skills_col1': ['UX Research & User Journeys', 'User Interface (UI) & Design Systems', 'Interactive Prototyping (Figma)', 'Wireframing & Information Architecture'],
     'skills_col2': ['Usability Testing & A/B Testing', 'Web Accessibility (WCAG)', 'HTML5, CSS3, JS (Front-end Basics)', 'Design Thinking & Agile Methodologies'],
-    'software_icons': ['fab fa-figma', 'fab fa-html5', 'fab fa-css3-alt', 'fab fa-js', 'text:Ps', 'text:Ai'],
+    'software_icons': ['text:Ai', 'text:Ps', 'text:Id', 'fab fa-figma', 'fab fa-js', 'fab fa-react', 'fab fa-html5', 'fab fa-css3-alt', 'text:Tw', 'fab fa-wordpress', 'fas fa-chart-line', 'text:Ads', 'fab fa-git-alt', 'text:Pr'],
     'certs': shared_certs_en,
     'edu': {'title': 'BA Visual Communication', 'school': 'University of Communication', 'date': 'Aug 2005 - Dec 2009'},
     'exp': [
@@ -210,7 +211,8 @@ data_ux_en = {
         {'title': 'UX & Digital Projects Lead', 'company': 'Lapi Laboratory', 'date': 'Jan 2023 - Jan 2024', 'bullets': ['Led user research and heuristic audits for the redesign of digital platforms, resulting in improved user retention.', 'Defined user personas and mapped customer journeys to align product goals with the actual needs of healthcare patients.']},
         {'title': 'UX/UI Designer', 'company': 'Archer Troy', 'date': 'Mar 2022 - Dec 2022', 'bullets': ['Conceptualized interaction flows and developed high-fidelity prototypes for interactive campaign microsites.', 'Analyzed user behavior via heatmaps to iteratively improve UI design and maximize overall conversion rates.']},
         {'title': 'Web & UI Designer', 'company': 'Polyglobal', 'date': 'Jun 2020 - Feb 2022', 'bullets': ['Designed corporate interfaces focused on B2B usability, ensuring seamless adaptation across multiple devices (Responsive Design).', 'Conducted early-stage usability testing to validate design concepts prior to front-end development handoff.']},
-        {'title': 'Visual Designer', 'company': 'M4 TEL', 'date': 'Aug 2019 - May 2020', 'bullets': ['Created visual assets and intuitive layouts for e-commerce stores and high-impact promotional campaigns.']}
+        {'title': 'Visual Designer', 'company': 'M4 TEL', 'date': 'Aug 2019 - May 2020', 'bullets': ['Created visual assets and intuitive layouts for e-commerce stores and high-impact promotional campaigns.']},
+        {'title': 'Project Manager', 'company': 'Hand Creative', 'date': 'Jun 2017 - Jul 2019', 'bullets': ['Managed the project lifecycle and coordinated design and development teams.', 'Analyzed requirements and optimized workflows.']}
     ]
 }
 
@@ -221,7 +223,7 @@ data_pm_es = {
     'profile': 'Digital Project Manager certificado en Scrum, especializado en liderar equipos multidisciplinarios para la entrega exitosa de productos tecnológicos. Con sólida experiencia técnica en desarrollo web, UX/UI y marketing digital, funciono como un puente efectivo entre los stakeholders, el equipo de diseño y los desarrolladores. Me enfoco en la planificación ágil, la gestión de riesgos, el análisis de KPIs y la optimización continua de procesos para asegurar que cada proyecto se entregue a tiempo, dentro del presupuesto y superando los objetivos de negocio.',
     'skills_col1': ['Gestión Ágil de Proyectos (Scrum)', 'Liderazgo de Equipos Multidisciplinarios', 'Planificación de Sprints & Roadmapping', 'Análisis de KPIs & OKRs'],
     'skills_col2': ['Gestión de Presupuesto y Riesgos', 'Comunicación con Stakeholders', 'Background Técnico (Web/UX/SEO)', 'Optimización de Procesos'],
-    'software_icons': ['fab fa-trello', 'fab fa-jira', 'fab fa-wordpress', 'fab fa-google'],
+    'software_icons': ['text:Ai', 'text:Ps', 'text:Id', 'fab fa-figma', 'fab fa-js', 'fab fa-react', 'fab fa-html5', 'fab fa-css3-alt', 'text:Tw', 'fab fa-wordpress', 'fas fa-chart-line', 'text:Ads', 'fab fa-git-alt', 'text:Pr'],
     'certs': shared_certs_es,
     'edu': {'title': 'Licenciatura en Comunicación Visual', 'school': 'Universidad de la Comunicación', 'date': 'Ago 2005 - Dic 2009'},
     'exp': [
@@ -229,7 +231,8 @@ data_pm_es = {
         {'title': 'Líder de Proyectos Digitales', 'company': 'Lapi Laboratorio', 'date': 'Ene 2023 - Ene 2024', 'bullets': ['Liderazgo en la gestión integral del ciclo de vida de proyectos digitales en el sector salud, desde la definición de alcance hasta el despliegue.', 'Asignación de recursos y monitorización del cumplimiento de presupuestos, asegurando el ROI esperado por la dirección.', 'Comunicación continua con directivos y presentación de reportes de progreso y KPIs mediante dashboards analíticos.']},
         {'title': 'Coordinador Web & Marketing', 'company': 'Archer Troy', 'date': 'Mar 2022 - Dic 2022', 'bullets': ['Coordinación del lanzamiento de campañas publicitarias digitales, asegurando entregas a tiempo en entornos de alta presión.', 'Resolución de bloqueos técnicos entre áreas de diseño, contenido y desarrollo front-end para campañas interactivos.']},
         {'title': 'Gestor de Proyectos Web', 'company': 'Polyglobal', 'date': 'Jun 2020 - Feb 2022', 'bullets': ['Supervisión del desarrollo y mantenimiento de portales corporativos, actuando como enlace principal con clientes internos.', 'Definición de cronogramas y priorización de backlog enfocado en optimizar el rendimiento (WPO) y reducir tasas de abandono.']},
-        {'title': 'Diseñador Visual', 'company': 'M4 TEL', 'date': 'Ago 2019 - May 2020', 'bullets': ['Apoyo en la coordinación de entregables gráficos para campañas de lanzamiento tecnológico.']}
+        {'title': 'Diseñador Visual', 'company': 'M4 TEL', 'date': 'Ago 2019 - May 2020', 'bullets': ['Apoyo en la coordinación de entregables gráficos para campañas de lanzamiento tecnológico.']},
+        {'title': 'Project Manager', 'company': 'Hand Creative', 'date': 'Jun 2017 - Jul 2019', 'bullets': ['Gestión de ciclo de vida de proyectos y coordinación de equipos de diseño y desarrollo.', 'Análisis de requerimientos y optimización de flujos de trabajo.']}
     ]
 }
 
@@ -239,7 +242,7 @@ data_pm_en = {
     'profile': 'Scrum-certified Digital Project Manager specialized in leading multidisciplinary teams for the successful delivery of technology products. With a solid technical background in web development, UX/UI, and digital marketing, I act as an effective bridge between stakeholders, design teams, and developers. I focus on agile planning, risk management, KPI analysis, and continuous process optimization to ensure every project is delivered on time, within budget, and exceeding business goals.',
     'skills_col1': ['Agile Project Management (Scrum)', 'Multidisciplinary Team Leadership', 'Sprint Planning & Roadmapping', 'KPI & OKR Analysis'],
     'skills_col2': ['Budget & Risk Management', 'Stakeholder Communication', 'Technical Background (Web/UX/SEO)', 'Process Optimization'],
-    'software_icons': ['fab fa-trello', 'fab fa-jira', 'fab fa-wordpress', 'fab fa-google'],
+    'software_icons': ['text:Ai', 'text:Ps', 'text:Id', 'fab fa-figma', 'fab fa-js', 'fab fa-react', 'fab fa-html5', 'fab fa-css3-alt', 'text:Tw', 'fab fa-wordpress', 'fas fa-chart-line', 'text:Ads', 'fab fa-git-alt', 'text:Pr'],
     'certs': shared_certs_en,
     'edu': {'title': 'BA Visual Communication', 'school': 'University of Communication', 'date': 'Aug 2005 - Dec 2009'},
     'exp': [
@@ -247,7 +250,8 @@ data_pm_en = {
         {'title': 'Digital Projects Lead', 'company': 'Lapi Laboratory', 'date': 'Jan 2023 - Jan 2024', 'bullets': ['Led the end-to-end lifecycle management of digital projects in the healthcare sector, from scoping to final deployment.', 'Allocated resources and monitored budget adherence, ensuring the ROI expected by the executive board.', 'Maintained continuous communication with stakeholders and presented progress reports and KPIs via analytical dashboards.']},
         {'title': 'Web & Marketing Coordinator', 'company': 'Archer Troy', 'date': 'Mar 2022 - Dec 2022', 'bullets': ['Coordinated the launch of digital advertising campaigns, ensuring on-time deliverables in high-pressure, fast-paced environments.', 'Resolved technical blockers between design, content, and front-end development areas for interactive campaigns.']},
         {'title': 'Web Project Manager', 'company': 'Polyglobal', 'date': 'Jun 2020 - Feb 2022', 'bullets': ['Supervised the development and maintenance of corporate portals, acting as the primary liaison with internal clients.', 'Defined schedules and prioritized the product backlog, focused on optimizing web performance (WPO) and reducing bounce rates.']},
-        {'title': 'Visual Designer', 'company': 'M4 TEL', 'date': 'Aug 2019 - May 2020', 'bullets': ['Supported the coordination of graphic deliverables for high-profile technological product launch campaigns.']}
+        {'title': 'Visual Designer', 'company': 'M4 TEL', 'date': 'Aug 2019 - May 2020', 'bullets': ['Supported the coordination of graphic deliverables for high-profile technological product launch campaigns.']},
+        {'title': 'Project Manager', 'company': 'Hand Creative', 'date': 'Jun 2017 - Jul 2019', 'bullets': ['Managed the project lifecycle and coordinated design and development teams.', 'Analyzed requirements and optimized workflows.']}
     ]
 }
 
