@@ -266,7 +266,8 @@ data_general_es = {
         {'title': 'Líder de Proyectos Digitales', 'company': 'Lapi Laboratorio', 'date': 'Ene 2023 - Ene 2024', 'bullets': ['Liderazgo en la investigación de usuarios y auditorías heurísticas para el rediseño de plataformas digitales, mejorando la retención.', 'Dirección integral de estrategias SEO y marketing de contenidos, logrando un aumento sostenido en la visibilidad orgánica.']},
         {'title': 'Web & Marketing Coordinator', 'company': 'Archer Troy', 'date': 'Mar 2022 - Dic 2022', 'bullets': ['Conceptualización de flujos de interacción y prototipado de alta fidelidad para micrositios de campañas interactivas.', 'Coordinación del lanzamiento de campañas publicitarias digitales, asegurando entregas a tiempo en entornos de alta presión.']},
         {'title': 'Web & UI Designer', 'company': 'Polyglobal', 'date': 'Jun 2020 - Feb 2022', 'bullets': ['Diseño de interfaces corporativas enfocadas en la usabilidad B2B y adaptación a múltiples dispositivos (Responsive Design).', 'Administración y mantenimiento integral de sitios web corporativos en WordPress, optimizando el rendimiento (WPO).']},
-        {'title': 'Visual Designer', 'company': 'M4 TEL', 'date': 'Ago 2019 - May 2020', 'bullets': ['Creación de assets visuales y layouts intuitivos para tiendas de e-commerce y campañas promocionales.']}
+        {'title': 'Visual Designer', 'company': 'M4 TEL', 'date': 'Ago 2019 - May 2020', 'bullets': ['Creación de assets visuales y layouts intuitivos para tiendas de e-commerce y campañas promocionales.']},
+        {'title': 'Project Manager', 'company': 'Hand Creative', 'date': 'Jun 2017 - Jul 2019', 'bullets': ['Gestión de ciclo de vida de proyectos y coordinación de equipos de diseño y desarrollo.', 'Análisis de requerimientos y optimización de flujos de trabajo.']}
     ]
 }
 
@@ -284,7 +285,8 @@ data_general_en = {
         {'title': 'Digital Projects Lead', 'company': 'Lapi Laboratory', 'date': 'Jan 2023 - Jan 2024', 'bullets': ['Led user research and heuristic audits for the redesign of digital platforms, resulting in improved user retention.', 'Comprehensive direction of SEO strategies and content marketing, achieving a sustained increase in organic visibility.']},
         {'title': 'Web & Marketing Coordinator', 'company': 'Archer Troy', 'date': 'Mar 2022 - Dec 2022', 'bullets': ['Conceptualized interaction flows and developed high-fidelity prototypes for interactive campaign microsites.', 'Coordinated the launch of digital advertising campaigns, ensuring on-time deliverables in high-pressure environments.']},
         {'title': 'Web & UI Designer', 'company': 'Polyglobal', 'date': 'Jun 2020 - Feb 2022', 'bullets': ['Designed corporate interfaces focused on B2B usability, ensuring seamless adaptation across multiple devices (Responsive Design).', 'Comprehensive administration and maintenance of corporate websites in WordPress, optimizing web performance (WPO).']},
-        {'title': 'Visual Designer', 'company': 'M4 TEL', 'date': 'Aug 2019 - May 2020', 'bullets': ['Created visual assets and intuitive layouts for e-commerce stores and high-impact promotional campaigns.']}
+        {'title': 'Visual Designer', 'company': 'M4 TEL', 'date': 'Aug 2019 - May 2020', 'bullets': ['Created visual assets and intuitive layouts for e-commerce stores and high-impact promotional campaigns.']},
+        {'title': 'Project Manager', 'company': 'Hand Creative', 'date': 'Jun 2017 - Jul 2019', 'bullets': ['Managed the project lifecycle and coordinated design and development teams.', 'Analyzed requirements and optimized workflows.']}
     ]
 }
 
