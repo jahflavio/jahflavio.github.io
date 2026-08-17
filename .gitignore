@@ -1,0 +1,15 @@
+# Ignore generated PDFs and text files
+*.pdf
+!assets/*.pdf
+*.txt
+
+# Ignore copy HTML files
+*copy.html
+cv.html
+extract_pdfs.py
+
+node_modules/
+*.tmp
+*.js
+.env
+dist/
