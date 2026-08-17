@@ -56,7 +56,7 @@
 
         .timeline-dot {
             position: absolute;
-            left: -5px;
+            left: -30px; /* Adjust to sit exactly on the parent's border-l-2 */
             top: 6px;
             width: 10px;
             height: 10px;
@@ -66,13 +66,9 @@
             box-shadow: 0 0 0 1px var(--primary);
         }
 
+        /* We will remove timeline-line CSS because the parent already has a border-l-2 */
         .timeline-line {
-            position: absolute;
-            left: -1px;
-            top: 16px;
-            bottom: -24px;
-            width: 2px;
-            background-color: #e5e7eb;
+            display: none;
         }
 
         .skill-badge {
