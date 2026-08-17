@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Fabián Flores - Digital Marketing & UX/UI Lead</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #111111;
+            --accent: #a3ad29;
+            --bg-page: #f9fafb;
+            --text-main: #374151;
+            --text-light: #6b7280;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #e5e7eb;
+            color: var(--primary);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, h4, .font-display {
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .cv-page {
+            width: 21cm;
+            min-height: 29.7cm;
+            margin: 2rem auto;
+            background-color: white;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            position: relative;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        /* Top Accent Bar */
+        .cv-page::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 12px;
+            background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 100%);
+        }
+
+        .header-bg {
+            background-color: #fcfcfc;
+            border-bottom: 1px solid #f3f4f6;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: -5px;
+            top: 6px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: var(--accent);
+            border: 2px solid white;
+            box-shadow: 0 0 0 1px var(--primary);
+        }
+
+        .timeline-line {
+            position: absolute;
+            left: -1px;
+            top: 16px;
+            bottom: -24px;
+            width: 2px;
+            background-color: #e5e7eb;
+        }
+
+        .skill-badge {
+            background-color: #f3f4f6;
+            color: var(--primary);
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 0.25rem 0.6rem;
+            border-radius: 9999px;
+            border: 1px solid #e5e7eb;
+            transition: all 0.2s ease;
+        }
+
+        .skill-badge:hover {
+            border-color: var(--accent);
+            background-color: white;
+        }
+
+        .software-icon {
+            width: 28px;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f3f4f6;
+            border: 1px solid #e5e7eb;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        ul.bullets {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        ul.bullets > li {
+            position: relative;
+            padding-left: 18px;
+            font-size: 0.75rem;
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        ul.bullets > li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            top: -1px;
+            color: var(--accent);
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        /* Print optimizations */
+        @media print {
+            @page {
+                size: A4;
+                margin: 0;
+            }
+            body {
+                background-color: white !important;
+                margin: 0;
+            }
+            .cv-page {
+                margin: 0;
+                box-shadow: none;
+                width: 100%;
+                height: 100%;
+                page-break-after: avoid;
+            }
+            .no-print {
+                display: none !important;
+            }
+            * {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Floating Toolbar (Not visible in PDF) -->
+    <div class="fixed top-6 right-6 no-print flex gap-4 z-50">
+        <a href="index.html" class="bg-white border border-gray-200 shadow-sm px-4 py-2 rounded-lg text-sm font-semibold hover:bg-gray-50 transition flex items-center gap-2">
+            <i class="fas fa-arrow-left"></i> Volver a Web
+        </a>
+        <button onclick="window.print()" class="bg-[#111111] text-white shadow-md px-4 py-2 rounded-lg text-sm font-semibold hover:bg-[#222222] transition flex items-center gap-2">
+            <i class="fas fa-print"></i> Imprimir PDF
+        </button>
+    </div>
+
+    <!-- CV Container -->
+    <div class="cv-page flex flex-col">
+        
+        <!-- HEADER -->
+        <header class="header-bg pt-12 pb-6 px-10 flex justify-between items-center relative">
+            <div class="max-w-[70%]">
+                <h1 class="text-5xl font-extrabold tracking-tight uppercase leading-none text-gray-900 mb-2">Fabián Flores</h1>
+                <h2 class="text-lg font-bold tracking-widest uppercase text-[#a3ad29]">Digital Marketing & UX/UI Lead</h2>
+                <p class="mt-4 text-xs font-medium text-gray-600 leading-relaxed text-justify pr-6">
+                    Comunicador Audiovisual especializado en Diseño de Experiencia de Usuario (UX/UI), Desarrollo Web y Estrategia de Marketing Digital. Con sólida trayectoria liderando el ciclo de vida de productos digitales —desde la investigación y conceptualización, hasta la implementación técnica y optimización SEO/SEM—. Mi enfoque multidisciplinario me permite alinear soluciones centradas en el usuario con los objetivos estratégicos y de rentabilidad del negocio.
+                </p>
+            </div>
+            
+            <div class="flex flex-col items-end gap-2 text-[11px] font-semibold text-gray-700">
+                <a href="mailto:fabianfloram@gmail.com" class="flex items-center gap-2 hover:text-[#a3ad29] transition">
+                    fabianfloram@gmail.com <i class="fas fa-envelope w-4 text-center"></i>
+                </a>
+                <a href="tel:+522223441091" class="flex items-center gap-2 hover:text-[#a3ad29] transition">
+                    +52 222 344 1091 <i class="fas fa-phone w-4 text-center"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/fabian-f-71858b209" target="_blank" class="flex items-center gap-2 hover:text-[#a3ad29] transition">
+                    /in/fabian-f-71858b209 <i class="fab fa-linkedin-in w-4 text-center"></i>
+                </a>
+                <a href="https://jahflavio.github.io/" target="_blank" class="flex items-center gap-2 hover:text-[#a3ad29] transition">
+                    jahflavio.github.io <i class="fas fa-globe w-4 text-center"></i>
+                </a>
+                <span class="flex items-center gap-2">
+                    Ciudad de México <i class="fas fa-map-marker-alt w-4 text-center"></i>
+                </span>
+            </div>
+        </header>
+
+        <!-- MAIN CONTENT -->
+        <main class="flex flex-1 px-10 py-6 gap-8">
+            
+            <!-- LEFT COLUMN (Experience) -->
+            <div class="w-[65%] pr-4">
+                <h3 class="text-sm font-bold uppercase tracking-widest text-gray-900 border-b-2 border-gray-200 pb-2 mb-6">Experiencia Profesional</h3>
+                
+                <div class="relative border-l-2 border-gray-200 pl-6 ml-2 space-y-6">
+                    
+                    <!-- Exp 1 -->
+                    <div class="relative">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-line"></div>
+                        <div class="flex justify-between items-baseline mb-1">
+                            <h4 class="text-sm font-bold text-gray-900">Maestro Diseño, Diseño Web & Mkt. Digital</h4>
+                            <span class="text-[10px] font-bold text-[#a3ad29] uppercase tracking-wide bg-[#f4f6e6] px-2 py-0.5 rounded">Ene 2026 - Presente</span>
+                        </div>
+                        <p class="text-[11px] font-bold text-gray-500 uppercase tracking-wider mb-2">studioMac</p>
+                        <ul class="bullets">
+                            <li>Liderazgo en la estrategia digital de la empresa, gestionando y optimizando el diseño web corporativo para maximizar la tasa de conversión.</li>
+                            <li>Ejecución de campañas integrales de Marketing Digital orientadas a la adquisición y retención de clientes.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Exp 2 -->
+                    <div class="relative">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-line"></div>
+                        <div class="flex justify-between items-baseline mb-1">
+                            <h4 class="text-sm font-bold text-gray-900">App Designer & Programador Freelance</h4>
+                            <span class="text-[10px] font-bold text-[#a3ad29] uppercase tracking-wide bg-[#f4f6e6] px-2 py-0.5 rounded">Ene 2026 - Presente</span>
+                        </div>
+                        <p class="text-[11px] font-bold text-gray-500 uppercase tracking-wider mb-2">Proyectos Independientes</p>
+                        <ul class="bullets">
+                            <li>Desarrollo integral de interfaces (UI/UX) para aplicaciones móviles, centrando el diseño en usabilidad y escalabilidad técnica.</li>
+                            <li>Programación de scripts avanzados e interfaces enfocados en el análisis e inversión en el mercado bursátil de EE. UU.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Exp 3 -->
+                    <div class="relative">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-line"></div>
+                        <div class="flex justify-between items-baseline mb-1">
+                            <h4 class="text-sm font-bold text-gray-900">Digital Marketing & UX/UI Lead</h4>
+                            <span class="text-[10px] font-semibold text-gray-400 uppercase tracking-wide">May 2024 - Dic 2025</span>
+                        </div>
+                        <p class="text-[11px] font-bold text-gray-500 uppercase tracking-wider mb-2">B-Drive</p>
+                        <ul class="bullets">
+                            <li>Diseño y prototipado de interfaces centradas en el usuario, optimizando flujos de navegación para reducir fricción en landing pages.</li>
+                            <li>Mantenimiento de sistemas de diseño en Figma e implementación Front-end garantizando accesibilidad y performance web (SEO Técnico).</li>
+                        </ul>
+                    </div>
+
+                    <!-- Exp 4 -->
+                    <div class="relative">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-line"></div>
+                        <div class="flex justify-between items-baseline mb-1">
+                            <h4 class="text-sm font-bold text-gray-900">Líder de Proyectos Digitales & UX</h4>
+                            <span class="text-[10px] font-semibold text-gray-400 uppercase tracking-wide">Sep 2023 - Dic 2023</span>
+                        </div>
+                        <p class="text-[11px] font-bold text-gray-500 uppercase tracking-wider mb-2">Lapi Laboratorio</p>
+                        <ul class="bullets">
+                            <li>Liderazgo en investigación de usuarios y auditorías heurísticas para el rediseño de plataformas digitales corporativas.</li>
+                            <li>Dirección de estrategias SEO y marketing de contenidos, incrementando el posicionamiento orgánico en el sector salud.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Exp 5 -->
+                    <div class="relative">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-line"></div>
+                        <div class="flex justify-between items-baseline mb-1">
+                            <h4 class="text-sm font-bold text-gray-900">UX/UI & Marketing Coordinator</h4>
+                            <span class="text-[10px] font-semibold text-gray-400 uppercase tracking-wide">May 2022 - Ago 2023</span>
+                        </div>
+                        <p class="text-[11px] font-bold text-gray-500 uppercase tracking-wider mb-2">Archer Troy</p>
+                        <ul class="bullets">
+                            <li>Conceptualización y prototipado de alta fidelidad para micrositios de campañas publicitarias interactivas.</li>
+                            <li>Coordinación ágil de entregables digitales asegurando la máxima calidad visual y efectividad en la conversión.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Exp 6 -->
+                    <div class="relative">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-line"></div>
+                        <div class="flex justify-between items-baseline mb-1">
+                            <h4 class="text-sm font-bold text-gray-900">Web & UI Designer</h4>
+                            <span class="text-[10px] font-semibold text-gray-400 uppercase tracking-wide">Jun 2020 - Feb 2022</span>
+                        </div>
+                        <p class="text-[11px] font-bold text-gray-500 uppercase tracking-wider mb-2">Polyglobal</p>
+                        <ul class="bullets">
+                            <li>Diseño B2B corporativo y administración técnica de plataformas en WordPress integrando prácticas sólidas de SEO (Rank Math/Yoast).</li>
+                        </ul>
+                    </div>
+
+                    <!-- Exp 7 -->
+                    <div class="relative">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-line" style="display: none;"></div> <!-- Hide last line -->
+                        <div class="flex justify-between items-baseline mb-1">
+                            <h4 class="text-sm font-bold text-gray-900">Experiencia Previa Destacada</h4>
+                            <span class="text-[10px] font-semibold text-gray-400 uppercase tracking-wide">2017 - 2020</span>
+                        </div>
+                        <ul class="bullets mt-2">
+                            <li><span class="font-bold">M4 TEL (2019-2020):</span> Visual Designer. Creación de layouts para e-commerce.</li>
+                            <li><span class="font-bold">Hand Creative (2017-2019):</span> Project Manager. Gestión ágil de proyectos y equipos de desarrollo.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT COLUMN (Skills, Tools, Education) -->
+            <div class="w-[35%]">
+                
+                <!-- Competencias -->
+                <div class="mb-8">
+                    <h3 class="text-sm font-bold uppercase tracking-widest text-gray-900 border-b-2 border-gray-200 pb-2 mb-4">Competencias</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge">UX/UI Design</span>
+                        <span class="skill-badge">Front-end Dev</span>
+                        <span class="skill-badge">Media Planning</span>
+                        <span class="skill-badge">SEO / SEM</span>
+                        <span class="skill-badge">CRO & Analytics</span>
+                        <span class="skill-badge">Design Systems</span>
+                        <span class="skill-badge">Prototyping</span>
+                        <span class="skill-badge">Project Management</span>
+                        <span class="skill-badge">E-commerce</span>
+                    </div>
+                </div>
+
+                <!-- Herramientas -->
+                <div class="mb-8">
+                    <h3 class="text-sm font-bold uppercase tracking-widest text-gray-900 border-b-2 border-gray-200 pb-2 mb-4">Stack & Tools</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <div class="software-icon" title="Figma"><i class="fab fa-figma"></i></div>
+                        <div class="software-icon" title="JavaScript"><i class="fab fa-js"></i></div>
+                        <div class="software-icon" title="React"><i class="fab fa-react"></i></div>
+                        <div class="software-icon" title="HTML5"><i class="fab fa-html5"></i></div>
+                        <div class="software-icon" title="CSS3"><i class="fab fa-css3-alt"></i></div>
+                        <div class="software-icon" title="WordPress"><i class="fab fa-wordpress"></i></div>
+                        <div class="software-icon" title="Analytics"><i class="fas fa-chart-line"></i></div>
+                        <div class="software-icon" title="Git"><i class="fab fa-git-alt"></i></div>
+                        <div class="software-icon text-[11px]" title="Adobe Illustrator">Ai</div>
+                        <div class="software-icon text-[11px]" title="Adobe Photoshop">Ps</div>
+                        <div class="software-icon text-[11px]" title="Tailwind CSS">Tw</div>
+                        <div class="software-icon text-[11px]" title="Google Ads">Ads</div>
+                    </div>
+                </div>
+
+                <!-- Educación -->
+                <div class="mb-8">
+                    <h3 class="text-sm font-bold uppercase tracking-widest text-gray-900 border-b-2 border-gray-200 pb-2 mb-4">Educación</h3>
+                    <div>
+                        <h4 class="text-[11.5px] font-bold text-gray-900 uppercase tracking-wide">Licenciatura en Comunicación Visual</h4>
+                        <p class="text-[10.5px] font-medium text-gray-500 mt-1">Universidad de la Comunicación</p>
+                        <p class="text-[10px] font-semibold text-gray-400 mt-0.5">Ago 2005 - Dic 2009</p>
+                    </div>
+                </div>
+
+                <!-- Certificados -->
+                <div>
+                    <h3 class="text-sm font-bold uppercase tracking-widest text-gray-900 border-b-2 border-gray-200 pb-2 mb-4">Certificados Clave</h3>
+                    <ul class="space-y-2 text-[10.5px]">
+                        <li class="flex justify-between items-center border-b border-gray-100 pb-1">
+                            <span class="font-bold text-gray-800">IA en RR.HH. & Algoritmos</span>
+                            <span class="text-gray-500 text-[9px] uppercase">UBITS '25</span>
+                        </li>
+                        <li class="flex justify-between items-center border-b border-gray-100 pb-1">
+                            <span class="font-bold text-gray-800">Ciberseguridad / React</span>
+                            <span class="text-gray-500 text-[9px] uppercase">B-drive / UBITS '25</span>
+                        </li>
+                        <li class="flex justify-between items-center border-b border-gray-100 pb-1">
+                            <span class="font-bold text-gray-800">Certificación Scrum</span>
+                            <span class="text-gray-500 text-[9px] uppercase">CertJoin '24</span>
+                        </li>
+                        <li class="flex justify-between items-center border-b border-gray-100 pb-1">
+                            <span class="font-bold text-gray-800">SEO Certification</span>
+                            <span class="text-gray-500 text-[9px] uppercase">HubSpot '24</span>
+                        </li>
+                        <li class="flex justify-between items-center border-b border-gray-100 pb-1">
+                            <span class="font-bold text-gray-800">Foundations of UX</span>
+                            <span class="text-gray-500 text-[9px] uppercase">Google '22</span>
+                        </li>
+                        <li class="flex justify-between items-center">
+                            <span class="font-bold text-gray-800">Mkt Digital / Web Dev</span>
+                            <span class="text-gray-500 text-[9px] uppercase">Google / Grasshopper</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
