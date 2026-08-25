@@ -166,22 +166,23 @@
             const toolbar = document.querySelector('.no-print');
             if (toolbar) toolbar.style.display = 'none';
 
-            const widthMm = element.offsetWidth * 0.264583;
-            const heightMm = (element.scrollHeight * 0.264583) + 5;
+            const originalMargin = element.style.margin;
+            element.style.margin = '0';
+
+            const widthMm = 210;
+            const pxToMm = 0.264583;
+            const heightMm = element.offsetHeight * pxToMm;
 
             const opt = {
                 margin: 0,
                 filename: 'Cover_Letter_Fabian_Flores.pdf',
                 image: { type: 'jpeg', quality: 1 },
                 html2canvas: { scale: 2, useCORS: true, scrollY: 0 },
-                jsPDF: { 
-                    unit: 'mm', 
-                    format: [widthMm, heightMm], 
-                    orientation: 'portrait' 
-                }
+                jsPDF: { unit: 'mm', format: [widthMm, Math.ceil(heightMm) + 1], orientation: 'portrait' }
             };
 
             html2pdf().set(opt).from(element).save().then(() => {
+                element.style.margin = originalMargin;
                 if (toolbar) toolbar.style.display = 'flex';
             });
         }
