@@ -465,15 +465,19 @@
             const toolbar = document.querySelector('.no-print');
             if (toolbar) toolbar.style.display = 'none';
 
-            // Generate exactly one page matching the container's full dimensions
+            // Calculate dimensions in mm (1px approx 0.264583 mm)
+            const widthMm = element.offsetWidth * 0.264583;
+            // Use scrollHeight to capture full content height, and add a 5mm buffer
+            const heightMm = (element.scrollHeight * 0.264583) + 5;
+
             const opt = {
                 margin: 0,
                 filename: 'CV_Fabian_Flores.pdf',
-                image: { type: 'jpeg', quality: 0.98 },
+                image: { type: 'jpeg', quality: 1 },
                 html2canvas: { scale: 2, useCORS: true, scrollY: 0 },
                 jsPDF: { 
-                    unit: 'px', 
-                    format: [element.offsetWidth, element.offsetHeight], 
+                    unit: 'mm', 
+                    format: [widthMm, heightMm], 
                     orientation: 'portrait' 
                 }
             };
