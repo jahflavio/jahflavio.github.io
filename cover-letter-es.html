@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta de Presentación - Fabián Flores</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #111111;
+            --accent: #2563eb;
+            --bg-page: #f9fafb;
+            --text-main: #374151;
+            --text-light: #6b7280;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #e5e7eb;
+            color: var(--primary);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, h4, .font-display {
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .cv-page {
+            width: 21cm;
+            min-height: 29.7cm;
+            margin: 2rem auto;
+            background-color: white;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            position: relative;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        .cv-page::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 12px;
+            background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 100%);
+        }
+
+        .header-bg {
+            background-color: #fcfcfc;
+            border-bottom: 1px solid #f3f4f6;
+        }
+
+        .letter-content p {
+            margin-bottom: 1.25rem;
+            line-height: 1.7;
+            text-align: justify;
+        }
+
+        /* Print optimizations */
+        @media print {
+            @page {
+                size: A4;
+                margin: 0;
+            }
+            body {
+                background-color: white !important;
+                margin: 0;
+            }
+            .cv-page {
+                margin: 0;
+                box-shadow: none;
+                width: 100%;
+                height: 100%;
+                page-break-after: avoid;
+            }
+            .no-print {
+                display: none !important;
+            }
+            * {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="fixed top-6 right-6 no-print flex gap-4 z-50">
+        <a href="index.html" class="bg-white border border-gray-200 shadow-sm px-4 py-2 rounded-lg text-sm font-semibold hover:bg-gray-50 transition flex items-center gap-2">
+            <i class="fas fa-arrow-left"></i> Volver a Web
+        </a>
+        <button onclick="descargarPDF()" class="bg-[#111111] text-white shadow-md px-4 py-2 rounded-lg text-sm font-semibold hover:bg-[#222222] transition flex items-center gap-2">
+            <i class="fas fa-file-pdf"></i> Descargar Carta PDF
+        </button>
+    </div>
+
+    <div class="cv-page flex flex-col">
+        
+        <header class="header-bg pt-8 pb-4 px-10 flex justify-between items-center relative">
+            <div class="max-w-[70%]">
+                <h1 class="text-5xl font-extrabold tracking-tight uppercase leading-none text-gray-900 mb-2">Fabián Flores</h1>
+                <h2 class="text-lg font-bold tracking-widest uppercase text-[#2563eb]">Digital Marketing & UX/UI Lead | Front-End Developer</h2>
+            </div>
+            
+            <div class="flex flex-col items-end gap-2 text-[11px] font-semibold text-gray-700">
+                <a href="mailto:fabianfloram@gmail.com" class="flex items-center gap-2 hover:text-[#2563eb] transition">
+                    fabianfloram@gmail.com <i class="fas fa-envelope w-4 text-center"></i>
+                </a>
+                <a href="tel:+522223441091" class="flex items-center gap-2 hover:text-[#2563eb] transition">
+                    +52 222 344 1091 <i class="fas fa-phone w-4 text-center"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/fabian-f-71858b209" target="_blank" class="flex items-center gap-2 hover:text-[#2563eb] transition">
+                    /in/fabian-f-71858b209 <i class="fab fa-linkedin-in w-4 text-center"></i>
+                </a>
+                <span class="flex items-center gap-2">
+                    Ciudad de México <i class="fas fa-map-marker-alt w-4 text-center"></i>
+                </span>
+            </div>
+        </header>
+
+        <main class="flex flex-1 flex-col px-14 py-12">
+            <div class="text-sm text-gray-500 font-medium mb-10 flex justify-between">
+                <span id="fecha-actual"></span>
+                <span>Asunto: Candidatura para vacante</span>
+            </div>
+
+            <div class="letter-content text-[13px] text-gray-800">
+                <p>Estimado/a responsable de selección,</p>
+
+                <p>Le escribo con gran entusiasmo para presentar mi candidatura a la posición abierta en su organización. Como líder de productos digitales con más de 7 años de experiencia combinando Diseño UX/UI, Desarrollo Front-End y Estrategia de Marketing Digital, estoy convencido de que mi perfil multidisciplinario puede aportar un gran valor a su equipo.</p>
+
+                <p>A lo largo de mi carrera, he tenido la oportunidad de gobernar el ciclo de vida completo de productos digitales en empresas como B-Drive IT, Lapi Laboratorio Médico y Archer Troy. Mi enfoque no se limita a crear interfaces estéticamente atractivas, sino que me aseguro de que cada decisión de diseño esté respaldada por investigación de usuarios (UX Research) y orientada a maximizar la conversión (CRO) y el rendimiento técnico (SEO).</p>
+
+                <p>Recientemente, he liderado la creación de Design Systems escalables, el desarrollo Front-end utilizando tecnologías modernas como React y Tailwind CSS, y la optimización de flujos de navegación complejos. Además, mi dominio de herramientas de Inteligencia Artificial Generativa y flujos de automatización me ha permitido optimizar tanto procesos creativos como técnicos, reduciendo tiempos de entrega sin comprometer los altos estándares de calidad.</p>
+
+                <p>Me considero un profesional orientado a resultados y altamente proactivo, capaz de comunicarme efectivamente tanto con equipos de ingeniería como de negocio. Me entusiasma la posibilidad de unirme a un entorno colaborativo y me encantaría tener la oportunidad de conversar con usted para profundizar sobre cómo mi experiencia, mis habilidades técnicas y mi visión estratégica pueden contribuir a los próximos éxitos de su empresa.</p>
+
+                <p>Agradezco de antemano su tiempo y consideración. Estaré atento a cualquier comentario.</p>
+
+                <div class="mt-12">
+                    <p class="font-bold text-gray-900 mb-1">Atentamente,</p>
+                    <p class="font-bold text-lg font-display text-gray-900 mt-6">Fabián Flores</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const dateObj = new Date();
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            document.getElementById('fecha-actual').textContent = dateObj.toLocaleDateString('es-ES', options);
+
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('download') === 'true') {
+                setTimeout(descargarPDF, 800);
+            }
+        });
+
+        function descargarPDF() {
+            const element = document.querySelector('.cv-page');
+            const toolbar = document.querySelector('.no-print');
+            if (toolbar) toolbar.style.display = 'none';
+
+            const widthMm = element.offsetWidth * 0.264583;
+            const heightMm = (element.scrollHeight * 0.264583) + 5;
+
+            const opt = {
+                margin: 0,
+                filename: 'Cover_Letter_Fabian_Flores.pdf',
+                image: { type: 'jpeg', quality: 1 },
+                html2canvas: { scale: 2, useCORS: true, scrollY: 0 },
+                jsPDF: { 
+                    unit: 'mm', 
+                    format: [widthMm, heightMm], 
+                    orientation: 'portrait' 
+                }
+            };
+
+            html2pdf().set(opt).from(element).save().then(() => {
+                if (toolbar) toolbar.style.display = 'flex';
+            });
+        }
+    </script>
+</body>
+</html>
