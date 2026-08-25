@@ -29,7 +29,7 @@
 
         .cv-page {
             width: 21cm;
-            min-height: 29.7cm;
+            min-height: auto;
             margin: 2rem auto;
             background-color: white;
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
@@ -171,11 +171,11 @@
     <div class="cv-page flex flex-col">
         
         <!-- HEADER -->
-        <header class="header-bg pt-8 pb-4 px-10 flex justify-between items-center relative">
+        <header class="header-bg pt-6 pb-2 px-10 flex justify-between items-center relative">
             <div class="max-w-[70%]">
                 <h1 class="text-5xl font-extrabold tracking-tight uppercase leading-none text-gray-900 mb-2">Fabián Flores</h1>
                 <h2 class="text-lg font-bold tracking-widest uppercase text-[#2563eb]">Digital Marketing & UX/UI Lead | Front-End Developer</h2>
-                <p class="mt-4 text-xs font-medium text-gray-600 leading-relaxed text-justify pr-6">
+                <p class="mt-2 text-[11px] font-medium text-gray-600 leading-tight text-justify pr-6">
                     Comunicador Audiovisual y Líder de Producto Digital con sólida trayectoria integrando Diseño de Experiencia de Usuario (UX/UI), Desarrollo Web Front-End (React, GSAP, Tailwind) y Estrategia Integral de Marketing Digital (SEO/SEM, CRO, GA4). Especialista en gobernar el ciclo de vida completo de productos digitales: desde investigación de usuarios, arquitectura de información y diseño atómico, hasta la implementación técnica en código, analítica avanzada y optimización de rentabilidad del negocio.
                 </p>
             </div>
@@ -200,13 +200,13 @@
         </header>
 
         <!-- MAIN CONTENT -->
-        <main class="flex flex-1 px-10 py-4 gap-8">
+        <main class="flex flex-1 px-10 py-2 gap-6">
             
             <!-- LEFT COLUMN (Experience) -->
             <div class="w-[65%] pr-4">
                 <h3 class="text-sm font-bold uppercase tracking-widest text-gray-900 border-b-2 border-gray-200 pb-1 mb-4">Experiencia Profesional</h3>
                 
-                <div class="relative border-l-2 border-gray-200 pl-6 ml-2 space-y-4">
+                <div class="relative border-l-2 border-gray-200 pl-6 ml-2 space-y-3">
                     
                     <!-- Exp 1 -->
                     <div class="relative">
@@ -311,7 +311,7 @@
             <div class="w-[35%]">
                 
                 <!-- Competencias -->
-                <div class="mb-2.5">
+                <div class="mb-1.5">
                     <h3 class="text-sm font-bold uppercase tracking-widest text-gray-900 border-b-2 border-gray-200 pb-1 mb-2">Competencias</h3>
                     <div class="flex flex-wrap gap-2">
                         <span class="skill-badge">UX/UI Design</span>
@@ -328,7 +328,7 @@
                 </div>
 
                 <!-- Herramientas -->
-                <div class="mb-2.5">
+                <div class="mb-1.5">
                     <h3 class="text-sm font-bold uppercase tracking-widest text-gray-900 border-b-2 border-gray-200 pb-1 mb-2">Stack & Tools</h3>
                     <div class="flex flex-wrap gap-2">
                         <div class="software-icon" title="Figma"><i class="fab fa-figma"></i></div>
@@ -347,7 +347,7 @@
                 </div>
 
                 <!-- Hard Skills & Metodologías -->
-                <div class="mb-2.5">
+                <div class="mb-1.5">
                     <h3 class="text-sm font-bold uppercase tracking-widest text-gray-900 border-b-2 border-gray-200 pb-1 mb-2">Hard Skills & Frameworks</h3>
                     <ul class="space-y-1 text-[9.5px] text-gray-600 leading-tight">
                         <li><strong class="text-gray-900">UX/UI & Producto:</strong> Design Systems, User Research, Prototipado Hi-Fi, Arquitectura, Auditorías Heurísticas, Usabilidad, CRO, Wireframing, User Flows.</li>
@@ -361,7 +361,7 @@
                 </div>
 
                 <!-- Educación -->
-                <div class="mb-2.5">
+                <div class="mb-1.5">
                     <h3 class="text-sm font-bold uppercase tracking-widest text-gray-900 border-b-2 border-gray-200 pb-1 mb-2">Educación</h3>
                     <div>
                         <h4 class="text-[11.5px] font-bold text-gray-900 uppercase tracking-wide">Licenciatura en Comunicación Visual</h4>
@@ -371,7 +371,7 @@
                 </div>
 
                 <!-- Certificados -->
-                <div class="mb-2.5">
+                <div class="mb-1.5">
                     <h3 class="text-sm font-bold uppercase tracking-widest text-gray-900 border-b-2 border-gray-200 pb-1 mb-2">Certificaciones</h3>
                     <ul class="space-y-1 text-[9px]">
                         <li class="flex justify-between items-center border-b border-gray-100 pb-0">
@@ -475,6 +475,7 @@
                 filename: 'CV_Fabian_Flores.pdf',
                 image: { type: 'jpeg', quality: 1 },
                 html2canvas: { scale: 2, useCORS: true, scrollY: 0 },
+                pagebreak: { mode: 'avoid-all' },
                 jsPDF: { 
                     unit: 'mm', 
                     format: [widthMm, heightMm], 
