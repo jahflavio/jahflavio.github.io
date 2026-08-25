@@ -162,8 +162,8 @@
         <a href="index.html" class="bg-white border border-gray-200 shadow-sm px-4 py-2 rounded-lg text-sm font-semibold hover:bg-gray-50 transition flex items-center gap-2">
             <i class="fas fa-arrow-left"></i> Volver a Web
         </a>
-        <button onclick="window.print()" class="bg-[#111111] text-white shadow-md px-4 py-2 rounded-lg text-sm font-semibold hover:bg-[#222222] transition flex items-center gap-2">
-            <i class="fas fa-print"></i> Imprimir PDF
+        <button onclick="descargarPDF()" class="bg-[#111111] text-white shadow-md px-4 py-2 rounded-lg text-sm font-semibold hover:bg-[#222222] transition flex items-center gap-2">
+            <i class="fas fa-file-pdf"></i> Descargar PDF
         </button>
     </div>
 
@@ -448,5 +448,41 @@
         </main>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('download') === 'true') {
+                // Wait briefly for web fonts and icons to load
+                setTimeout(descargarPDF, 800);
+            }
+        });
+
+        function descargarPDF() {
+            const element = document.querySelector('.cv-page');
+            
+            // Hide the floating toolbar during PDF generation
+            const toolbar = document.querySelector('.no-print');
+            if (toolbar) toolbar.style.display = 'none';
+
+            // Generate exactly one page matching the container's full dimensions
+            const opt = {
+                margin: 0,
+                filename: 'CV_Fabian_Flores.pdf',
+                image: { type: 'jpeg', quality: 0.98 },
+                html2canvas: { scale: 2, useCORS: true, scrollY: 0 },
+                jsPDF: { 
+                    unit: 'px', 
+                    format: [element.offsetWidth, element.offsetHeight], 
+                    orientation: 'portrait' 
+                }
+            };
+
+            html2pdf().set(opt).from(element).save().then(() => {
+                // Restore toolbar
+                if (toolbar) toolbar.style.display = 'flex';
+            });
+        }
+    </script>
 </body>
 </html>
